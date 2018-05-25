@@ -1,0 +1,20 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/vadlusk/turing/3module/projects/give_a_little/spec/support/factory_bot.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/spec/support/shoulda-matchers.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1527207868
+  }
+}
