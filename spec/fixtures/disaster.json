@@ -1,0 +1,87 @@
+{
+	"href": "https://api.reliefweb.int/v1/disasters/8591?appname=apidoc",
+	"time": 3,
+	"links": {
+		"self": {
+			"href": "https://api.reliefweb.int/v1/disasters/8591"
+		},
+		"collection": {
+			"href": "https://api.reliefweb.int/v1/disasters"
+		}
+	},
+	"totalCount": 1,
+	"count": 1,
+	"data": [
+		{
+			"fields": {
+				"id": 8591,
+				"name": "Central African Republic: Severe Local Storm - Jun 2011",
+				"description": "Since 11 June 2011, Bangui the capital city of the Central African Republic (CAR) has been affected by violent winds coupled with torrential rains. The situation worsened over the weekend of 18 to 19 June 2011 with serious consequences in 7 neighbourhoods of the 6th subdivision of Bangui [IFRC, 12 March 2012](https://reliefweb.int/report/central-african-republic/central-african-republic-violent-winds-bangui-dref-final-report)).",
+				"status": "past",
+				"date": {
+					"created": "2011-06-12T00:00:00+00:00"
+				},
+				"glide": "ST-2011-000073-CAF",
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/54",
+					"id": 54,
+					"name": "Central African Republic",
+					"shortname": "CAR",
+					"iso3": "caf",
+					"location": {
+						"lat": 6.57,
+						"lon": 20.48
+					}
+				},
+				"primary_type": {
+					"id": 4611,
+					"name": "Flood",
+					"code": "FL"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/54",
+						"id": 54,
+						"name": "Central African Republic",
+						"shortname": "CAR",
+						"iso3": "caf",
+						"location": {
+							"lat": 6.57,
+							"lon": 20.48
+						},
+						"primary": true
+					}
+				],
+				"type": [
+					{
+						"id": 4611,
+						"name": "Flood",
+						"code": "FL",
+						"primary": true
+					},
+					{
+						"id": 4656,
+						"name": "Severe Local Storm",
+						"code": "ST"
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8591",
+				"url_alias": "https://reliefweb.int/disaster/st-2011-000073-caf",
+				"current": false,
+				"description-html": "
+Since 11 June 2011, Bangui the capital city of the Central African Republic (CAR) has been affected by violent winds coupled with torrential rains. The situation worsened over the weekend of 18 to 19 June 2011 with serious consequences in 7 neighbourhoods of the 6th subdivision of Bangui IFRC, 12 March 2012).
+
+\n",
+				"profile": {
+					"overview": "Since 11 June 2011, Bangui the capital city of the Central African Republic (CAR) has been affected by violent winds coupled with torrential rains. The situation worsened over the weekend of 18 to 19 June 2011 with serious consequences in 7 neighbourhoods of the 6th subdivision of Bangui [IFRC, 12 March 2012](https://reliefweb.int/report/central-african-republic/central-african-republic-violent-winds-bangui-dref-final-report)).",
+					"overview-html": "
+Since 11 June 2011, Bangui the capital city of the Central African Republic (CAR) has been affected by violent winds coupled with torrential rains. The situation worsened over the weekend of 18 to 19 June 2011 with serious consequences in 7 neighbourhoods of the 6th subdivision of Bangui IFRC, 12 March 2012).
+
+\n"
+				}
+			},
+			"id": "8591"
+		}
+	]
+}
