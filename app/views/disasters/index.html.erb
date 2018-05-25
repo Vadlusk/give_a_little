@@ -5,14 +5,16 @@
     var center = {lat: 0.000, lng: 0.000};
     var uluru = {lat: -25.344, lng: 131.036};
     var denver = {lat: 39.739, lng: -104.990};
+    var disasters = [uluru, denver];
     var map = new google.maps.Map(document.getElementById("map"), {
       zoom: 1,
-      center: uluru
+      center: center
     });
-    var marker = new google.maps.Marker({position: uluru, map: map});
-    var marker_two = new google.maps.Marker({position: denver, map: map});
-  }
+    for (i=0;i<disasters.length;i++) {
+      var marker_i = new google.maps.Marker({position: disasters[i], map: map});
+    };
+  };
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_api_key'] %>&callback=initMap" async defer>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_api_key'] %>&callback=initMap">
 </script>
