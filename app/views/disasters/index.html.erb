@@ -1,11 +1,16 @@
-<div class="map"></div>
+<h1>Disaster Map</h1>
+<div id="map"></div>
 <script>
-  var map;
   function initMap() {
-    map = new google.maps.Map(document.getElementsByClassName('map'), {
-      center: {lat: 00.00 , lng: 00.00},
-      zoom: 0
+    var center = {lat: 0.000, lng: 0.000};
+    var uluru = {lat: -25.344, lng: 131.036};
+    var denver = {lat: 39.739, lng: -104.990};
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 1,
+      center: uluru
     });
+    var marker = new google.maps.Marker({position: uluru, map: map});
+    var marker_two = new google.maps.Marker({position: denver, map: map});
   }
 </script>
 
