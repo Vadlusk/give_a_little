@@ -13,8 +13,18 @@
         1,
         null,
         null
+      ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/disasters_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/application_controller.rb": [
+        1,
+        null
       ]
     },
-    "timestamp": 1527207964
+    "timestamp": 1527208127
   }
 }
