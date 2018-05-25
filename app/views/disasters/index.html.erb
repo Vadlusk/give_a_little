@@ -1,0 +1,13 @@
+<div class="map"></div>
+<script>
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementsByClassName('map'), {
+      center: {lat: 00.00 , lng: 00.00},
+      zoom: 0
+    });
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKL9u8V42Ct3XpVEdH_HlfPGhQHth_tfg&callback=initMap" async defer>
+</script>
