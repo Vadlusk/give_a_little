@@ -1,16 +1,18 @@
 require 'rails_helper'
 
-describe DisasterSearch do
-  subject { DisasterSearch.new }
+describe DisasterService do
+  subject { DisasterService.new }
   context 'attributes' do
     it 'exists' do
-      expect(subject).to be_a(DisasterSearch)
+      expect(subject).to be_a(DisasterService)
     end
   end
-  context 'class methods' do
+  context 'instance methods' do
     context 'returns all types of disasters' do
-      expect(subject.all.length).to eq(10)
-      expect(subject.all.first).to be_a(Disaster) 
+      it '.disasters' do
+        expect(subject.disasters.length).to eq(10)
+        expect(subject.disasters.first).to be_a(Disaster)
+      end
     end
   end
 end

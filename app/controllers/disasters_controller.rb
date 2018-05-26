@@ -1,8 +1,7 @@
 class DisastersController < ApplicationController
   def index
-    @disasters = DisasterSearch.new.all
+    @disasters = DisasterService.new.disasters
   end
 
-  def show
-  end
+  def show; end
 end
