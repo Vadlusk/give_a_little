@@ -1,5 +1,5 @@
 {
-	"href": "https://api.reliefweb.int/v1/disasters/8591?appname=apidoc",
+	"href": "https://api.reliefweb.int/v1/disasters/8591?appname=apidoc&profile=full",
 	"time": 3,
 	"links": {
 		"self": {

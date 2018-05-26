@@ -1,0 +1,981 @@
+{
+	"href": "https://api.reliefweb.int/v1/disasters?appname=apidoc&profile=full",
+	"time": 2,
+	"links": {
+		"self": {
+			"href": "https://api.reliefweb.int/v1/disasters?offset=0&limit=10&preset=minimal"
+		},
+		"next": {
+			"href": "https://api.reliefweb.int/v1/disasters?offset=10&limit=10&preset=minimal"
+		}
+	},
+	"totalCount": 2958,
+	"count": 10,
+	"data": [
+		{
+			"id": "8591",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8591",
+			"fields": {
+				"id": 8591,
+				"name": "Central African Republic: Severe Local Storm - Jun 2011",
+				"description": "Since 11 June 2011, Bangui the capital city of the Central African Republic (CAR) has been affected by violent winds coupled with torrential rains. The situation worsened over the weekend of 18 to 19 June 2011 with serious consequences in 7 neighbourhoods of the 6th subdivision of Bangui [IFRC, 12 March 2012](https://reliefweb.int/report/central-african-republic/central-african-republic-violent-winds-bangui-dref-final-report)).",
+				"status": "past",
+				"date": {
+					"created": "2011-06-12T00:00:00+00:00"
+				},
+				"glide": "ST-2011-000073-CAF",
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/54",
+					"id": 54,
+					"name": "Central African Republic",
+					"shortname": "CAR",
+					"iso3": "caf",
+					"location": {
+						"lat": 6.57,
+						"lon": 20.48
+					}
+				},
+				"primary_type": {
+					"id": 4611,
+					"name": "Flood",
+					"code": "FL"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/54",
+						"id": 54,
+						"name": "Central African Republic",
+						"shortname": "CAR",
+						"iso3": "caf",
+						"location": {
+							"lat": 6.57,
+							"lon": 20.48
+						},
+						"primary": true
+					}
+				],
+				"type": [
+					{
+						"id": 4611,
+						"name": "Flood",
+						"code": "FL",
+						"primary": true
+					},
+					{
+						"id": 4656,
+						"name": "Severe Local Storm",
+						"code": "ST"
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8591",
+				"url_alias": "https://reliefweb.int/disaster/st-2011-000073-caf",
+				"current": false,
+				"description-html": "
+Since 11 June 2011, Bangui the capital city of the Central African Republic (CAR) has been affected by violent winds coupled with torrential rains. The situation worsened over the weekend of 18 to 19 June 2011 with serious consequences in 7 neighbourhoods of the 6th subdivision of Bangui IFRC, 12 March 2012).
+
+\n",
+				"profile": {
+					"overview": "Since 11 June 2011, Bangui the capital city of the Central African Republic (CAR) has been affected by violent winds coupled with torrential rains. The situation worsened over the weekend of 18 to 19 June 2011 with serious consequences in 7 neighbourhoods of the 6th subdivision of Bangui [IFRC, 12 March 2012](https://reliefweb.int/report/central-african-republic/central-african-republic-violent-winds-bangui-dref-final-report)).",
+					"overview-html": "
+Since 11 June 2011, Bangui the capital city of the Central African Republic (CAR) has been affected by violent winds coupled with torrential rains. The situation worsened over the weekend of 18 to 19 June 2011 with serious consequences in 7 neighbourhoods of the 6th subdivision of Bangui IFRC, 12 March 2012).
+
+\n"
+				}
+			}
+		},
+		{
+			"id": "8590",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8590",
+			"fields": {
+				"id": 8590,
+				"name": "Congo: Chikungunya and Measles Outbreak - May 2011",
+				"description": "A chikungunya outbreak affected the cities of Brazzaville, Pointe Noire and Pool in the Republic of Congo in June 2011, affecting about 11,000 people. Joint efforts by the government, the Red Cross and other partners contributed to fighting effectively against this epidemic, as no new case was declared since week 32 of 2011.. ([IFRC, 28 Mar 2012](https://reliefweb.int/node/486171))\r\n\r\nA measles epidemic was declared officially in Pointe Noire on 10 June 2011. By then, 687 cases and 32 deaths were registered.  In response to the epidemic, Government, supported by its partners organized an anti-measles immunization campaign that took place from 22 June to 26 July 2011 targeting 142,397 children aged 6 to 8 months. The measles epidemic occurred at a time when the country was still fighting against a poliomyelitis outbreak. In the meantime, other outbreaks occurred, namely chikungunya and cholera, which complicated the implementation of the measles operation. The Congolese Red Cross, supported by IFRC’s Central Africa Regional Representation (CARREP), succeeded in implementing all antimeasles activities as planned . ([IFRC, 13 Mar 2012](https://reliefweb.int/node/482673))",
+				"status": "past",
+				"date": {
+					"created": "2011-05-31T00:00:00+00:00"
+				},
+				"glide": "EP-2011-000074-COG",
+				"related_glide": [
+					"EP-2011-000075-COG"
+				],
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/66",
+					"id": 66,
+					"name": "Congo",
+					"shortname": "Congo",
+					"iso3": "cog",
+					"location": {
+						"lat": -0.31,
+						"lon": 15.99
+					}
+				},
+				"primary_type": {
+					"id": 4642,
+					"name": "Epidemic",
+					"code": "EP"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/66",
+						"id": 66,
+						"name": "Congo",
+						"shortname": "Congo",
+						"iso3": "cog",
+						"location": {
+							"lat": -0.31,
+							"lon": 15.99
+						},
+						"primary": true
+					}
+				],
+				"type": [
+					{
+						"id": 4642,
+						"name": "Epidemic",
+						"code": "EP",
+						"primary": true
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8590",
+				"url_alias": "https://reliefweb.int/disaster/ep-2011-000074-cog",
+				"current": false,
+				"description-html": "
+A chikungunya outbreak affected the cities of Brazzaville, Pointe Noire and Pool in the Republic of Congo in June 2011, affecting about 11,000 people. Joint efforts by the government, the Red Cross and other partners contributed to fighting effectively against this epidemic, as no new case was declared since week 32 of 2011.. (IFRC, 28 Mar 2012)
+
+\n\n
+A measles epidemic was declared officially in Pointe Noire on 10 June 2011. By then, 687 cases and 32 deaths were registered.  In response to the epidemic, Government, supported by its partners organized an anti-measles immunization campaign that took place from 22 June to 26 July 2011 targeting 142,397 children aged 6 to 8 months. The measles epidemic occurred at a time when the country was still fighting against a poliomyelitis outbreak. In the meantime, other outbreaks occurred, namely chikungunya and cholera, which complicated the implementation of the measles operation. The Congolese Red Cross, supported by IFRC’s Central Africa Regional Representation (CARREP), succeeded in implementing all antimeasles activities as planned . (IFRC, 13 Mar 2012)
+
+\n",
+				"profile": {
+					"overview": "A chikungunya outbreak affected the cities of Brazzaville, Pointe Noire and Pool in the Republic of Congo in June 2011, affecting about 11,000 people. Joint efforts by the government, the Red Cross and other partners contributed to fighting effectively against this epidemic, as no new case was declared since week 32 of 2011.. ([IFRC, 28 Mar 2012](https://reliefweb.int/node/486171))\r\n\r\nA measles epidemic was declared officially in Pointe Noire on 10 June 2011. By then, 687 cases and 32 deaths were registered.  In response to the epidemic, Government, supported by its partners organized an anti-measles immunization campaign that took place from 22 June to 26 July 2011 targeting 142,397 children aged 6 to 8 months. The measles epidemic occurred at a time when the country was still fighting against a poliomyelitis outbreak. In the meantime, other outbreaks occurred, namely chikungunya and cholera, which complicated the implementation of the measles operation. The Congolese Red Cross, supported by IFRC’s Central Africa Regional Representation (CARREP), succeeded in implementing all antimeasles activities as planned . ([IFRC, 13 Mar 2012](https://reliefweb.int/node/482673))",
+					"overview-html": "
+A chikungunya outbreak affected the cities of Brazzaville, Pointe Noire and Pool in the Republic of Congo in June 2011, affecting about 11,000 people. Joint efforts by the government, the Red Cross and other partners contributed to fighting effectively against this epidemic, as no new case was declared since week 32 of 2011.. (IFRC, 28 Mar 2012)
+
+\n\n
+A measles epidemic was declared officially in Pointe Noire on 10 June 2011. By then, 687 cases and 32 deaths were registered.  In response to the epidemic, Government, supported by its partners organized an anti-measles immunization campaign that took place from 22 June to 26 July 2011 targeting 142,397 children aged 6 to 8 months. The measles epidemic occurred at a time when the country was still fighting against a poliomyelitis outbreak. In the meantime, other outbreaks occurred, namely chikungunya and cholera, which complicated the implementation of the measles operation. The Congolese Red Cross, supported by IFRC’s Central Africa Regional Representation (CARREP), succeeded in implementing all antimeasles activities as planned . (IFRC, 13 Mar 2012)
+
+\n"
+				}
+			}
+		},
+		{
+			"id": "8580",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8580",
+			"fields": {
+				"id": 8580,
+				"name": "Congo River: Cholera Outbreak - May 2011",
+				"description": "*DR Congo*\r\n\r\nA cholera outbreak was declared in March 2011 in Oriental province and later spread along the Congo River to Bandundu, Equateur and Kinshasa provinces in DR Congo. The Ministry of Health declared a national epidemic in June and appealed to donors for support. ([IFRC, 25 Apr 2012](https://reliefweb.int/node/492417)) Over the course of 2011, 8,038 cases of cholera and 434 deaths were recorded in the western provinces, with a peak in June ([Gov't/WHO, 3 Jul 2012](https://reliefweb.int/node/508838)). In 2012, 7,175 cases and 229 deaths were registered, peaking in April ([Gov't/WHO, 29 Jan 2013](https://reliefweb.int/node/564059)).\r\n\r\n*Republic of Congo*\r\n\r\nThe first cases of cholera appeared in the Likouala, Cuvette and Plateaux divisions in June 2011, but Government officials did not declare the epidemic officially until July 2011. By 27 Dec 2011, 775 cases of cholera and 32 deaths were registered nationwide. ([IFRC, 1 Feb 2012](https://reliefweb.int/node/474052)) \r\n\r\nAt the beginning of 2012, a new cholera outbreak occurred in Betou and the surrounding villages. 355 cholera cases, including 5 deaths, were recorded, with the highest number of cases at the beginning of March. By June, no new cases had been registered. ([IFRC, 30 Sep 2012](https://reliefweb.int/node/528933)) \r\n\r\nOn 4 March 2012, an explosion occurred in an arms depot in Brazzaville, making 13,800 people homeless. They were accommodated in a temporary site where cases of cholera were declared in late March 2012 and early April 2012. ([IFRC, 30 Apr 2012](https://reliefweb.int/node/493459))\r\n\r\nFrom May through to June 2012,  no new cases were registered.  ([IFRC, 30 Sept 2012](https://reliefweb.int/node/528933))\n### Useful Links\n\n- [Rapports journaliers sur la situation du choléra](http://www.rdc-humanitaire.net/index.php?option=com_content&view=article&id=1242:rapport-journalier-sur-la-situation-du-cholera&catid=49:autres-rapports&Itemid=125)",
+				"status": "past",
+				"date": {
+					"created": "2011-05-31T00:00:00+00:00"
+				},
+				"glide": "EP-2011-000076-COD",
+				"related_glide": [
+					"EP-2011-000165-COG"
+				],
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/66",
+					"id": 66,
+					"name": "Congo",
+					"shortname": "Congo",
+					"iso3": "cog",
+					"location": {
+						"lat": -0.31,
+						"lon": 15.99
+					}
+				},
+				"primary_type": {
+					"id": 4642,
+					"name": "Epidemic",
+					"code": "EP"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/66",
+						"id": 66,
+						"name": "Congo",
+						"shortname": "Congo",
+						"iso3": "cog",
+						"location": {
+							"lat": -0.31,
+							"lon": 15.99
+						},
+						"primary": true
+					},
+					{
+						"href": "https://api.reliefweb.int/v1/countries/75",
+						"id": 75,
+						"name": "Democratic Republic of the Congo",
+						"shortname": "DR Congo",
+						"iso3": "cod",
+						"location": {
+							"lat": -4.03833,
+							"lon": 21.7587
+						}
+					}
+				],
+				"type": [
+					{
+						"id": 4642,
+						"name": "Epidemic",
+						"code": "EP",
+						"primary": true
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8580",
+				"url_alias": "https://reliefweb.int/disaster/ep-2011-000076-cod",
+				"current": false,
+				"description-html": "
+DR Congo
+
+\n\n
+A cholera outbreak was declared in March 2011 in Oriental province and later spread along the Congo River to Bandundu, Equateur and Kinshasa provinces in DR Congo. The Ministry of Health declared a national epidemic in June and appealed to donors for support. (IFRC, 25 Apr 2012) Over the course of 2011, 8,038 cases of cholera and 434 deaths were recorded in the western provinces, with a peak in June (Gov't/WHO, 3 Jul 2012). In 2012, 7,175 cases and 229 deaths were registered, peaking in April (Gov't/WHO, 29 Jan 2013).
+
+\n\n
+Republic of Congo
+
+\n\n
+The first cases of cholera appeared in the Likouala, Cuvette and Plateaux divisions in June 2011, but Government officials did not declare the epidemic officially until July 2011. By 27 Dec 2011, 775 cases of cholera and 32 deaths were registered nationwide. (IFRC, 1 Feb 2012)
+
+\n\n
+At the beginning of 2012, a new cholera outbreak occurred in Betou and the surrounding villages. 355 cholera cases, including 5 deaths, were recorded, with the highest number of cases at the beginning of March. By June, no new cases had been registered. (IFRC, 30 Sep 2012)
+
+\n\n
+On 4 March 2012, an explosion occurred in an arms depot in Brazzaville, making 13,800 people homeless. They were accommodated in a temporary site where cases of cholera were declared in late March 2012 and early April 2012. (IFRC, 30 Apr 2012)
+
+\n\n
+From May through to June 2012,  no new cases were registered.  (IFRC, 30 Sept 2012)
+
+\n\n
+Useful Links
+\n\n
+\n
+Rapports journaliers sur la situation du choléra
+\n
+\n",
+				"profile": {
+					"overview": "*DR Congo*\r\n\r\nA cholera outbreak was declared in March 2011 in Oriental province and later spread along the Congo River to Bandundu, Equateur and Kinshasa provinces in DR Congo. The Ministry of Health declared a national epidemic in June and appealed to donors for support. ([IFRC, 25 Apr 2012](https://reliefweb.int/node/492417)) Over the course of 2011, 8,038 cases of cholera and 434 deaths were recorded in the western provinces, with a peak in June ([Gov't/WHO, 3 Jul 2012](https://reliefweb.int/node/508838)). In 2012, 7,175 cases and 229 deaths were registered, peaking in April ([Gov't/WHO, 29 Jan 2013](https://reliefweb.int/node/564059)).\r\n\r\n*Republic of Congo*\r\n\r\nThe first cases of cholera appeared in the Likouala, Cuvette and Plateaux divisions in June 2011, but Government officials did not declare the epidemic officially until July 2011. By 27 Dec 2011, 775 cases of cholera and 32 deaths were registered nationwide. ([IFRC, 1 Feb 2012](https://reliefweb.int/node/474052)) \r\n\r\nAt the beginning of 2012, a new cholera outbreak occurred in Betou and the surrounding villages. 355 cholera cases, including 5 deaths, were recorded, with the highest number of cases at the beginning of March. By June, no new cases had been registered. ([IFRC, 30 Sep 2012](https://reliefweb.int/node/528933)) \r\n\r\nOn 4 March 2012, an explosion occurred in an arms depot in Brazzaville, making 13,800 people homeless. They were accommodated in a temporary site where cases of cholera were declared in late March 2012 and early April 2012. ([IFRC, 30 Apr 2012](https://reliefweb.int/node/493459))\r\n\r\nFrom May through to June 2012,  no new cases were registered.  ([IFRC, 30 Sept 2012](https://reliefweb.int/node/528933))",
+					"useful_links": {
+						"title": "Useful Links",
+						"active": [
+							{
+								"url": "http://www.rdc-humanitaire.net/index.php?option=com_content&view=article&id=1242:rapport-journalier-sur-la-situation-du-cholera&catid=49:autres-rapports&Itemid=125",
+								"title": "Rapports journaliers sur la situation du choléra"
+							}
+						]
+					},
+					"overview-html": "
+DR Congo
+
+\n\n
+A cholera outbreak was declared in March 2011 in Oriental province and later spread along the Congo River to Bandundu, Equateur and Kinshasa provinces in DR Congo. The Ministry of Health declared a national epidemic in June and appealed to donors for support. (IFRC, 25 Apr 2012) Over the course of 2011, 8,038 cases of cholera and 434 deaths were recorded in the western provinces, with a peak in June (Gov't/WHO, 3 Jul 2012). In 2012, 7,175 cases and 229 deaths were registered, peaking in April (Gov't/WHO, 29 Jan 2013).
+
+\n\n
+Republic of Congo
+
+\n\n
+The first cases of cholera appeared in the Likouala, Cuvette and Plateaux divisions in June 2011, but Government officials did not declare the epidemic officially until July 2011. By 27 Dec 2011, 775 cases of cholera and 32 deaths were registered nationwide. (IFRC, 1 Feb 2012)
+
+\n\n
+At the beginning of 2012, a new cholera outbreak occurred in Betou and the surrounding villages. 355 cholera cases, including 5 deaths, were recorded, with the highest number of cases at the beginning of March. By June, no new cases had been registered. (IFRC, 30 Sep 2012)
+
+\n\n
+On 4 March 2012, an explosion occurred in an arms depot in Brazzaville, making 13,800 people homeless. They were accommodated in a temporary site where cases of cholera were declared in late March 2012 and early April 2012. (IFRC, 30 Apr 2012)
+
+\n\n
+From May through to June 2012,  no new cases were registered.  (IFRC, 30 Sept 2012)
+
+\n"
+				}
+			}
+		},
+		{
+			"id": "8574",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8574",
+			"fields": {
+				"id": 8574,
+				"name": "Georgia: Flash Floods and Landslides - Jun 2011",
+				"description": "In Western and Eastern Georgia many regions were affected by unceasing rains from 12 to 22 June 2011 with landslides that followed. Seven people lost their lives. Over 3,000 houses have been affected, out of which 1,500 are badly damaged ([IFRC, 25 June 2011](https://reliefweb.int/node/422311)).\n### Useful Links\n\n- [UN Country Team in Georgia](http://www.ungeorgia.ge/eng)",
+				"status": "past",
+				"date": {
+					"created": "2011-06-12T00:00:00+00:00"
+				},
+				"glide": "FF-2011-000071-GEO",
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/100",
+					"id": 100,
+					"name": "Georgia",
+					"iso3": "geo",
+					"location": {
+						"lat": 42.18,
+						"lon": 43.52
+					}
+				},
+				"primary_type": {
+					"id": 4624,
+					"name": "Flash Flood",
+					"code": "FF"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/100",
+						"id": 100,
+						"name": "Georgia",
+						"iso3": "geo",
+						"location": {
+							"lat": 42.18,
+							"lon": 43.52
+						},
+						"primary": true
+					}
+				],
+				"type": [
+					{
+						"id": 4624,
+						"name": "Flash Flood",
+						"code": "FF",
+						"primary": true
+					},
+					{
+						"id": 4728,
+						"name": "Land Slide",
+						"code": "LS"
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8574",
+				"url_alias": "https://reliefweb.int/disaster/ff-2011-000071-geo",
+				"current": false,
+				"description-html": "
+In Western and Eastern Georgia many regions were affected by unceasing rains from 12 to 22 June 2011 with landslides that followed. Seven people lost their lives. Over 3,000 houses have been affected, out of which 1,500 are badly damaged (IFRC, 25 June 2011).
+
+\n\n
+Useful Links
+\n\n
+\n
+UN Country Team in Georgia
+\n
+\n",
+				"profile": {
+					"overview": "In Western and Eastern Georgia many regions were affected by unceasing rains from 12 to 22 June 2011 with landslides that followed. Seven people lost their lives. Over 3,000 houses have been affected, out of which 1,500 are badly damaged ([IFRC, 25 June 2011](https://reliefweb.int/node/422311)).",
+					"useful_links": {
+						"title": "Useful Links",
+						"active": [
+							{
+								"url": "http://www.ungeorgia.ge/eng",
+								"title": "UN Country Team in Georgia"
+							}
+						]
+					},
+					"overview-html": "
+In Western and Eastern Georgia many regions were affected by unceasing rains from 12 to 22 June 2011 with landslides that followed. Seven people lost their lives. Over 3,000 houses have been affected, out of which 1,500 are badly damaged (IFRC, 25 June 2011).
+
+\n"
+				}
+			}
+		},
+		{
+			"id": "8573",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8573",
+			"fields": {
+				"id": 8573,
+				"name": "Tropical Storm Haima - Jun 2011",
+				"description": "Heavy downpours brought on by tropical storm Haima, which landed on the coast of south China's Guangdong Province on 23 Jun 2012, affected some 5,100 people and forced the evacuation of 800 ([Xinhua, 24 June 2011](https://reliefweb.int/node/422248)).\r\n\r\nTyphoon Haima made landfall in Lao People’s Democratic Republic (PDR) on 24-26 Jun 2011, causing heavy rains and subsequent floods in central and northern parts of the country. Later during the first week of August, Tropical Storm Nock-Ten hit Lao PDR. Flooding and landslides affected 340,000 people in 96 districts within 12 provinces, causing damage to over 64,000 hectares of farmland, 323 roads and 42 bridges. Most rice seedlings were destroyed, and infrastructure, including bridges and roads, in need of repair. A total of 30 people were reported killed. ([IFRC, 13 Apr 2012](https://reliefweb.int/node/489784))\r\n\r\nAs Haima moved through the upper region of Thailand, heavy rains prompted the water levels in smaller canals and rivers to rise and flow quickly into Nan River ([Government, 26 Jun 2012](https://reliefweb.int/node/422348)).\r\n\r\nIn Viet Nam, the storm caused floods and devastated 14,250 hectares of rice crop and vegetables; at least 16 people were killed ([Government, 30 Jun 2012](https://reliefweb.int/node/424240)).",
+				"status": "past",
+				"date": {
+					"created": "2011-06-24T00:00:00+00:00"
+				},
+				"glide": "TC-2011-000070-CHN",
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/58",
+					"id": 58,
+					"name": "China",
+					"iso3": "chn",
+					"location": {
+						"lat": 35.49,
+						"lon": 101.9
+					}
+				},
+				"primary_type": {
+					"id": 4618,
+					"name": "Tropical Cyclone",
+					"code": "TC"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/58",
+						"id": 58,
+						"name": "China",
+						"iso3": "chn",
+						"location": {
+							"lat": 35.49,
+							"lon": 101.9
+						},
+						"primary": true
+					},
+					{
+						"href": "https://api.reliefweb.int/v1/countries/135",
+						"id": 135,
+						"name": "Lao People's Democratic Republic (the)",
+						"shortname": "Lao PDR",
+						"iso3": "lao",
+						"location": {
+							"lat": 19.92,
+							"lon": 102.59
+						}
+					},
+					{
+						"href": "https://api.reliefweb.int/v1/countries/228",
+						"id": 228,
+						"name": "Thailand",
+						"iso3": "tha",
+						"location": {
+							"lat": 15.13,
+							"lon": 101.02
+						}
+					},
+					{
+						"href": "https://api.reliefweb.int/v1/countries/251",
+						"id": 251,
+						"name": "Viet Nam",
+						"iso3": "vnm",
+						"location": {
+							"lat": 14.32,
+							"lon": 108.34
+						}
+					}
+				],
+				"type": [
+					{
+						"id": 4618,
+						"name": "Tropical Cyclone",
+						"code": "TC",
+						"primary": true
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8573",
+				"url_alias": "https://reliefweb.int/disaster/tc-2011-000070-chn",
+				"current": false,
+				"description-html": "
+Heavy downpours brought on by tropical storm Haima, which landed on the coast of south China's Guangdong Province on 23 Jun 2012, affected some 5,100 people and forced the evacuation of 800 (Xinhua, 24 June 2011).
+
+\n\n
+Typhoon Haima made landfall in Lao People’s Democratic Republic (PDR) on 24-26 Jun 2011, causing heavy rains and subsequent floods in central and northern parts of the country. Later during the first week of August, Tropical Storm Nock-Ten hit Lao PDR. Flooding and landslides affected 340,000 people in 96 districts within 12 provinces, causing damage to over 64,000 hectares of farmland, 323 roads and 42 bridges. Most rice seedlings were destroyed, and infrastructure, including bridges and roads, in need of repair. A total of 30 people were reported killed. (IFRC, 13 Apr 2012)
+
+\n\n
+As Haima moved through the upper region of Thailand, heavy rains prompted the water levels in smaller canals and rivers to rise and flow quickly into Nan River (Government, 26 Jun 2012).
+
+\n\n
+In Viet Nam, the storm caused floods and devastated 14,250 hectares of rice crop and vegetables; at least 16 people were killed (Government, 30 Jun 2012).
+
+\n",
+				"profile": {
+					"overview": "Heavy downpours brought on by tropical storm Haima, which landed on the coast of south China's Guangdong Province on 23 Jun 2012, affected some 5,100 people and forced the evacuation of 800 ([Xinhua, 24 June 2011](https://reliefweb.int/node/422248)).\r\n\r\nTyphoon Haima made landfall in Lao People’s Democratic Republic (PDR) on 24-26 Jun 2011, causing heavy rains and subsequent floods in central and northern parts of the country. Later during the first week of August, Tropical Storm Nock-Ten hit Lao PDR. Flooding and landslides affected 340,000 people in 96 districts within 12 provinces, causing damage to over 64,000 hectares of farmland, 323 roads and 42 bridges. Most rice seedlings were destroyed, and infrastructure, including bridges and roads, in need of repair. A total of 30 people were reported killed. ([IFRC, 13 Apr 2012](https://reliefweb.int/node/489784))\r\n\r\nAs Haima moved through the upper region of Thailand, heavy rains prompted the water levels in smaller canals and rivers to rise and flow quickly into Nan River ([Government, 26 Jun 2012](https://reliefweb.int/node/422348)).\r\n\r\nIn Viet Nam, the storm caused floods and devastated 14,250 hectares of rice crop and vegetables; at least 16 people were killed ([Government, 30 Jun 2012](https://reliefweb.int/node/424240)). ",
+					"overview-html": "
+Heavy downpours brought on by tropical storm Haima, which landed on the coast of south China's Guangdong Province on 23 Jun 2012, affected some 5,100 people and forced the evacuation of 800 (Xinhua, 24 June 2011).
+
+\n\n
+Typhoon Haima made landfall in Lao People’s Democratic Republic (PDR) on 24-26 Jun 2011, causing heavy rains and subsequent floods in central and northern parts of the country. Later during the first week of August, Tropical Storm Nock-Ten hit Lao PDR. Flooding and landslides affected 340,000 people in 96 districts within 12 provinces, causing damage to over 64,000 hectares of farmland, 323 roads and 42 bridges. Most rice seedlings were destroyed, and infrastructure, including bridges and roads, in need of repair. A total of 30 people were reported killed. (IFRC, 13 Apr 2012)
+
+\n\n
+As Haima moved through the upper region of Thailand, heavy rains prompted the water levels in smaller canals and rivers to rise and flow quickly into Nan River (Government, 26 Jun 2012).
+
+\n\n
+In Viet Nam, the storm caused floods and devastated 14,250 hectares of rice crop and vegetables; at least 16 people were killed (Government, 30 Jun 2012).
+
+\n"
+				}
+			}
+		},
+		{
+			"id": "8570",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8570",
+			"fields": {
+				"id": 8570,
+				"name": "Tropical Storm Meari - Jun 2011",
+				"description": "Since 21 June 2011, Tropical Storm Meari has dumped heavy rains throughout the northern Philippines island of Luzon, including in the national capital region of Metro Manila, triggering flash floods that have affected at least 171,000 people ([WFP, 24 Jun 2011](https://reliefweb.int/node/422212)). \r\n\r\nAs of 24 June 2011, at least 48,700 people have been evacuated at 23 evacuation centers in ALbay, Rizal, Zambales and NCR ([Government, 24 Jun 2011](https://reliefweb.int/node/422139)).\r\n\r\nTropical Storm Meari hit China on 26 June 2011, with gales and downpours generated by Meari causing floods in 17 counties of three provinces on the east coast. The forecast suggests that the provinces of Shandong and Liaoning will get a break from the torrential rains on 29 June 2011 as Meari heads for the Korean Peninsula ([Xinhua, 28 Jun 2011](https://reliefweb.int/node/422646)).\r\n\r\nIn Republic of Korea, as of 27 June 2011, at least nine people have been killed, mostly drowned in flooding as a result of the Tropical Storm ([Thomson Reuters Foundation, 27 Jun 2011](https://reliefweb.int/node/422618)).\r\n\r\nFrom 25 to 28 June 2011, Tropical Storm Meari affected most areas of the Democratic People's Republic of Korea. The typhoon brought a strong wind, heavy rain and tidal wave, claiming casualties and leaving more than 160 dwelling blocks destroyed and over 21,000 hectares of cultivated areas submerged, washed away and buried mainly in west coastal areas ([Korean Central News Agency, 12 Jul 2011](https://reliefweb.int/node/425463)).",
+				"status": "past",
+				"date": {
+					"created": "2011-06-23T00:00:00+00:00"
+				},
+				"glide": "TC-2011-000069-PHL",
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/58",
+					"id": 58,
+					"name": "China",
+					"iso3": "chn",
+					"location": {
+						"lat": 35.49,
+						"lon": 101.9
+					}
+				},
+				"primary_type": {
+					"id": 4618,
+					"name": "Tropical Cyclone",
+					"code": "TC"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/58",
+						"id": 58,
+						"name": "China",
+						"iso3": "chn",
+						"location": {
+							"lat": 35.49,
+							"lon": 101.9
+						},
+						"primary": true
+					},
+					{
+						"href": "https://api.reliefweb.int/v1/countries/74",
+						"id": 74,
+						"name": "Democratic People's Republic of Korea",
+						"shortname": "DPRK",
+						"iso3": "prk",
+						"location": {
+							"lat": 40.35,
+							"lon": 126.85
+						}
+					},
+					{
+						"href": "https://api.reliefweb.int/v1/countries/188",
+						"id": 188,
+						"name": "Philippines",
+						"shortname": "Philippines",
+						"iso3": "phl",
+						"location": {
+							"lat": 11.74,
+							"lon": 122.88
+						}
+					},
+					{
+						"href": "https://api.reliefweb.int/v1/countries/194",
+						"id": 194,
+						"name": "Republic of Korea",
+						"iso3": "kor",
+						"location": {
+							"lat": 36.54,
+							"lon": 128.17
+						}
+					}
+				],
+				"type": [
+					{
+						"id": 4618,
+						"name": "Tropical Cyclone",
+						"code": "TC",
+						"primary": true
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8570",
+				"url_alias": "https://reliefweb.int/disaster/tc-2011-000069-phl",
+				"current": false,
+				"description-html": "
+Since 21 June 2011, Tropical Storm Meari has dumped heavy rains throughout the northern Philippines island of Luzon, including in the national capital region of Metro Manila, triggering flash floods that have affected at least 171,000 people (WFP, 24 Jun 2011).
+
+\n\n
+As of 24 June 2011, at least 48,700 people have been evacuated at 23 evacuation centers in ALbay, Rizal, Zambales and NCR (Government, 24 Jun 2011).
+
+\n\n
+Tropical Storm Meari hit China on 26 June 2011, with gales and downpours generated by Meari causing floods in 17 counties of three provinces on the east coast. The forecast suggests that the provinces of Shandong and Liaoning will get a break from the torrential rains on 29 June 2011 as Meari heads for the Korean Peninsula (Xinhua, 28 Jun 2011).
+
+\n\n
+In Republic of Korea, as of 27 June 2011, at least nine people have been killed, mostly drowned in flooding as a result of the Tropical Storm (Thomson Reuters Foundation, 27 Jun 2011).
+
+\n\n
+From 25 to 28 June 2011, Tropical Storm Meari affected most areas of the Democratic People's Republic of Korea. The typhoon brought a strong wind, heavy rain and tidal wave, claiming casualties and leaving more than 160 dwelling blocks destroyed and over 21,000 hectares of cultivated areas submerged, washed away and buried mainly in west coastal areas (Korean Central News Agency, 12 Jul 2011).
+
+\n",
+				"profile": {
+					"overview": "Since 21 June 2011, Tropical Storm Meari has dumped heavy rains throughout the northern Philippines island of Luzon, including in the national capital region of Metro Manila, triggering flash floods that have affected at least 171,000 people ([WFP, 24 Jun 2011](https://reliefweb.int/node/422212)). \r\n\r\nAs of 24 June 2011, at least 48,700 people have been evacuated at 23 evacuation centers in ALbay, Rizal, Zambales and NCR ([Government, 24 Jun 2011](https://reliefweb.int/node/422139)).\r\n\r\nTropical Storm Meari hit China on 26 June 2011, with gales and downpours generated by Meari causing floods in 17 counties of three provinces on the east coast. The forecast suggests that the provinces of Shandong and Liaoning will get a break from the torrential rains on 29 June 2011 as Meari heads for the Korean Peninsula ([Xinhua, 28 Jun 2011](https://reliefweb.int/node/422646)).\r\n\r\nIn Republic of Korea, as of 27 June 2011, at least nine people have been killed, mostly drowned in flooding as a result of the Tropical Storm ([Thomson Reuters Foundation, 27 Jun 2011](https://reliefweb.int/node/422618)).\r\n\r\nFrom 25 to 28 June 2011, Tropical Storm Meari affected most areas of the Democratic People's Republic of Korea. The typhoon brought a strong wind, heavy rain and tidal wave, claiming casualties and leaving more than 160 dwelling blocks destroyed and over 21,000 hectares of cultivated areas submerged, washed away and buried mainly in west coastal areas ([Korean Central News Agency, 12 Jul 2011](https://reliefweb.int/node/425463)).",
+					"overview-html": "
+Since 21 June 2011, Tropical Storm Meari has dumped heavy rains throughout the northern Philippines island of Luzon, including in the national capital region of Metro Manila, triggering flash floods that have affected at least 171,000 people (WFP, 24 Jun 2011).
+
+\n\n
+As of 24 June 2011, at least 48,700 people have been evacuated at 23 evacuation centers in ALbay, Rizal, Zambales and NCR (Government, 24 Jun 2011).
+
+\n\n
+Tropical Storm Meari hit China on 26 June 2011, with gales and downpours generated by Meari causing floods in 17 counties of three provinces on the east coast. The forecast suggests that the provinces of Shandong and Liaoning will get a break from the torrential rains on 29 June 2011 as Meari heads for the Korean Peninsula (Xinhua, 28 Jun 2011).
+
+\n\n
+In Republic of Korea, as of 27 June 2011, at least nine people have been killed, mostly drowned in flooding as a result of the Tropical Storm (Thomson Reuters Foundation, 27 Jun 2011).
+
+\n\n
+From 25 to 28 June 2011, Tropical Storm Meari affected most areas of the Democratic People's Republic of Korea. The typhoon brought a strong wind, heavy rain and tidal wave, claiming casualties and leaving more than 160 dwelling blocks destroyed and over 21,000 hectares of cultivated areas submerged, washed away and buried mainly in west coastal areas (Korean Central News Agency, 12 Jul 2011).
+
+\n"
+				}
+			}
+		},
+		{
+			"id": "8518",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8518",
+			"fields": {
+				"id": 8518,
+				"name": "Philippines: Floods - Jun 2011",
+				"description": "Widespread rains over eastern and southern Mindanao have caused flooding and flashfloods in nine provinces of Mindanao, affecting 120,038 families (OCHA [Humanitarian Situation Update](https://reliefweb.int/node/420699), 17 June 2011).\n### Useful Links\n\n- [NDRRMC Lanslides and Flashflood in Mindanao Areas](http://www.ndcc.gov.ph/index.php?option=com_content&view=article&id=238)\n- [Flashflood and Landslide Incidents in Davao City and Davao del Norte](http://www.ndcc.gov.ph/index.php?option=com_content&view=article&id=235)",
+				"status": "past",
+				"date": {
+					"created": "2011-06-01T00:00:00+00:00"
+				},
+				"glide": "FL-2011-000067-PHL",
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/188",
+					"id": 188,
+					"name": "Philippines",
+					"shortname": "Philippines",
+					"iso3": "phl",
+					"location": {
+						"lat": 11.74,
+						"lon": 122.88
+					}
+				},
+				"primary_type": {
+					"id": 4624,
+					"name": "Flash Flood",
+					"code": "FF"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/188",
+						"id": 188,
+						"name": "Philippines",
+						"shortname": "Philippines",
+						"iso3": "phl",
+						"location": {
+							"lat": 11.74,
+							"lon": 122.88
+						},
+						"primary": true
+					}
+				],
+				"type": [
+					{
+						"id": 4624,
+						"name": "Flash Flood",
+						"code": "FF",
+						"primary": true
+					},
+					{
+						"id": 4611,
+						"name": "Flood",
+						"code": "FL"
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8518",
+				"url_alias": "https://reliefweb.int/disaster/fl-2011-000067-phl",
+				"current": false,
+				"description-html": "
+Widespread rains over eastern and southern Mindanao have caused flooding and flashfloods in nine provinces of Mindanao, affecting 120,038 families (OCHA Humanitarian Situation Update, 17 June 2011).
+
+\n\n
+Useful Links
+\n\n
+\n
+NDRRMC Lanslides and Flashflood in Mindanao Areas
+\n
+Flashflood and Landslide Incidents in Davao City and Davao del Norte
+\n
+\n",
+				"profile": {
+					"overview": "Widespread rains over eastern and southern Mindanao have caused flooding and flashfloods in nine provinces of Mindanao, affecting 120,038 families (OCHA [Humanitarian Situation Update](https://reliefweb.int/node/420699), 17 June 2011).",
+					"useful_links": {
+						"title": "Useful Links",
+						"active": [
+							{
+								"url": "http://www.ndcc.gov.ph/index.php?option=com_content&view=article&id=238",
+								"title": "NDRRMC Lanslides and Flashflood in Mindanao Areas"
+							},
+							{
+								"url": "http://www.ndcc.gov.ph/index.php?option=com_content&view=article&id=235",
+								"title": "Flashflood and Landslide Incidents in Davao City and Davao del Norte"
+							}
+						]
+					},
+					"overview-html": "
+Widespread rains over eastern and southern Mindanao have caused flooding and flashfloods in nine provinces of Mindanao, affecting 120,038 families (OCHA Humanitarian Situation Update, 17 June 2011).
+
+\n"
+				}
+			}
+		},
+		{
+			"id": "8510",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8510",
+			"fields": {
+				"id": 8510,
+				"name": "Tajikistan: Floods and Mudslides - Jun 2011",
+				"description": "As a result of heavy rains on 11-12 June 2011, floods hit Sughd province in the northern part of Tajikistan, affecting 7 villages in 3 districts of the province (IFRC, 16 Jun 2011).\n### Useful Links\n\n- [UN in Tajikistan REACT June 2011 disasters](http://untj.org/country_context/coordination_mechanisms/disaster_management/reports/june_2011)",
+				"status": "past",
+				"date": {
+					"created": "2011-06-12T00:00:00+00:00"
+				},
+				"glide": "FF-2011-000066-TJK",
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/227",
+					"id": 227,
+					"name": "Tajikistan",
+					"iso3": "tjk",
+					"location": {
+						"lat": 38.84,
+						"lon": 71.04
+					}
+				},
+				"primary_type": {
+					"id": 4611,
+					"name": "Flood",
+					"code": "FL"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/227",
+						"id": 227,
+						"name": "Tajikistan",
+						"iso3": "tjk",
+						"location": {
+							"lat": 38.84,
+							"lon": 71.04
+						},
+						"primary": true
+					}
+				],
+				"type": [
+					{
+						"id": 4611,
+						"name": "Flood",
+						"code": "FL",
+						"primary": true
+					},
+					{
+						"id": 4814,
+						"name": "Mud Slide",
+						"code": "MS"
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8510",
+				"url_alias": "https://reliefweb.int/disaster/ff-2011-000066-tjk",
+				"current": false,
+				"description-html": "
+As a result of heavy rains on 11-12 June 2011, floods hit Sughd province in the northern part of Tajikistan, affecting 7 villages in 3 districts of the province (IFRC, 16 Jun 2011).
+
+\n\n
+Useful Links
+\n\n
+\n
+UN in Tajikistan REACT June 2011 disasters
+\n
+\n",
+				"profile": {
+					"overview": "As a result of heavy rains on 11-12 June 2011, floods hit Sughd province in the northern part of Tajikistan, affecting 7 villages in 3 districts of the province (IFRC, 16 Jun 2011).",
+					"useful_links": {
+						"title": "Useful Links",
+						"active": [
+							{
+								"url": "http://untj.org/country_context/coordination_mechanisms/disaster_management/reports/june_2011",
+								"title": "UN in Tajikistan REACT June 2011 disasters"
+							}
+						]
+					},
+					"overview-html": "
+As a result of heavy rains on 11-12 June 2011, floods hit Sughd province in the northern part of Tajikistan, affecting 7 villages in 3 districts of the province (IFRC, 16 Jun 2011).
+
+\n"
+				}
+			}
+		},
+		{
+			"id": "8435",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8435",
+			"fields": {
+				"id": 8435,
+				"name": "Haiti: Floods - Jun 2011",
+				"description": "On the evening of 6 Jun 2012, severe heavy rains hit the Port-au-Prince metropolitan area and other areas of the West and Nippes departments in Haiti. A total of 20 deaths, 6 injured and 6 missing people were reported as a result of flooding and landslides.(OCHA, 7 Jun 2011, [EN](https://reliefweb.int/node/406643) / [FR](https://reliefweb.int/node/406746)).\n### Useful Links\n\n- [Centre national de météorologie (CNM)](http://www.meteo-haiti.gouv.ht/index.html)",
+				"status": "past",
+				"date": {
+					"created": "2011-06-08T00:00:00+00:00"
+				},
+				"glide": "FL-2011-000063-HTI",
+				"related_glide": [
+					"updated",
+					"profile"
+				],
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/113",
+					"id": 113,
+					"name": "Haiti",
+					"iso3": "hti",
+					"location": {
+						"lat": 19.18,
+						"lon": -72.43
+					}
+				},
+				"primary_type": {
+					"id": 4611,
+					"name": "Flood",
+					"code": "FL"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/113",
+						"id": 113,
+						"name": "Haiti",
+						"iso3": "hti",
+						"location": {
+							"lat": 19.18,
+							"lon": -72.43
+						},
+						"primary": true
+					}
+				],
+				"type": [
+					{
+						"id": 4611,
+						"name": "Flood",
+						"code": "FL",
+						"primary": true
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8435",
+				"url_alias": "https://reliefweb.int/disaster/fl-2011-000063-hti",
+				"current": false,
+				"description-html": "
+On the evening of 6 Jun 2012, severe heavy rains hit the Port-au-Prince metropolitan area and other areas of the West and Nippes departments in Haiti. A total of 20 deaths, 6 injured and 6 missing people were reported as a result of flooding and landslides.(OCHA, 7 Jun 2011, EN / FR).
+
+\n\n
+Useful Links
+\n\n
+\n
+Centre national de météorologie (CNM)
+\n
+\n",
+				"profile": {
+					"overview": "On the evening of 6 Jun 2012, severe heavy rains hit the Port-au-Prince metropolitan area and other areas of the West and Nippes departments in Haiti. A total of 20 deaths, 6 injured and 6 missing people were reported as a result of flooding and landslides.(OCHA, 7 Jun 2011, [EN](https://reliefweb.int/node/406643) / [FR](https://reliefweb.int/node/406746)).",
+					"useful_links": {
+						"title": "Useful Links",
+						"active": [
+							{
+								"url": "http://www.meteo-haiti.gouv.ht/index.html",
+								"title": "Centre national de météorologie (CNM)"
+							}
+						]
+					},
+					"overview-html": "
+On the evening of 6 Jun 2012, severe heavy rains hit the Port-au-Prince metropolitan area and other areas of the West and Nippes departments in Haiti. A total of 20 deaths, 6 injured and 6 missing people were reported as a result of flooding and landslides.(OCHA, 7 Jun 2011, EN / FR).
+
+\n"
+				}
+			}
+		},
+		{
+			"id": "8423",
+			"score": 1,
+			"href": "https://api.reliefweb.int/v1/disasters/8423",
+			"fields": {
+				"id": 8423,
+				"name": "Peru: Cold Wave - May 2011",
+				"description": "Since May 2011, more than 13,400 people have been affected by freezing temperatures in several provinces in the Andes. The agricultural sector was also impacted, with more than 4,500 heads of cattle affected (SINPAD, 25 May 2011, [Informe de emergencia No. 121](https://reliefweb.int/node/404300)).\n### Useful Links\n\n- [Sistema Nacional de Información para la Prevención y Atención de Desastres (SINPAD)](http://sinpad.indeci.gob.pe/PortalSINPAD)\n- [Cruz Roja Peruana](http://www.cruzroja.org.pe)\n- [![Financial Tracking Service - Logo](https://fts.unocha.org/sites/all/themes/custom/fts_public/logo.png)](https://ftsarchive.unocha.org/pageloader.aspx?page=emerg-emergencyCountryDetails&cc=per)",
+				"status": "past",
+				"date": {
+					"created": "2011-05-24T00:00:00+00:00"
+				},
+				"glide": "CW-2011-000062-PER",
+				"featured": false,
+				"primary_country": {
+					"href": "https://api.reliefweb.int/v1/countries/187",
+					"id": 187,
+					"name": "Peru",
+					"iso3": "per",
+					"location": {
+						"lat": -10.15,
+						"lon": -75.31
+					}
+				},
+				"primary_type": {
+					"id": 4653,
+					"name": "Cold Wave",
+					"code": "CW"
+				},
+				"country": [
+					{
+						"href": "https://api.reliefweb.int/v1/countries/187",
+						"id": 187,
+						"name": "Peru",
+						"iso3": "per",
+						"location": {
+							"lat": -10.15,
+							"lon": -75.31
+						},
+						"primary": true
+					}
+				],
+				"type": [
+					{
+						"id": 4653,
+						"name": "Cold Wave",
+						"code": "CW",
+						"primary": true
+					}
+				],
+				"url": "https://reliefweb.int/taxonomy/term/8423",
+				"url_alias": "https://reliefweb.int/disaster/cw-2011-000062",
+				"current": false,
+				"description-html": "
+Since May 2011, more than 13,400 people have been affected by freezing temperatures in several provinces in the Andes. The agricultural sector was also impacted, with more than 4,500 heads of cattle affected (SINPAD, 25 May 2011, Informe de emergencia No. 121).
+
+\n\n
+Useful Links
+\n\n
+\n
+Sistema Nacional de Información para la Prevención y Atención de Desastres (SINPAD)
+\n
+Cruz Roja Peruana
+\n
+\"Financial
+\n
+\n",
+				"profile": {
+					"overview": "Since May 2011, more than 13,400 people have been affected by freezing temperatures in several provinces in the Andes. The agricultural sector was also impacted, with more than 4,500 heads of cattle affected (SINPAD, 25 May 2011, [Informe de emergencia No. 121](https://reliefweb.int/node/404300)).",
+					"useful_links": {
+						"title": "Useful Links",
+						"active": [
+							{
+								"url": "http://sinpad.indeci.gob.pe/PortalSINPAD",
+								"title": "Sistema Nacional de Información para la Prevención y Atención de Desastres (SINPAD)"
+							},
+							{
+								"url": "http://www.cruzroja.org.pe",
+								"title": "Cruz Roja Peruana"
+							},
+							{
+								"url": "https://ftsarchive.unocha.org/pageloader.aspx?page=emerg-emergencyCountryDetails&cc=per",
+								"title": "Financial Tracking Service",
+								"logo": "https://fts.unocha.org/sites/all/themes/custom/fts_public/logo.png"
+							}
+						]
+					},
+					"overview-html": "
+Since May 2011, more than 13,400 people have been affected by freezing temperatures in several provinces in the Andes. The agricultural sector was also impacted, with more than 4,500 heads of cattle affected (SINPAD, 25 May 2011, Informe de emergencia No. 121).
+
+\n"
+				}
+			}
+		}
+	]
+}

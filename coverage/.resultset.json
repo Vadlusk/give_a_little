@@ -34,6 +34,9 @@
       ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/disaster.rb": [
         1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/disasters_controller.rb": [
@@ -47,6 +50,6 @@
         null
       ]
     },
-    "timestamp": 1527284536
+    "timestamp": 1527284790
   }
 }
