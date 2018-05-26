@@ -10,7 +10,7 @@
 <div id="small_map"></div>
 <script>
   function initMap() {
-    var position = {lat: -25.344, lng: 131.036};
+    var position = {lat: <%= @disaster.latitude %>, lng: <%= @disaster.longitude %>};
     var map = new google.maps.Map(document.getElementById("small_map"), {
       zoom: 4,
       center: position

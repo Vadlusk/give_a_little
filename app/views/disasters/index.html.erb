@@ -18,20 +18,24 @@
       zoom: 1,
       center: center
     });
-    var infoWindow = new google.maps.InfoWindow({
-      content: 'click here!'
-    })
     for (i=0;i<disasters.length;i++) {
       var marker = new google.maps.Marker({
         position: disasters[i],
-        map: map,
-        title: 'title'
+        map: map
       });
-      marker.addListener('click', function() {
-        infoWindow.open(map, marker)
-      })
+      attachMarkerInfo(marker, disasters[i])
     };
   };
+
+  function attachMarkerInfo(marker, disaster) {
+  var infowindow = new google.maps.InfoWindow({
+    content: disaster
+  });
+
+  marker.addListener('click', function() {
+    infowindow.open(marker.get('map'), marker);
+  });
+}
 </script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_api_key'] %>&callback=initMap">
