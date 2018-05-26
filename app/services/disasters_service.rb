@@ -1,9 +1,4 @@
-class DisasterService
-  attr_reader :disasters
-
-  def initialize
-    @disasters = disasters
-  end
+class DisastersService
 
   def disasters
     raw_disasters.map do |raw_disaster|

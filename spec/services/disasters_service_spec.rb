@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-describe DisasterService do
-  subject { DisasterService.new }
+describe DisastersService do
+  subject { DisastersService.new }
   context 'attributes' do
     it 'exists' do
-      expect(subject).to be_a(DisasterService)
+      expect(subject).to be_a(DisastersService)
     end
   end
   context 'instance methods' do

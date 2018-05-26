@@ -1,7 +1,9 @@
 class DisastersController < ApplicationController
   def index
-    @disasters = DisasterService.new.disasters
+    @disasters = DisastersService.new.disasters
   end
 
-  def show; end
+  def show
+    @disaster = DisasterService.new(params[:id]).disaster
+  end
 end

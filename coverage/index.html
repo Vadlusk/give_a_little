@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-05-26T10:55:07-06:00">2018-05-26T10:55:07-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-05-26T12:02:55-06:00">2018-05-26T12:02:55-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         11.49
+         6.39
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>9</b> files in total.
-    <b>64</b> relevant lines. 
-    <span class="green"><b>64</b> lines covered</span> and
+    <b>62</b> relevant lines. 
+    <span class="green"><b>62</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,11 +63,11 @@
       <tr>
         <td class="strong"><a href="#da3cdcc528a2d3e655027fc99367d0020ba68ba5" class="src_link" title="app/controllers/disasters_controller.rb">app/controllers/disasters_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
-        <td>4</td>
-        <td>4</td>
+        <td>9</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -77,17 +77,17 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>57.0</td>
+        <td>29.0</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#47a291d44848c3e2aaeea28ea4a1e992afaf326b" class="src_link" title="app/services/disaster_service.rb">app/services/disaster_service.rb</a></td>
+        <td class="strong"><a href="#aacbeffe441f3ea5117a68bfd5d4cfdb223b3c28" class="src_link" title="app/services/disasters_service.rb">app/services/disasters_service.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>26</td>
-        <td>14</td>
-        <td>14</td>
+        <td>21</td>
+        <td>11</td>
+        <td>11</td>
         <td>0</td>
-        <td>8.6</td>
+        <td>5.5</td>
       </tr>
       
       <tr>
@@ -111,7 +111,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#1dad59c2650e3b4cdea1e6f74767ea301ee624e9" class="src_link" title="spec/services/disaster_search_spec.rb">spec/services/disaster_search_spec.rb</a></td>
+        <td class="strong"><a href="#c6da73313e7d3bb84ab69abe758821a0220c52ec" class="src_link" title="spec/services/disasters_service_spec.rb">spec/services/disasters_service_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>18</td>
         <td>11</td>
@@ -192,8 +192,8 @@
     <h3>app/controllers/disasters_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -216,7 +216,7 @@
         <li class="covered" data-hits="2" data-linenumber="3">
           <span class="hits">2</span>
           
-          <code class="ruby">    @disasters = DisasterService.new.disasters</code>
+          <code class="ruby">    @disasters = DisastersService.new.disasters</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -234,10 +234,22 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  def show; end</code>
+          <code class="ruby">  def show</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @disaster = DisasterService.new(params[:id]).disaster</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>
@@ -292,44 +304,44 @@
           <code class="ruby">  def initialize(data)</code>
         </li>
       
-        <li class="covered" data-hits="81" data-linenumber="6">
-          <span class="hits">81</span>
+        <li class="covered" data-hits="41" data-linenumber="6">
+          <span class="hits">41</span>
           
           <code class="ruby">    @date        = Time.new(data[:fields][:date][:created])</code>
         </li>
       
-        <li class="covered" data-hits="81" data-linenumber="7">
-          <span class="hits">81</span>
+        <li class="covered" data-hits="41" data-linenumber="7">
+          <span class="hits">41</span>
           
           <code class="ruby">    @type        = data[:fields][:primary_type][:name]</code>
         </li>
       
-        <li class="covered" data-hits="81" data-linenumber="8">
-          <span class="hits">81</span>
+        <li class="covered" data-hits="41" data-linenumber="8">
+          <span class="hits">41</span>
           
           <code class="ruby">    @country     = data[:fields][:primary_country][:name]</code>
         </li>
       
-        <li class="covered" data-hits="81" data-linenumber="9">
-          <span class="hits">81</span>
+        <li class="covered" data-hits="41" data-linenumber="9">
+          <span class="hits">41</span>
           
           <code class="ruby">    @longitude   = data[:fields][:primary_country][:location][:lon]</code>
         </li>
       
-        <li class="covered" data-hits="81" data-linenumber="10">
-          <span class="hits">81</span>
+        <li class="covered" data-hits="41" data-linenumber="10">
+          <span class="hits">41</span>
           
           <code class="ruby">    @latitude    = data[:fields][:primary_country][:location][:lat]</code>
         </li>
       
-        <li class="covered" data-hits="81" data-linenumber="11">
-          <span class="hits">81</span>
+        <li class="covered" data-hits="41" data-linenumber="11">
+          <span class="hits">41</span>
           
           <code class="ruby">    @description = data[:fields][:description]</code>
         </li>
       
-        <li class="covered" data-hits="81" data-linenumber="12">
-          <span class="hits">81</span>
+        <li class="covered" data-hits="41" data-linenumber="12">
+          <span class="hits">41</span>
           
           <code class="ruby">    @rw_id       = data[:id].to_i</code>
         </li>
@@ -351,13 +363,13 @@
 </div>
 
       
-        <div class="source_table" id="47a291d44848c3e2aaeea28ea4a1e992afaf326b">
+        <div class="source_table" id="aacbeffe441f3ea5117a68bfd5d4cfdb223b3c28">
   <div class="header">
-    <h3>app/services/disaster_service.rb</h3>
+    <h3>app/services/disasters_service.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -368,73 +380,73 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">class DisasterService</code>
+          <code class="ruby">class DisastersService</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  attr_reader :disasters</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="never" data-hits="" data-linenumber="2">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def initialize</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="5">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    @disasters = disasters</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
           <code class="ruby">  def disasters</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="9">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="4" data-linenumber="4">
+          <span class="hits">4</span>
           
           <code class="ruby">    raw_disasters.map do |raw_disaster|</code>
         </li>
       
-        <li class="covered" data-hits="80" data-linenumber="10">
-          <span class="hits">80</span>
+        <li class="covered" data-hits="40" data-linenumber="5">
+          <span class="hits">40</span>
           
           <code class="ruby">      Disaster.new(raw_disaster)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def conn</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="11">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      Faraday.new(&quot;https://api.reliefweb.int/v1/disasters?appname=apidoc&amp;profile=list&amp;preset=latest&amp;fields[include][]=primary_country&amp;fields[include][]=primary_type&amp;fields[include][]=description&amp;primary_type&amp;fields[exclude][]=country&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -446,76 +458,46 @@
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">  private</code>
+          <code class="ruby">    def response</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def conn</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="16">
+        <li class="covered" data-hits="4" data-linenumber="15">
           <span class="hits">4</span>
           
-          <code class="ruby">      Faraday.new(&quot;https://api.reliefweb.int/v1/disasters?appname=apidoc&amp;profile=list&amp;preset=latest&amp;fields[include][]=primary_country&amp;fields[include][]=primary_type&amp;fields[include][]=description&amp;primary_type&amp;fields[exclude][]=country&quot;)</code>
+          <code class="ruby">      @response ||= conn.get</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    def response</code>
-        </li>
-      
-        <li class="covered" data-hits="8" data-linenumber="20">
-          <span class="hits">8</span>
-          
-          <code class="ruby">      @response ||= conn.get</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
           <code class="ruby">    def raw_disasters</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="24">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="4" data-linenumber="19">
+          <span class="hits">4</span>
           
           <code class="ruby">      JSON.parse(response.body, symbolize_names: true)[:data]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">end</code>
@@ -936,9 +918,9 @@
 </div>
 
       
-        <div class="source_table" id="1dad59c2650e3b4cdea1e6f74767ea301ee624e9">
+        <div class="source_table" id="c6da73313e7d3bb84ab69abe758821a0220c52ec">
   <div class="header">
-    <h3>spec/services/disaster_search_spec.rb</h3>
+    <h3>spec/services/disasters_service_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>11</b> relevant lines. 
@@ -965,13 +947,13 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">describe DisasterService do</code>
+          <code class="ruby">describe DisastersService do</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="4">
           <span class="hits">3</span>
           
-          <code class="ruby">  subject { DisasterService.new }</code>
+          <code class="ruby">  subject { DisastersService.new }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -989,7 +971,7 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(subject).to be_a(DisasterService)</code>
+          <code class="ruby">      expect(subject).to be_a(DisastersService)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
