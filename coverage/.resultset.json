@@ -19,9 +19,12 @@
         null,
         1,
         1,
-        1,
         null,
-        1,
+        0,
+        null,
+        0,
+        null,
+        0,
         null,
         null
       ],
@@ -35,21 +38,28 @@
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/disaster.rb": [
         1,
         1,
-        1,
         null,
         null
       ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/disasters_controller.rb": [
-        1,
+      "/Users/vadlusk/turing/3module/projects/give_a_little/spec/services/disaster_search_spec.rb": [
         1,
         null,
-        null
-      ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/application_controller.rb": [
         1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1527284790
+    "timestamp": 1527294456
   }
 }
