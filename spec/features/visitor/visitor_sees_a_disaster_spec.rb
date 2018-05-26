@@ -11,7 +11,6 @@ describe 'visitor goes to a disaster page and' do
     expect(page).to have_css('.type')
     expect(page).to have_css('.country')
     expect(page).to have_css('.description')
-    expect(page).to have_css('.number_affected')
     expect(page).to have_css('#small_map')
   end
 end
