@@ -1,0 +1,16 @@
+<table class="disasters-table table table-sm">
+  <tr class="thead-light">
+    <th>Disaster ID</th>
+    <th>Type of Disaster</th>
+    <th>Country</th>
+    <th>Date Started</th>
+  </tr>
+  <% @disasters.each do |disaster| %>
+    <tr>
+      <td class="link"><%= link_to disaster.rw_id, disaster_path(disaster.rw_id, class: 'disaster-link') %></td>
+      <td><%= disaster.type %></td>
+      <td><%= disaster.country %></td>
+      <td><%= disaster.format_date %></td>
+    </tr>
+  <% end %>
+</table>

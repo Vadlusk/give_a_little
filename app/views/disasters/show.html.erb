@@ -1,23 +1,18 @@
 <header class="disaster-header">
-  <h1 class="type"><%= @disaster.type %></h1>
-  <h1 class="country">in <%= @disaster.country %></h1>
+  <h1 class="type country"><%= @disaster.type %> in <%= @disaster.country %></h1>
+  <h2 class="date"><%= @disaster.format_date %></h2>
 </header>
 
-<section class="description">
-  <%= @disaster.description %>
-</section>
+<main class="disaster-main">
+  <div id="small_map"></div>
 
-<div id="small_map"></div>
-<script>
-  function initMap() {
-    var position = {lat: <%= @disaster.latitude %>, lng: <%= @disaster.longitude %>};
-    var map = new google.maps.Map(document.getElementById("small_map"), {
-      zoom: 4,
-      center: position
-    });
-    var marker = new google.maps.Marker({ position: position, map: map });
-  }
-</script>
+  <%= render partial: 'disasters/small_map' %>
+
+  <section class="description">
+    <%= @disaster.description %>
+  </section>
+  
+</main>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_api_key'] %>&callback=initMap">
 </script>

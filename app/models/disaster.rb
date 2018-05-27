@@ -11,4 +11,8 @@ class Disaster
     @description = data[:fields][:description]
     @rw_id       = data[:id].to_i
   end
+
+  def format_date
+    @date.strftime('%b %d, %Y')
+  end
 end

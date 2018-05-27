@@ -1,0 +1,12 @@
+<aside class="filters">
+  <h2 class="filter-title">
+    filters
+  </h2>
+  <div class="types">
+    <% @disasters.each do |disaster| %>
+      <form>
+        <input type="radio" name="type-<%= disaster.type %>" value= disaster.type><%= disaster.type %><br>
+      </form>
+    <% end %>
+  </div>
+</aside>
