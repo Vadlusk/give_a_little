@@ -85,7 +85,7 @@ describe Charity do
     expect(subject.name).to eq('Mount Desert Island Biological Laboratory')
     expect(subject.ein).to eq('010202467')
     expect(subject.mission).to eq('The MDI Biological Laboratory is a rapidly growing, independent non-profit biomedical research institution. Its mission is to improve human health and well-being through basic research, education, and development ventures that transform discoveries into cures.')
-    expect(subject.rating).to eq(94.62)
+    expect(subject.rating).to eq(4)
     expect(subject.cause).to eq('Non-Medical Science & Technology Research')
     expect(subject.cause_img).to eq('https://d20umu42aunjpx.cloudfront.net/_gfx_/causes/small/nonmedical.jpg')
     expect(subject.cause_id).to eq(35)
