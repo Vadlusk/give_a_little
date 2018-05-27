@@ -10,8 +10,8 @@ describe CharitiesService do
   context 'instance methods' do
     context 'returns a list of charities' do
       it '.charities' do
-        expect(subject.disasters.length).to eq(10)
-        expect(subject.disasters.first).to be_a(Charity)
+        expect(subject.charities.length).to eq(15)
+        expect(subject.charities.first).to be_a(Charity)
       end
     end
   end

@@ -47,28 +47,28 @@ describe Charity do
       "foundationStatus": "Organization that normally receives no more than one-third of its support from gross investment income and unrelated business income and at the same time more than one-third of its support from contributions, fees, and gross receipts related to exempt purposes.  509(a)(2)",
       "nteeSuffix": "0",
       "nteeClassification": "Biological, Life Science Research",
-      "deductibilityDetail": null,
+      "deductibilityDetail": nil,
       "nteeCode": "U50",
       "nteeLetter": "U"
     },
     "mailingAddress": {
-      "country": null,
+      "country": nil,
       "stateOrProvince": "ME",
       "city": "Bar Harbor",
       "postalCode": "04609",
       "streetAddress1": "159 Old Bar Harbor Road",
-      "streetAddress2": null
+      "streetAddress2": nil
     },
     "donationAddress": {
-      "country": null,
+      "country": nil,
       "stateOrProvince": "ME",
       "city": "Salisbury Cove",
       "postalCode": "04672",
       "streetAddress1": "PO Box 35",
-      "streetAddress2": null
+      "streetAddress2": nil
     },
     "advisories": {
-      "severity": null,
+      "severity": nil,
       "active": {
         "_rapid_links": {
           "related": {
@@ -77,7 +77,7 @@ describe Charity do
         }
       }
     }
-  }
+  }}
 
   subject { Charity.new(data) }
 
