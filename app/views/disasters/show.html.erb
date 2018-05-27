@@ -3,7 +3,7 @@
   <h2 class="date"><%= @disaster.format_date %></h2>
 </header>
 
-<%= link_to 'Donate Now', charities_path, type: @disaster.type, class: "btn btn-primary" %>
+<%= link_to 'Donate Now', charities_path(type: @disaster.type), class: "btn btn-primary" %>
 
 <main class="disaster-main">
   <div id="small_map"></div>
