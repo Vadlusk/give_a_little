@@ -3,6 +3,8 @@
   <h2 class="date"><%= @disaster.format_date %></h2>
 </header>
 
+<%= link_to 'Donate Now', charities_path(type: @disaster.type), class: "btn btn-primary" %>
+
 <main class="disaster-main">
   <div id="small_map"></div>
 
@@ -11,7 +13,7 @@
   <section class="description">
     <%= @disaster.description %>
   </section>
-  
+
 </main>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_api_key'] %>&callback=initMap">
