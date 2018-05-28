@@ -6,8 +6,14 @@ describe 'visitor selects charity' do
     click_on 'Donate Now'
   end
   scenario 'and pushes enter without being logged in' do
-    save_and_open_page
-    expect(page).to have_css('.charity', count: 15)
-    expect(page).to have_button('Proceed to entering financial info')
+    click_on 'Proceed to entering financial info'
+
+    expect(page).to have_content('Please select a charity.')
+
+    click_on :charity
+    click_on 'Proceed to entering financial info'
+
+    expect(current_path).to eq(login_path)
+    expect(page).to have_content('Please login or create account before donating.')
   end
 end

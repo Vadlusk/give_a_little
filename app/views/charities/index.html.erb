@@ -1,7 +1,7 @@
 <h1>Select a Charity:</h1>
 
 <div class="charities">
-  <%= form_tag do %>
+  <%= form_tag new_donation_path, method: :get do %>
     <% @charities.each do |charity| %>
       <div class="charity">
         <%= radio_button_tag(:charity, charity.ein) %>
