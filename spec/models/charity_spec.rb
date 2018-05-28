@@ -1,4 +1,5 @@
-require 'rails_helper'
+require 'spec_helper'
+require './app/models/charity'
 
 describe Charity do
   let (:data) {
@@ -83,6 +84,7 @@ describe Charity do
 
   it 'exists with valid attributes' do
     expect(subject.name).to eq('Mount Desert Island Biological Laboratory')
+    expect(subject.url).to eq('http://www.mdibl.org/')
     expect(subject.ein).to eq('010202467')
     expect(subject.mission).to eq('The MDI Biological Laboratory is a rapidly growing, independent non-profit biomedical research institution. Its mission is to improve human health and well-being through basic research, education, and development ventures that transform discoveries into cures.')
     expect(subject.rating).to eq(4)

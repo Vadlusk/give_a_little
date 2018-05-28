@@ -1,7 +1,15 @@
-<ul class="charities">
-  <% @charities.each do |charity| %>
-    <li class="charity-name">charity.name</li>
-    <li class="rating">charity.rating</li>
-    <li class="cause-img">charity.cause_img</li>
+<h1>Select a Charity:</h1>
+
+<div class="charities">
+  <%= form_tag do %>
+    <% @charities.each do |charity| %>
+      <div class="charity">
+        <%= radio_button_tag(:charity, charity.ein) %>
+        <%= image_tag charity.cause_img, class: 'cause-img' %>
+        <%= link_to label_tag(:charity, charity.name), charity.url %>
+        <span class="rating">Rating: <%= charity.rating %></span><br>
+      </div>
+    <% end %>
+    <%= submit_tag('Proceed to entering financial info') %>
   <% end %>
-</ul>
+</div>

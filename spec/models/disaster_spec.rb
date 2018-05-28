@@ -1,4 +1,5 @@
-require 'rails_helper'
+require 'spec_helper'
+require './app/models/disaster'
 
 describe Disaster do
   let (:data) {
