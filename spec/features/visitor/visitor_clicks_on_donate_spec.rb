@@ -11,9 +11,8 @@ describe 'visitor clicks on donate now' do
   scenario 'and sees a list of associated charities to select from' do
     expect(page).to have_css('.charities')
     within('.charities') do
-      expect(page).to have_css('.charity-name')
-      expect(page).to have_css('.rating')
       expect(page).to have_css('.cause-img')
+      expect(page).to have_css('.rating')
     end
   end
 end
