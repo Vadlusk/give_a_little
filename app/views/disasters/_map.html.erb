@@ -3,18 +3,18 @@
   function initMap() {
     let center = {lat: 0.000, lng: 0.000};
 
-    let locations = [];
+    let disasters = [];
     <% @disasters.each do |disaster| %>
-      locations.push({lat: <%= disaster.latitude %>, lng: <%= disaster.longitude %>})
+      disasters.push({lat: <%= disaster.latitude %>, lng: <%= disaster.longitude %>})
     <% end %>
 
     let map = new google.maps.Map(document.getElementById("map"), {
       zoom: 1,
       center: center
     });
-    locations.forEach(location => {
+    disasters.forEach(disaster => {
       let marker = new google.maps.Marker({
-        position: location,
+        position: disaster,
         map: map
       });
       attachMarkerInfo(marker, 'click here!')
