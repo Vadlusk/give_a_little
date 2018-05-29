@@ -12,6 +12,7 @@
       zoom: 1,
       center: center
     });
+  
     disasters.forEach(disaster => {
       let marker = new google.maps.Marker({
         position: disaster,
@@ -20,6 +21,7 @@
       attachMarkerInfo(marker, 'click here!')
     });
   };
+
   function attachMarkerInfo(marker, disaster) {
     var infowindow = new google.maps.InfoWindow({
       content: disaster
