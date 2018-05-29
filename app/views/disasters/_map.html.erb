@@ -2,13 +2,17 @@
 <script>
   function initMap() {
     let center = {lat: 0.000, lng: 0.000};
-    var uluru = {lat: -25.344, lng: 131.036};
-    var denver = {lat: 39.739, lng: -104.990};
-    let disasters = [uluru, denver];
+
+    let disasters = [];
+    <% @disasters.each do |disaster| %>
+      disasters.push({lat: <%= disaster.latitude %>, lng: <%= disaster.longitude %>})
+    <% end %>
+
     let map = new google.maps.Map(document.getElementById("map"), {
       zoom: 1,
       center: center
     });
+  
     disasters.forEach(disaster => {
       let marker = new google.maps.Marker({
         position: disaster,
@@ -17,6 +21,7 @@
       attachMarkerInfo(marker, 'click here!')
     });
   };
+
   function attachMarkerInfo(marker, disaster) {
     var infowindow = new google.maps.InfoWindow({
       content: disaster
