@@ -15,7 +15,6 @@ describe 'visitor selects charity' do
     choose 'charity_061057497'
     click_on 'Proceed to entering financial info'
 
-    expect(current_path).to eq(login_path)
-    expect(page).to have_content('Please login or create account before donating.')
+    expect(page).to have_content('Please login or create an account before donating.')
   end
 end
