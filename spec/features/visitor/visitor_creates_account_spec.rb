@@ -12,7 +12,7 @@ describe 'visitor creates an account' do
     fill_in 'user[email]', with: 'New@email.com'
     fill_in 'user[password]', with: 'password'
     fill_in 'user[password_confirmation]', with: 'password'
-    click_on 'submit'
+    click_on 'Create Account'
 
     expect(current_path).to eq(dashboard_path)
     within('.navbar') do
