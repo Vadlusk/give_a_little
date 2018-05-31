@@ -8,12 +8,9 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to 'Create an Account', register_path, class: 'nav-link' %>
-      </li>
-    </ul>
-  </div>
+  <% if current_user %>
+    <%= render partial: 'layouts/user_nav' %>
+  <% else %>
+    <%= render partial: 'layouts/visitor_nav' %>
+  <% end %>
 </nav>

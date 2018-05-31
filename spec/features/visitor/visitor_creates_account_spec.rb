@@ -19,6 +19,8 @@ describe 'visitor creates an account' do
     within('.navbar') do
       expect(page).to have_content('Logged in as: New User')
       expect(page).to have_link('Log out')
+      expect(page).to_not have_link('Log in')
+      expect(page).to_not have_link('Create an Account')
     end
   end
 end

@@ -1,3 +1,5 @@
+<h1>Enter your information below</h1>
+
 <%= form_for @user, url: register_path do |f| %>
   <%= f.label :first_name %>
   <%= f.text_field :first_name %>
@@ -9,10 +11,10 @@
   <%= f.email_field :email %>
 
   <%= f.label :password %>
-  <%= f.text_field :password %>
+  <%= f.password_field :password %>
 
   <%= f.label :password_confirmation %>
-  <%= f.text_field :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
 
   <%= f.submit 'Create Account'%>
 <% end %>
