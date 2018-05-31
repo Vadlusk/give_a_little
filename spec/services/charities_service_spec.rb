@@ -10,8 +10,10 @@ describe CharitiesService do
   context 'instance methods' do
     context 'returns a list of charities' do
       it '.charities' do
-        expect(subject.charities.length).to eq(15)
-        expect(subject.charities.first).to be_a(Charity)
+        VCR.use_cassette('.charities') do
+          expect(subject.charities.length).to eq(15)
+          expect(subject.charities.first).to be_a(Charity)
+        end
       end
     end
   end

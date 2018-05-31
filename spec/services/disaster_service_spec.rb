@@ -11,7 +11,9 @@ describe DisasterService do
   context 'instance methods' do
     context 'returns one disaster' do
       it '.disaster' do
-        expect(subject.disaster).to be_a(Disaster)
+        VCR.use_cassette('.disaster') do
+          expect(subject.disaster).to be_a(Disaster)
+        end
       end
     end
   end

@@ -10,8 +10,10 @@ describe DisastersService do
   context 'instance methods' do
     context 'returns all types of disasters' do
       it '.disasters' do
-        expect(subject.disasters.length).to eq(10)
-        expect(subject.disasters.first).to be_a(Disaster)
+        VCR.use_cassette('.disasters') do
+          expect(subject.disasters.length).to eq(10)
+          expect(subject.disasters.first).to be_a(Disaster)
+        end
       end
     end
   end
