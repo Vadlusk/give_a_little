@@ -2,8 +2,10 @@ require 'rails_helper'
 
 describe 'visitor goes to the disasters page and' do
   it 'sees a map with pins in it' do
-    visit disasters_path
+    VCR.use_cassette('disasters_index') do
+      visit disasters_path
 
-    expect(page).to have_css('#map')
+      expect(page).to have_css('#map')
+    end
   end
 end
