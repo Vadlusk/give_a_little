@@ -24,15 +24,6 @@
         1,
         null
       ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/users_controller.rb": [
         1,
         1,
@@ -57,71 +48,24 @@
         null,
         null
       ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/sessions_controller.rb": [
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/disasters_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
         0,
-        null,
-        null
-      ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/services/disasters_service.rb": [
-        1,
-        null,
-        1,
-        1,
-        10,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/disaster.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        null,
-        null,
-        1,
-        10,
+        0,
         null,
         null
       ]
     },
-    "timestamp": 1527777773
+    "timestamp": 1527797474
   }
 }
