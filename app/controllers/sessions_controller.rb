@@ -1,5 +1,8 @@
 class SessionsController < ApplicationController
-  def new
+  def new; end
+
+  def create
+    binding.pry
   end
 
   def destroy

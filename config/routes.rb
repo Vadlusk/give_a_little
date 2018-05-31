@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :donations, only: %i[new]
 
   get '/login',     to: 'sessions#new'
+  post '/login',    to: 'sessions#create'
   get '/logout',    to: 'sessions#destroy'
 
   get '/dashboard', to: 'users#show'
