@@ -8,8 +8,7 @@ describe 'user logs out' do
 
     visit dashboard_path
     click_on 'Log out'
-
-    expect(page).to have_link('Log in')
+    
     expect(page).to have_link('Create an Account')
   end
 end
