@@ -81,8 +81,17 @@
         1,
         null,
         null
+      ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/user.rb": [
+        1,
+        null
+      ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/application_record.rb": [
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1527730411
+    "timestamp": 1527731047
   }
 }
