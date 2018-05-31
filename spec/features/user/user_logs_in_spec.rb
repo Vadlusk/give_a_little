@@ -9,9 +9,9 @@ describe 'user logs in' do
 
     expect(current_path).to eq('/login')
 
-    fill_in 'user[email]', with: user.email
-    fill_in 'user[password]', with: user.password
-    click_on 'Submit'
+    fill_in 'email', with: user.email
+    fill_in 'password', with: user.password
+    click_on 'Log In'
 
     expect(current_path).to eq('/dashboard')
     expect(page).to have_link('Log out')

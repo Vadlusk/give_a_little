@@ -53,12 +53,15 @@
         1,
         null,
         1,
-        1,
+        2,
         null,
         null
       ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/sessions_controller.rb": [
         1,
+        1,
+        null,
+        null,
         1,
         0,
         0,
@@ -66,6 +69,6 @@
         null
       ]
     },
-    "timestamp": 1527797474
+    "timestamp": 1527799300
   }
 }
