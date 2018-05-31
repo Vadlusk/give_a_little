@@ -16,6 +16,6 @@ class DisastersService
     end
 
     def raw_disasters
-      JSON.parse(response.body, symbolize_names: true)[:data]
+      JSON.parse(response.body)['data']
     end
 end

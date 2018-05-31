@@ -11,7 +11,7 @@
   <%= render partial: 'disasters/small_map' %>
 
   <section class="description">
-    <%= @disaster.description %>
+    <%= @disaster.description.html_safe %>
   </section>
 
 </main>
