@@ -1,0 +1,14 @@
+<h1>Enter your information below</h1>
+
+<%= form_tag login_path do %>
+  <%= label_tag :email  %>
+  <%= email_field_tag :email %>
+
+  <%= label_tag :password %>
+  <%= password_field_tag :password %>
+
+  <div class="cancel-submit">
+    <%= link_to "Cancel", disasters_path, class: 'btn' %>
+    <%= submit_tag 'Log In', class: 'btn' %>
+  </div>
+<% end %>

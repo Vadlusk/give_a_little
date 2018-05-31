@@ -1,0 +1,22 @@
+class SessionsController < ApplicationController
+  def new; end
+
+  def create
+    @user = User.find_by(email: params[:email])
+    if @user.nil?
+      flash[:error] = 'Email not found. Please create an account or try again.'
+      redirect_to login_path
+    elsif @user && @user.authenticate(params[:password]) == false
+      flash[:error] = 'Incorrect password. Please try again.'
+      redirect_to login_path
+    elsif @user && @user.authenticate(params[:password])
+      session[:user_id] = @user.id
+      redirect_to dashboard_path
+    end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to disasters_path
+  end
+end
