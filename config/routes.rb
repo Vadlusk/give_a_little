@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :charities, only: %i[index]
   resources :donations, only: %i[new]
 
-  get '/login',    to: 'sessions#new'
-  get '/register', to: 'users#new'
+  get '/login',     to: 'sessions#new'
+  get '/register',  to: 'users#new'
+  post '/register', to: 'users#create'
+  get '/dashboard', to: 'users#show'
 end

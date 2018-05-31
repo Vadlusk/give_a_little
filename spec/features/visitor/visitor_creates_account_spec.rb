@@ -15,6 +15,7 @@ describe 'visitor creates an account' do
     click_on 'Create Account'
 
     expect(current_path).to eq(dashboard_path)
+    expect(page).to have_content('Welcome New User, thanks for creating an account with us.')
     within('.navbar') do
       expect(page).to have_content('Logged in as: New User')
       expect(page).to have_link('Log out')
