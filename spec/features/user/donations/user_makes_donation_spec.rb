@@ -12,12 +12,12 @@ describe 'user selects a charity' do
       choose 'charity_061057497'
       click_on 'Proceed to entering financial info'
 
-      expect(current_path).to eq('/donate')
+      expect(current_path).to eq(new_donation_path)
 
-      fill_in 'First Name', with: 'Felipe'
-      fill_in 'Last Name', with: 'O Keefe'
-      fill_in 'Credit Card Number', with: 4111111111111111
-      fill_in 'Expiration', with: 07/2018
+      fill_in 'first_name', with: 'Felipe'
+      fill_in 'last_name', with: 'O Keefe'
+      fill_in 'credit_card_number', with: 4111111111111111
+      fill_in 'expiration', with: 07/2018
       fill_in 'CVV', with: 123
       click_on 'Tokenize!'
 
