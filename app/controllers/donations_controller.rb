@@ -4,7 +4,8 @@ class DonationsController < ApplicationController
       flash[:error] = 'Please select a charity.'
     elsif current_user.nil?
       flash[:error] = 'Please login or create an account before donating.'
+    elsif params['charity'] && current_user
+      @donation = Donation.new
     end
-    redirect_to charities_path
   end
 end
