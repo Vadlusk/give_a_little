@@ -1,52 +1,55 @@
 <!-- Include PandaJS -->
 <script src="//d2t45z63lq9zlh.cloudfront.net/panda-v0.0.5.min.js"></script>
 
-<form action="/donations/new" action="post" id="panda_cc_form">
-  <div>
+<form action="/dashboard" action="get" id="panda_cc_form">
+  <div class="form-group">
     <label>First Name</label>
-    <input type="text" data-panda="first_name" id="first_name">
+    <input type="text" data-panda="first_name" id="first_name" class="form-control" value=<%= current_user.first_name %>>
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Last Name</label>
-    <input type="text" data-panda="last_name" id="last_name">
+    <input type="text" data-panda="last_name" id="last_name" class="form-control" value=<%= current_user.last_name %>>
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Credit Card Number</label>
-    <input type="text" data-panda="credit_card" id="credit_card_number">
+    <input type="text" data-panda="credit_card" id="credit_card_number" class="form-control">
   </div>
 
-  <div>
+  <div class="form-group">
     <label>Expiration</label>
-    <input type="text" data-panda="expiration" id="expiration">
+    <input type="text" data-panda="expiration" id="expiration" class="form-control">
   </div>
 
-  <div>
+  <div class="form-group">
     <label>CVV</label>
-    <input type="text" data-panda="cvv" id="CVV">
+    <input type="text" data-panda="cvv" id="CVV" class="form-control">
   </div>
 
   <div id="tokenize">
-    <button type="submit">Tokenize!</button>
+    <button type="submit" class="tokenize">Make Donation</button>
   </div>
 </form>
 
 <script>
-  // Call Panda.init() with your Panda Publishable Key and the DOM id of the
-  // credit card-related form element
+  const baseUrl = 'https://localhost::3000';
+
+  $(`#tokenize`).on('click', function() {
+    debugger
+  });
 
   Panda.init('pk_test_wFlnyfcJa4ucu68P24jKpg', 'panda_cc_form');
+  Panda.on('success', function(cardToken) {});
+  Panda.on('error', function(errors) {});
 
-  Panda.on('success', function(cardToken) {
-    // You now have a token you can use to refer to that credit card later.
-    // This token is used in PandaPay API calls for creating donations and grants
-    // so that you don't have to worry about security concerns with dealing with
-    // credit card data.
-  });
-
-  Panda.on('error', function(errors) {
-    // errors is a human-readable list of things that went wrong
-    //  (invalid card number, missing last name, etc.)
-  });
+  const postToken = (body) => {
+    return {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    };
+  };
 </script>

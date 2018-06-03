@@ -10,4 +10,10 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#show'
   get '/register',  to: 'users#new'
   post '/register', to: 'users#create'
+
+  namespace :api do
+    namespace :v1 do
+      post '/donations', to: 'donations#create'
+    end
+  end
 end

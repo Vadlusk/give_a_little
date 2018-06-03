@@ -1,14 +1,23 @@
-<h1>Disaster Map</h1>
-<h2><%= Time.now %></h2>
+<h1>Choose an event</h1>
+<h2>Last updated: <%= format_date(Time.now) %></h2>
 
 <main class="disasters-main">
-  <div id="map"></div>
 
-  <%= render partial: 'disasters/map' %>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <%= link_to 'Map View', '/disasters?tab=map', class: 'nav-link' %>
+    </li>
+    <li class="nav-item">
+      <%= link_to 'Chart View', '/disasters?tab=chart', class: 'nav-link' %>
+    </li>
+  </ul>
 
-  <%= render partial: 'disasters/filters' %>
-
-  <%= render partial: 'disasters/disasters_table' %>
+  <% if params['tab'] == 'map' || params['tab'].nil? %>
+    <%= render partial: 'disasters/map' %>
+    <%= render partial: 'disasters/filters' %>
+  <% elsif params['tab'] == 'chart' %>
+    <%= render partial: 'disasters/disasters_table' %>
+  <% end %>
 
 </main>
 

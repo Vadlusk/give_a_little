@@ -9,7 +9,7 @@ describe 'user selects a charity' do
 
       visit disaster_path(45829)
       click_on 'Donate Now'
-      choose 'charity_061057497'
+      choose 'charity_311811917'
       click_on 'Proceed to entering financial info'
 
       expect(current_path).to eq(new_donation_path)
@@ -19,10 +19,10 @@ describe 'user selects a charity' do
       fill_in 'credit_card_number', with: 4111111111111111
       fill_in 'expiration', with: 07/2018
       fill_in 'CVV', with: 123
-      click_on 'Tokenize!'
+      click_on 'Make Donation'
 
-      expect(current_path).to eq('/tweet')
-      expect(page).to have_content('Thanks for your donation.')
+      expect(current_path).to eq('/dashboard')
+      expect(page).to have_content('Your donation was successful.')
       expect(Donation.all.count).to eq(1)
     end
   end

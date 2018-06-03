@@ -5,6 +5,7 @@ describe 'visitor goes to a disaster page and' do
     VCR.use_cassette('disaster_show') do
       visit disasters_path
 
+      click_on 'Chart View'
       within(first('.link')) do
         click_on '45829'
       end
