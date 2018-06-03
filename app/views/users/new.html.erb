@@ -1,4 +1,5 @@
 <h1>Enter your information below</h1>
+<h2>Or <%= link_to 'Continue with Twitter', twitter_login_path %></h2>
 
 <%= form_for @user, url: register_path do |f| %>
   <%= f.label :first_name %>
