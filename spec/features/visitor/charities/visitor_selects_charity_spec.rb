@@ -9,7 +9,7 @@ describe 'visitor selects charity' do
 
       expect(page).to have_content('Please select a charity.')
 
-      choose 'charity_311811917'
+      choose 'charity_581482590'
       click_on 'Proceed to entering financial info'
 
       expect(page).to have_content('Please login or create an account before donating.')

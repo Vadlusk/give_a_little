@@ -3,8 +3,14 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.find_by(email: params[:email])
-    if @user.nil?
-      flash[:danger] = 'Email not found. Please create an account or try again.'
+    if @user.nil? && request.env['omniauth.auth']
+      @user = User.from_omniauth(request.env['omniauth.auth'])
+      @user.password = 'ChangeThis'
+      @user.save!
+      session[:user_id] = @user.id
+      redirect_to dashboard_path
+    elsif @user.nil?
+      flash[:error] = 'Email not found. Please create an account or try again.'
       redirect_to login_path
     elsif @user && @user.authenticate(params[:password]) == false
       flash[:danger] = 'Incorrect password. Please try again.'
