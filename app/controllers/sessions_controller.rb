@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to dashboard_path
     elsif @user.nil?
-      flash[:error] = 'Email not found. Please create an account or try again.'
+      flash[:danger] = 'Email not found. Please create an account or try again.'
       redirect_to login_path
     elsif @user && @user.authenticate(params[:password]) == false
       flash[:danger] = 'Incorrect password. Please try again.'
