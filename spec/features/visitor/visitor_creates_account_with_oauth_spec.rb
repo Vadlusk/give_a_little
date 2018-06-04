@@ -5,6 +5,7 @@ describe 'visitor goes to create account page' do
     VCR.use_cassette('oauth') do
       visit disasters_path
       click_on 'Create an Account'
+      stub_omniauth
       click_on 'Continue with Twitter'
 
       expect(User.all.length).to eq(1)
