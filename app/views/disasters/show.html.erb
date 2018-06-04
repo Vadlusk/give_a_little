@@ -1,9 +1,13 @@
 <header class="disaster-header">
-  <h1 class="type country"><%= @disaster.type %> in <%= @disaster.country %></h1>
-  <h2 class="date"><%= @disaster.format_date %></h2>
+  <div class="disaster-header-left">
+    <h1 class="type country"><%= @disaster.type %> in <%= @disaster.country %></h1>
+    <h2 class="date"><%= @disaster.format_date %></h2>
+  </div>
+  <div class="disaster-header-right">
+    <%= link_to 'Donate Now', charities_path(type: @disaster.type), class: "btn btn-primary" %>
+  </div>
 </header>
 
-<%= link_to 'Donate Now', charities_path(type: @disaster.type), class: "btn btn-primary" %>
 
 <main class="disaster-main">
   <div id="small_map"></div>

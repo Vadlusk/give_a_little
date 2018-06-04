@@ -3,11 +3,14 @@
 <div class="charities">
   <%= form_tag new_donation_path, method: :get do %>
     <% @charities.each do |charity| %>
-      <div class="charity">
-        <%= radio_button_tag(:charity, charity.ein) %>
-        <%= image_tag charity.cause_img, class: 'cause-img' %>
-        <%= link_to label_tag(:charity, charity.name), charity.url %>
-        <span class="rating">Rating: <%= charity.rating %></span><br>
+      <div class="charity card w-45">
+        <div class="card-body">
+          <%= radio_button_tag(:charity, charity.ein) %>
+          <%= image_tag charity.cause_img, class: 'cause-img' %>
+          <%= link_to label_tag(:charity, charity.name), charity.url, class: 'card-title' %><br>
+          <%= charity.mission %><br>
+          <span class="rating">Rating: <%= charity.rating %></span>
+        </div>
       </div>
     <% end %>
     <%= submit_tag('Proceed to entering financial info') %>

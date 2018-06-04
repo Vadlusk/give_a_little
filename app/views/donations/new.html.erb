@@ -36,12 +36,16 @@
   const baseUrl = 'https://localhost::3000';
 
   $(`#tokenize`).on('click', function() {
-    debugger
+
   });
 
   Panda.init('pk_test_wFlnyfcJa4ucu68P24jKpg', 'panda_cc_form');
-  Panda.on('success', function(cardToken) {});
-  Panda.on('error', function(errors) {});
+  Panda.on('success', function(cardToken) {
+
+  });
+  Panda.on('error', function(errors) {
+   
+  });
 
   const postToken = (body) => {
     return {

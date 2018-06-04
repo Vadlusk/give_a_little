@@ -14,7 +14,7 @@
 
   <% if params['tab'] == 'map' || params['tab'].nil? %>
     <%= render partial: 'disasters/map' %>
-    <%= render partial: 'disasters/filters' %>
+    <!-- <%= render partial: 'disasters/filters' %> -->
   <% elsif params['tab'] == 'chart' %>
     <%= render partial: 'disasters/disasters_table' %>
   <% end %>

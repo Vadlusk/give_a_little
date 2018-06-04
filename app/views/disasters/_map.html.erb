@@ -16,7 +16,7 @@
     <% end %>
 
     let map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 1,
+      zoom: 2,
       center: center
     });
 
@@ -33,7 +33,7 @@
     let infowindow = new google.maps.InfoWindow({
       content: content
     });
-    marker.addListener('click', function() {
+    marker.addListener('click', () => {
       infowindow.open(marker.get('map'), marker);
     });
   }
