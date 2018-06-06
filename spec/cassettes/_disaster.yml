@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 03 Jun 2018 15:22:08 GMT
+      - Wed, 06 Jun 2018 03:16:56 GMT
       Content-Type:
       - application/json
       Vary:
@@ -43,22 +43,22 @@ http_interactions:
       X-Varnish-Ttl:
       - '300.000'
       X-Varnish:
-      - 15108828 14724367
+      - '31735693'
       Age:
-      - '45491'
+      - '0'
       Via:
       - 1.1 varnish-v4
       X-Varnish-Server:
       - rwint-api-varnish
       Accept-Ranges:
       - bytes
-      Content-Length:
-      - '715'
+      Transfer-Encoding:
+      - chunked
       Set-Cookie:
       - __bm-hap_hKBcutrqRn9rEZDW=S1; path=/; HttpOnly; Secure
     body:
       encoding: ASCII-8BIT
-      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/8510?appname=givealittle&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description-html&preset=latest&primary_type&profile=list","time":4,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/8510"},"collection":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters"}},"totalCount":1,"count":1,"data":[{"fields":{"date":{"created":"2011-06-12T00:00:00+00:00"},"primary_type":{"code":"FL","name":"Flood","id":4611},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/227","name":"Tajikistan","location":{"lon":71.04,"lat":38.84},"id":227,"iso3":"tjk"},"description-html":"<p>As
+      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/8510?appname=givealittle&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description-html&preset=latest&primary_type&profile=list","time":3,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/8510"},"collection":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters"}},"totalCount":1,"count":1,"data":[{"fields":{"date":{"created":"2011-06-12T00:00:00+00:00"},"primary_type":{"code":"FL","name":"Flood","id":4611},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/227","name":"Tajikistan","location":{"lon":71.04,"lat":38.84},"id":227,"iso3":"tjk"},"description-html":"<p>As
         a result of heavy rains on 11-12 June 2011, floods hit Sughd province in the
         northern part of Tajikistan, affecting 7 villages in 3 districts of the province
         (IFRC, 16 Jun 2011).<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"http:\/\/untj.org\/country_context\/coordination_mechanisms\/disaster_management\/reports\/june_2011\">UN
@@ -66,5 +66,5 @@ http_interactions:
         Floods and Mudslides - Jun 2011","glide":"FF-2011-000066-TJK","type":[{"name":"Flood"},{"name":"Mud
         Slide"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/8510","status":"past"},"id":"8510"}]}'
     http_version: 
-  recorded_at: Mon, 04 Jun 2018 04:00:19 GMT
+  recorded_at: Wed, 06 Jun 2018 03:16:56 GMT
 recorded_with: VCR 4.0.0

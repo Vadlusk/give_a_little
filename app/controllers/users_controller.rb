@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
-  def show; end
+  def show
+    @donations = current_user.donations.all
+  end
 
   def new
     @user = User.new

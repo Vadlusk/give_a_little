@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'user logs in' do
   let(:user) { create(:user) }
   before(:each) do
-    visit dashboard_path
+    visit root_path
     click_on 'Log in'
   end
   scenario 'and sees their dashboard' do

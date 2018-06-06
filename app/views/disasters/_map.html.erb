@@ -1,3 +1,4 @@
+<div id="map"></div>
 
 <script>
   function initMap() {
@@ -5,29 +6,35 @@
 
     let disasters = [];
     <% @disasters.each do |disaster| %>
-      disasters.push({lat: <%= disaster.latitude %>, lng: <%= disaster.longitude %>})
+      disasters.push({
+        location: {
+          lat: <%= disaster.latitude %>,
+          lng: <%= disaster.longitude %>
+        },
+        info: '<%= link_to "#{disaster.type} in #{disaster.country}", disaster_path(disaster.rw_id) %>'
+      })
     <% end %>
 
     let map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 1,
+      zoom: 2,
       center: center
     });
-  
+
     disasters.forEach(disaster => {
       let marker = new google.maps.Marker({
-        position: disaster,
+        position: disaster.location,
         map: map
       });
-      attachMarkerInfo(marker, 'click here!')
+      attachMarkerInfo(marker, String(disaster.info))
     });
   };
 
-  function attachMarkerInfo(marker, disaster) {
-    var infowindow = new google.maps.InfoWindow({
-      content: disaster
+  function attachMarkerInfo(marker, content) {
+    let infowindow = new google.maps.InfoWindow({
+      content: content
     });
-    marker.addListener('click', function() {
+    marker.addListener('click', () => {
       infowindow.open(marker.get('map'), marker);
     });
-  }
+  };
 </script>
