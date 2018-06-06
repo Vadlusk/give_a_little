@@ -9,7 +9,7 @@ describe 'user selects a charity' do
 
       visit disaster_path(45829)
       click_on 'Donate Now'
-      choose 'charity_311811917'
+      choose 'charity_010211478'
       click_on 'Proceed to entering financial info'
 
       expect(current_path).to eq(new_donation_path)
@@ -21,8 +21,7 @@ describe 'user selects a charity' do
       fill_in 'CVV', with: 123
       click_on 'Make Donation'
 
-      expect(page).to have_content('Your donation was successful.')
-      expect(Donation.all.count).to eq(1)
+      expect(page).to have_css('#panda_cc_form')
     end
   end
 end

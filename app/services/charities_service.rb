@@ -1,25 +1,26 @@
 class CharitiesService
   def initialize(disaster_type)
     @disaster_type = disaster_type
+    @conn = Faraday.new('https://api.data.charitynavigator.org/v2/Organizations')
   end
 
-  def charities
-    raw_charities.map do |raw_charity|
-      Charity.new(raw_charity)
-    end
+  def json_charities
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   private
 
-  def conn
-    Faraday.new("https://api.data.charitynavigator.org/v2/Organizations?app_id=#{ENV['charity_nav_app_id']}&app_key=#{ENV['charity_nav_api_key']}&pageSize=15&sort=rating%3Adesc")
+  def params
+    { app_id: ENV['charity_nav_app_id'],
+      app_key: ENV['charity_nav_api_key'],
+      pageSize: 15,
+      search: @type,
+      rated: true }
   end
 
   def response
-    @response ||= conn.get
-  end
-
-  def raw_charities
-    JSON.parse(response.body, symbolize_names: true)
+    @response ||= @conn.get do |req|
+      req.params = params
+    end
   end
 end

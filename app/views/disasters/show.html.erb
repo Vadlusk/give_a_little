@@ -4,14 +4,15 @@
     <h2 class="date"><%= @disaster.format_date %></h2>
   </div><br>
   <div class="disaster-header-right">
-    <%= link_to 'Donate Now', charities_path(type: @disaster.type), class: "btn btn-primary" %>
+    <%= link_to 'Donate Now', charities_path(type: @disaster.type), class: "donate-now btn btn-primary" %>
   </div>
 </header>
 
 <main class="disaster-main">
-  <div id="small_map"></div>
 
-  <%= render partial: 'disasters/small_map' %>
+  <div id="small_map" data-lat="<%= @disaster.latitude %>" data-lng="<%= @disaster.longitude %>" data-map="<%= ENV['google_maps_api_key'] %>"></div>
+
+  <%= javascript_include_tag 'disasters/show' %>
 
   <section class="description">
     <%= @disaster.description.html_safe %>

@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  before_action :set_user
+  before_action :set_user, only: %i[create]
 
   def new; end
 
@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if @user
       returning_local_user
     elsif request.env['omniauth.auth']
-      omniauth
+      omniauth_user
     elsif @user.nil?
       unrecognized_email
     end
@@ -34,41 +34,39 @@ class SessionsController < ApplicationController
     end
 
     def right_password
-      session[:user_id] = @user.id
-      flash[:success] = "Welcome back, #{@user.first_name}."
-      redirect_to dashboard_path
+      set_session_user("Welcome back, #{@user.first_name}.")
     end
 
     def wrong_password
-      flash[:danger] = 'Incorrect password. Please try again.'
-      redirect_to login_path
+      flash_error('Incorrect password. Please try again.')
     end
 
     def email
       request.env['omniauth.auth']['info']['email']
     end
 
-    def omniauth
+    def omniauth_user
       User.exists?(email: email) ? returning_twitter_user : new_twitter_user
     end
 
     def returning_twitter_user
       @user = User.find_by(email: email)
-      session[:user_id] = @user.id
-      flash[:success] = "Welcome back, #{@user.first_name}."
-      redirect_to dashboard_path
+      set_session_user("Welcome back, #{@user.first_name}.")
     end
 
     def new_twitter_user
       @user = User.from_omniauth(request.env['omniauth.auth'])
       @user.save!
-      session[:user_id] = @user.id
-      flash[:success] = "Welcome #{@user.first_name}, thanks for creating an account with us."
-      redirect_to dashboard_path
+      set_session_user("Welcome #{@user.first_name}, thanks for creating an account with us.")
     end
 
     def unrecognized_email
-      flash[:danger] = 'Email not found. Please create an account or try again.'
-      redirect_to login_path
+      flash_error('Email not found. Please create an account or try again.')
+    end
+
+    def set_session_user(message)
+      session[:user_id] = @user.id
+      flash[:success] = message
+      redirect_to dashboard_path
     end
 end

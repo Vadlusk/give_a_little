@@ -5,8 +5,7 @@ describe User do
   subject { User.create(
     first_name: 'Al',
     last_name: 'Bundy',
-    password: '123'
-    ) }
+    password: '123') }
 
   let(:email) { 'email@email.com' }
 
@@ -32,10 +31,10 @@ describe User do
     end
   end
   context 'relationships' do
-    it {should have_many(:donations)}
+    it { should have_many(:donations) }
   end
   context 'class methods' do
-    it 'from_omniauth' do
+    it '#from_omniauth' do
 
     end
   end

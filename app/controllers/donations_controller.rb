@@ -1,13 +1,10 @@
 class DonationsController < ApplicationController
   def new
     if params['charity'].nil?
-      flash[:danger] = 'Please select a charity.'
-      redirect_back(fallback_location: disasters_path)
+      flash_error('Please select a charity.')
     elsif current_user.nil?
-      flash[:danger] = 'Please login or create an account before donating.'
-      redirect_back(fallback_location: disasters_path)
-    elsif params['charity'] && current_user
-      @donation = Donation.new
+      flash_error('Please login or create an account before donating.')
+    # elsif params['charity'] && current_user
     end
   end
 end

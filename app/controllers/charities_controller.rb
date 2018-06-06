@@ -1,5 +1,5 @@
 class CharitiesController < ApplicationController
   def index
-    @charities = CharitiesService.new(params[:type]).charities
+    @charities = CharitiesSearch.new(params[:type]).charities
   end
 end

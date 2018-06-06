@@ -1,5 +1,4 @@
-require 'spec_helper'
-require './app/models/disaster'
+require 'rails_helper'
 
 describe Disaster do
   let (:data) {
@@ -40,14 +39,4 @@ describe Disaster do
 
   subject { Disaster.new(data) }
 
-  it 'exists with valid attributes' do
-    skip
-    expect(subject.date).to eq(Time.new("2003-05-21T00:00:00+00:00"))
-    expect(subject.type).to eq('Earthquake')
-    expect(subject.country).to eq('Algeria')
-    expect(subject.longitude).to eq(2.63)
-    expect(subject.latitude).to eq(28.16)
-    expect(subject.description).to eq('Really long desc, lots of details.')
-    expect(subject.rw_id).to eq(5665)
-  end
 end
