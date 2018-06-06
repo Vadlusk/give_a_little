@@ -14,14 +14,13 @@ describe 'user selects a charity' do
 
       expect(current_path).to eq(new_donation_path)
 
-      fill_in 'first_name', with: 'Felipe'
-      fill_in 'last_name', with: 'O Keefe'
+      fill_in 'first_name', with: user.first_name
+      fill_in 'last_name', with: user.last_name
       fill_in 'credit_card_number', with: 4111111111111111
       fill_in 'expiration', with: 07/2018
       fill_in 'CVV', with: 123
       click_on 'Make Donation'
 
-      expect(current_path).to eq('/dashboard')
       expect(page).to have_content('Your donation was successful.')
       expect(Donation.all.count).to eq(1)
     end

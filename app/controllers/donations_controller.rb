@@ -7,7 +7,7 @@ class DonationsController < ApplicationController
       flash[:danger] = 'Please login or create an account before donating.'
       redirect_back(fallback_location: disasters_path)
     elsif params['charity'] && current_user
-
+      @donation = Donation.new
     end
   end
 end

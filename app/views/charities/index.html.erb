@@ -1,18 +1,21 @@
 <h1>Select a Charity:</h1>
 
-<div class="charities">
-  <%= form_tag new_donation_path, method: :get do %>
-    <% @charities.each do |charity| %>
-      <div class="charity card w-45">
-        <div class="card-body">
-          <%= radio_button_tag(:charity, charity.ein) %>
-          <%= image_tag charity.cause_img, class: 'cause-img' %>
-          <%= link_to label_tag(:charity, charity.name), charity.url, class: 'card-title' %><br>
-          <%= charity.mission %><br>
-          <span class="rating">Rating: <%= charity.rating %></span>
+
+<% cache do %>
+  <div class="charities">
+    <%= form_tag new_donation_path, method: :get do %>
+      <% @charities.each do |charity| %>
+        <div class="charity card">
+          <div class="card-body">
+            <%= radio_button_tag(:charity, charity.ein) %>
+            <%= image_tag charity.cause_img, class: 'cause-img' %>
+            <%= link_to label_tag(:charity, charity.name), charity.url, class: 'card-title' %><br>
+            <section class="mission"><%= charity.mission %><section><br>
+            <p class="rating">Rating: <%= charity.rating %></p>
+          </div>
         </div>
-      </div>
+      <% end %>
+      <%= submit_tag('Proceed to entering financial info', class: 'btn btn-primary') %>
     <% end %>
-    <%= submit_tag('Proceed to entering financial info') %>
-  <% end %>
-</div>
+  </div>
+<% end %>

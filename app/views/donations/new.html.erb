@@ -1,59 +1,58 @@
 <!-- Include PandaJS -->
 <script src="//d2t45z63lq9zlh.cloudfront.net/panda-v0.0.5.min.js"></script>
 
-<form action="/dashboard" action="get" id="panda_cc_form">
-  <div class="form-group">
-    <label>First Name</label>
-    <input type="text" data-panda="first_name" id="first_name" class="form-control" value=<%= current_user.first_name %>>
-  </div>
+<div id="panda-form">
+  <form id="panda_cc_form">
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" data-panda="first_name" name="first_name" id="first_name" class="form-control" value=<%= current_user.first_name %>>
+    </div>
 
-  <div class="form-group">
-    <label>Last Name</label>
-    <input type="text" data-panda="last_name" id="last_name" class="form-control" value=<%= current_user.last_name %>>
-  </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" data-panda="last_name" name="last_name" id="last_name" class="form-control" value=<%= current_user.last_name %>>
+    </div>
 
-  <div class="form-group">
-    <label>Credit Card Number</label>
-    <input type="text" data-panda="credit_card" id="credit_card_number" class="form-control">
-  </div>
+    <div class="form-group">
+      <label>Credit Card Number</label>
+      <input type="text" data-panda="credit_card" name="credit_card_number" id="credit_card_number" class="form-control">
+    </div>
 
-  <div class="form-group">
-    <label>Expiration</label>
-    <input type="text" data-panda="expiration" id="expiration" class="form-control">
-  </div>
+    <div class="form-group">
+      <label>Expiration</label>
+      <input type="text" data-panda="expiration" name="expiration" id="expiration" class="form-control">
+    </div>
 
-  <div class="form-group">
-    <label>CVV</label>
-    <input type="text" data-panda="cvv" id="CVV" class="form-control">
-  </div>
+    <div class="form-group">
+      <label>CVV</label>
+      <input type="text" data-panda="cvv" name="CVV" id="CVV" class="form-control">
+    </div>
+    <p class="error"></p>
 
-  <div id="tokenize">
-    <button type="submit" class="tokenize">Make Donation</button>
-  </div>
-</form>
+    <div id="tokenize">
+      <button type="submit" class="tokenize">Make Donation</button>
+    </div>
+  </form>
+</div>
 
 <script>
-  const baseUrl = 'https://localhost::3000';
+  let values = []
 
-  $(`#tokenize`).on('click', function() {
-
+  $(`#panda_cc_form`).submit( () => {
+    $(`#panda_cc_form :input`).each( () => {
+      debugger
+    });
   });
 
   Panda.init('pk_test_wFlnyfcJa4ucu68P24jKpg', 'panda_cc_form');
-  Panda.on('success', function(cardToken) {
 
-  });
-  Panda.on('error', function(errors) {
-   
+  Panda.on('success', (cardToken) => {
+    $('#panda-form').empty();
+    $('#panda-form').append(`<%= render partial: 'donations/successful_donation' %>`);
   });
 
-  const postToken = (body) => {
-    return {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(body)
-    };
-  };
+  Panda.on('error', (errors) => {
+    $(`.error`).text(errors[0].message);
+  });
+
 </script>
