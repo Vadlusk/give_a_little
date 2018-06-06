@@ -49,11 +49,7 @@ class SessionsController < ApplicationController
     end
 
     def omniauth
-      if User.exists?(email: email)
-        returning_twitter_user(email)
-      else
-        new_twitter_user
-      end
+      User.exists?(email: email) ? returning_twitter_user : new_twitter_user
     end
 
     def returning_twitter_user

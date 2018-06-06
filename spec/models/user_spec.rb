@@ -1,12 +1,15 @@
 require 'rails_helper'
 
 describe User do
+
   subject { User.create(
     first_name: 'Al',
     last_name: 'Bundy',
     password: '123'
     ) }
+
   let(:email) { 'email@email.com' }
+
   context 'field validations' do
     it 'is invalid without an email' do
       expect(subject).to_not be_valid
@@ -28,9 +31,12 @@ describe User do
       expect(user).to_not be_valid
     end
   end
+  context 'relationships' do
+    it {should have_many(:donations)}
+  end
   context 'class methods' do
     it 'from_omniauth' do
-      
+
     end
   end
 end
