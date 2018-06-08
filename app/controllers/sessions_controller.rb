@@ -63,10 +63,4 @@ class SessionsController < ApplicationController
     def unrecognized_email
       flash_error('Email not found. Please create an account or try again.')
     end
-
-    def set_session_user(message)
-      session[:user_id] = @user.id
-      flash[:success] = message
-      redirect_to dashboard_path
-    end
 end

@@ -19,7 +19,7 @@ class PandaPayService
     end
 
     def response
-      @response ||= @conn.get do |req|
+      @response ||= @conn.post do |req|
         req.params = params
       end
     end

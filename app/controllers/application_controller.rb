@@ -10,4 +10,10 @@ class ApplicationController < ActionController::Base
     flash[:danger] = message
     redirect_back(fallback_location: disasters_path)
   end
+
+  def set_session_user(message)
+    session[:user_id] = @user.id
+    flash[:success] = message
+    redirect_to dashboard_path
+  end
 end

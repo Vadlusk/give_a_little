@@ -1,12 +1,7 @@
 class Api::V1::DonationsController < ApplicationController
   def create
-    DonationPost.new(json_params)
-    render nothing: true, status: 201
+    json_request_body = JSON.parse(request.raw_post, symbolize_names: true)
+    @donation = DonationPost.new(json_request_body).donation
+    head :ok, status: :created
   end
-
-  private
-
-    def json_params
-      params.permit(:source, :amount, :destination, :email)
-    end
 end

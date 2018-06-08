@@ -4,7 +4,7 @@ class DonationPost
   end
 
   def donation
-    @donation = Donation.new(json_donation)
+    @donation = Donation.from_data(json_donation)
   end
 
   private
