@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-09T13:11:37-06:00">2018-06-09T13:11:37-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-09T13:25:46-06:00">2018-06-09T13:25:46-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -3516,7 +3516,7 @@
         <li class="covered" data-hits="9" data-linenumber="4">
           <span class="hits">9</span>
           
-          <code class="ruby">    @conn = Faraday.new(&#39;https://api.reliefweb.int/v1/disasters&#39;)</code>
+          <code class="ruby">    @conn = Faraday.new(&#39;https://api.reliefweb.int&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -3540,7 +3540,7 @@
         <li class="covered" data-hits="8" data-linenumber="8">
           <span class="hits">8</span>
           
-          <code class="ruby">    JSON.parse(response.body)[&#39;data&#39;]</code>
+          <code class="ruby">    JSON.parse(response(&#39;/v1/disasters&#39;).body)[&#39;data&#39;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -3636,13 +3636,13 @@
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">    def response</code>
+          <code class="ruby">    def response(uri)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">      @response ||= conn.get do |req|</code>
+          <code class="ruby">      @response ||= conn.get(uri) do |req|</code>
         </li>
       
         <li class="covered" data-hits="8" data-linenumber="26">

@@ -1,11 +1,11 @@
 class ReliefWebService
 
   def initialize
-    @conn = Faraday.new('https://api.reliefweb.int/v1/disasters')
+    @conn = Faraday.new('https://api.reliefweb.int')
   end
 
   def json_disasters
-    JSON.parse(response.body)['data']
+    JSON.parse(response('/v1/disasters').body)['data']
   end
 
   private
@@ -21,8 +21,8 @@ class ReliefWebService
         } }
     end
 
-    def response
-      @response ||= conn.get do |req|
+    def response(uri)
+      @response ||= conn.get(uri) do |req|
         req.params = params
       end
     end
