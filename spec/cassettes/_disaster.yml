@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Jun 2018 03:16:56 GMT
+      - Sat, 09 Jun 2018 19:09:30 GMT
       Content-Type:
       - application/json
       Vary:
@@ -43,7 +43,7 @@ http_interactions:
       X-Varnish-Ttl:
       - '300.000'
       X-Varnish:
-      - '31735693'
+      - '39535151'
       Age:
       - '0'
       Via:
@@ -66,5 +66,5 @@ http_interactions:
         Floods and Mudslides - Jun 2011","glide":"FF-2011-000066-TJK","type":[{"name":"Flood"},{"name":"Mud
         Slide"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/8510","status":"past"},"id":"8510"}]}'
     http_version: 
-  recorded_at: Wed, 06 Jun 2018 03:16:56 GMT
+  recorded_at: Sat, 09 Jun 2018 19:09:31 GMT
 recorded_with: VCR 4.0.0

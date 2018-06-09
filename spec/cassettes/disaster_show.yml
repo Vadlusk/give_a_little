@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.reliefweb.int/v1/disasters?appname=apidoc&fields%5Bexclude%5D%5B0%5D=country&fields%5Binclude%5D%5B0%5D=primary_country&fields%5Binclude%5D%5B1%5D=primary_type&fields%5Binclude%5D%5B2%5D=description&preset=latest&primary_type&profile=list
+    uri: https://api.reliefweb.int/v1/disasters?appname=givealittle&fields%5Bexclude%5D%5B0%5D=country&fields%5Binclude%5D%5B0%5D=primary_country&fields%5Binclude%5D%5B1%5D=primary_type&fields%5Binclude%5D%5B2%5D=description&preset=latest&profile=list
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Jun 2018 03:16:54 GMT
+      - Sat, 09 Jun 2018 19:09:22 GMT
       Content-Type:
       - application/json
       Vary:
@@ -41,9 +41,9 @@ http_interactions:
       X-Varnish-Ttl:
       - '2.000'
       X-Varnish:
-      - 31409393 31820289
+      - 37873584 37873573
       Age:
-      - '458'
+      - '6'
       Via:
       - 1.1 varnish-v4
       X-Varnish-Server:
@@ -51,12 +51,12 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Content-Length:
-      - '8838'
+      - '8944'
       Set-Cookie:
-      - __bm-hap_hKBcutrqRn9rEZDW=S1; path=/; HttpOnly; Secure
+      - __bm-hap_hKBcutrqRn9rEZDW=S2; path=/; HttpOnly; Secure
     body:
       encoding: ASCII-8BIT
-      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?appname=apidoc&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description&preset=latest&primary_type&profile=list","time":3,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=0&limit=10&preset=latest"},"next":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=10&limit=10&preset=latest"}},"totalCount":2963,"count":10,"data":[{"id":"45934","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45934","fields":{"date":{"created":"2018-06-03T00:00:00+00:00"},"primary_type":{"code":"VO","name":"Volcano","id":4615},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/109","name":"Guatemala","location":{"lon":-90.39,"lat":15.61},"id":109,"iso3":"gtm"},"name":"Guatemala:
+      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?appname=givealittle&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description&preset=latest&profile=list","time":2,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=0&limit=10&preset=latest"},"next":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=10&limit=10&preset=latest"}},"totalCount":2963,"count":10,"data":[{"id":"45934","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45934","fields":{"date":{"created":"2018-06-03T00:00:00+00:00"},"primary_type":{"code":"VO","name":"Volcano","id":4615},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/109","name":"Guatemala","location":{"lon":-90.39,"lat":15.61},"id":109,"iso3":"gtm"},"name":"Guatemala:
         Fuego Volcano - Jun 2018","description":"On 3 June, the Fuego volcano erupted
         for the second time in 2018, launching columns of ash and pyroclastic flow
         some 15,000m above sea level and spreading west and southwest, according to
@@ -71,14 +71,19 @@ http_interactions:
         Panimach\u00e9 I and II and others near the volcano were evacuated by the
         fire brigades, National Coordination for Disaster Reduction (CONRED) first
         response teams, Guatemalan armed forces personnel and other organizations
-        who are providing aid in affected areas...At the time of this report, the
-        possibility of carrying out missions to identify critical needs in affected
-        areas is being evaluated. Information related to the humanitarian impact of
-        the disaster is thus far preliminary and highly subject to change. CONRED
-        has mobilized first response teams to affected areas, as well as Guatemalan
-        Red Cross and military personnel, reporting that there are 1,200 people working
-        on and around the volcano in search and rescue. At present, there is no detailed
-        information regarding the number of people missing. ([OCHA, 4 Jun 2018](https:\/\/reliefweb.int\/node\/2638129))\n###
+        who are providing aid in affected areas. ([OCHA, 4 Jun 2018](https:\/\/reliefweb.int\/node\/2638129))\r\n\r\nOn
+        6 June, the National Institute for Seismology, Volcanology, Meteorology and
+        Hydrology (INSIVUMEH) reported that the accumulation of volcanic material
+        resulted in lahar flows down the Seca and Mineral ravines, both of which are
+        tributaries of the Pantale\u00f3n river...A red alert remains in place for
+        the Escuintla, Sacatep\u00e9quez and Chimaltenango departments, as well as
+        in the municipalities of Escuintla, Alotenango, Yepocapa and Santa Luc\u00eda
+        Cotzumalguapa. The institutional alert level remains at orange...As of 7 June
+        2018, 1,713,566 people have been affected, 99 people have been killed, 58
+        people have been injured and 4,137 people are in shelters. CONRED has 21 registered
+        shelters in the departments of Escuintla (17), Sacatep\u00e9quez (1), Santa
+        Rosa (2) and Suchitep\u00e9quez (1). The number of people sheltered continues
+        to rise. ([OCHA, 7 Jun 2018](https:\/\/reliefweb.int\/node\/2643439))\n###
         Useful Links\n\n- [![CONRED - Logo](https:\/\/conred.gob.gt\/site\/images\/logo.png)](https:\/\/conred.gob.gt\/site\/index.php)","glide":"VO-2018-000066-GTM","type":[{"name":"Volcano"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45934","status":"current"}},{"id":"45829","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45829","fields":{"date":{"created":"2018-05-23T00:00:00+00:00"},"primary_type":{"code":"TC","name":"Tropical
         Cyclone","id":4618},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/255","name":"Yemen","location":{"lon":47.62,"lat":15.94},"id":255,"iso3":"yem"},"name":"Tropical
         Cyclone Mekunu - May 2018","description":"A new tropical storm has developed
@@ -279,10 +284,10 @@ http_interactions:
         is carrying on in Arusha due to the continuous heavy downpour. ([IFRC, 30
         Apr 2018](https:\/\/reliefweb.int\/node\/2581164))","glide":"FL-2018-000043-TZA","type":[{"name":"Flood"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45654","status":"current"}}]}'
     http_version: 
-  recorded_at: Wed, 06 Jun 2018 03:24:32 GMT
+  recorded_at: Sat, 09 Jun 2018 19:09:28 GMT
 - request:
     method: get
-    uri: https://api.reliefweb.int/v1/disasters?appname=apidoc&fields%5Bexclude%5D%5B0%5D=country&fields%5Binclude%5D%5B0%5D=primary_country&fields%5Binclude%5D%5B1%5D=primary_type&fields%5Binclude%5D%5B2%5D=description&preset=latest&primary_type&profile=list
+    uri: https://api.reliefweb.int/v1/disasters?appname=givealittle&fields%5Bexclude%5D%5B0%5D=country&fields%5Binclude%5D%5B0%5D=primary_country&fields%5Binclude%5D%5B1%5D=primary_type&fields%5Binclude%5D%5B2%5D=description&preset=latest&profile=list
     body:
       encoding: US-ASCII
       string: ''
@@ -301,7 +306,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 06 Jun 2018 03:24:32 GMT
+      - Sat, 09 Jun 2018 19:09:28 GMT
       Content-Type:
       - application/json
       Vary:
@@ -321,7 +326,7 @@ http_interactions:
       X-Varnish-Ttl:
       - '2.000'
       X-Varnish:
-      - 31761969 31409394
+      - 37832188 37873585
       Age:
       - '0'
       Via:
@@ -331,12 +336,12 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Content-Length:
-      - '8838'
+      - '8943'
       Set-Cookie:
-      - __bm-hap_hKBcutrqRn9rEZDW=S1; path=/; HttpOnly; Secure
+      - __bm-hap_hKBcutrqRn9rEZDW=S2; path=/; HttpOnly; Secure
     body:
       encoding: ASCII-8BIT
-      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?appname=apidoc&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description&preset=latest&primary_type&profile=list","time":3,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=0&limit=10&preset=latest"},"next":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=10&limit=10&preset=latest"}},"totalCount":2963,"count":10,"data":[{"id":"45934","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45934","fields":{"date":{"created":"2018-06-03T00:00:00+00:00"},"primary_type":{"code":"VO","name":"Volcano","id":4615},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/109","name":"Guatemala","location":{"lon":-90.39,"lat":15.61},"id":109,"iso3":"gtm"},"name":"Guatemala:
+      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?appname=givealittle&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description&preset=latest&profile=list","time":3,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=0&limit=10&preset=latest"},"next":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=10&limit=10&preset=latest"}},"totalCount":2963,"count":10,"data":[{"id":"45934","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45934","fields":{"date":{"created":"2018-06-03T00:00:00+00:00"},"primary_type":{"code":"VO","name":"Volcano","id":4615},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/109","name":"Guatemala","location":{"lon":-90.39,"lat":15.61},"id":109,"iso3":"gtm"},"name":"Guatemala:
         Fuego Volcano - Jun 2018","description":"On 3 June, the Fuego volcano erupted
         for the second time in 2018, launching columns of ash and pyroclastic flow
         some 15,000m above sea level and spreading west and southwest, according to
@@ -351,14 +356,19 @@ http_interactions:
         Panimach\u00e9 I and II and others near the volcano were evacuated by the
         fire brigades, National Coordination for Disaster Reduction (CONRED) first
         response teams, Guatemalan armed forces personnel and other organizations
-        who are providing aid in affected areas...At the time of this report, the
-        possibility of carrying out missions to identify critical needs in affected
-        areas is being evaluated. Information related to the humanitarian impact of
-        the disaster is thus far preliminary and highly subject to change. CONRED
-        has mobilized first response teams to affected areas, as well as Guatemalan
-        Red Cross and military personnel, reporting that there are 1,200 people working
-        on and around the volcano in search and rescue. At present, there is no detailed
-        information regarding the number of people missing. ([OCHA, 4 Jun 2018](https:\/\/reliefweb.int\/node\/2638129))\n###
+        who are providing aid in affected areas. ([OCHA, 4 Jun 2018](https:\/\/reliefweb.int\/node\/2638129))\r\n\r\nOn
+        6 June, the National Institute for Seismology, Volcanology, Meteorology and
+        Hydrology (INSIVUMEH) reported that the accumulation of volcanic material
+        resulted in lahar flows down the Seca and Mineral ravines, both of which are
+        tributaries of the Pantale\u00f3n river...A red alert remains in place for
+        the Escuintla, Sacatep\u00e9quez and Chimaltenango departments, as well as
+        in the municipalities of Escuintla, Alotenango, Yepocapa and Santa Luc\u00eda
+        Cotzumalguapa. The institutional alert level remains at orange...As of 7 June
+        2018, 1,713,566 people have been affected, 99 people have been killed, 58
+        people have been injured and 4,137 people are in shelters. CONRED has 21 registered
+        shelters in the departments of Escuintla (17), Sacatep\u00e9quez (1), Santa
+        Rosa (2) and Suchitep\u00e9quez (1). The number of people sheltered continues
+        to rise. ([OCHA, 7 Jun 2018](https:\/\/reliefweb.int\/node\/2643439))\n###
         Useful Links\n\n- [![CONRED - Logo](https:\/\/conred.gob.gt\/site\/images\/logo.png)](https:\/\/conred.gob.gt\/site\/index.php)","glide":"VO-2018-000066-GTM","type":[{"name":"Volcano"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45934","status":"current"}},{"id":"45829","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45829","fields":{"date":{"created":"2018-05-23T00:00:00+00:00"},"primary_type":{"code":"TC","name":"Tropical
         Cyclone","id":4618},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/255","name":"Yemen","location":{"lon":47.62,"lat":15.94},"id":255,"iso3":"yem"},"name":"Tropical
         Cyclone Mekunu - May 2018","description":"A new tropical storm has developed
@@ -559,7 +569,7 @@ http_interactions:
         is carrying on in Arusha due to the continuous heavy downpour. ([IFRC, 30
         Apr 2018](https:\/\/reliefweb.int\/node\/2581164))","glide":"FL-2018-000043-TZA","type":[{"name":"Flood"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45654","status":"current"}}]}'
     http_version: 
-  recorded_at: Wed, 06 Jun 2018 03:24:32 GMT
+  recorded_at: Sat, 09 Jun 2018 19:09:28 GMT
 - request:
     method: get
     uri: https://api.reliefweb.int/v1/disasters/45934?appname=givealittle&fields%5Bexclude%5D%5B0%5D=country&fields%5Binclude%5D%5B0%5D=primary_country&fields%5Binclude%5D%5B1%5D=primary_type&fields%5Binclude%5D%5B2%5D=description-html&preset=latest&primary_type&profile=list
@@ -581,7 +591,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 05 Jun 2018 23:51:46 GMT
+      - Fri, 08 Jun 2018 23:22:51 GMT
       Content-Type:
       - application/json
       Vary:
@@ -595,7 +605,7 @@ http_interactions:
       Cache-Control:
       - public, max-age=300
       Last-Modified:
-      - Tue, 05 Jun 2018 17:50:39 GMT
+      - Fri, 08 Jun 2018 16:28:57 GMT
       X-Xss-Protection:
       - 1; mode=block
       X-Content-Options:
@@ -603,9 +613,9 @@ http_interactions:
       X-Varnish-Ttl:
       - '300.000'
       X-Varnish:
-      - 31287017 31027765
+      - 39345566 37690363
       Age:
-      - '12767'
+      - '71198'
       Via:
       - 1.1 varnish-v4
       X-Varnish-Server:
@@ -613,7 +623,7 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Content-Length:
-      - '1476'
+      - '1600'
       Set-Cookie:
       - __bm-hap_hKBcutrqRn9rEZDW=S1; path=/; HttpOnly; Secure
     body:
@@ -632,17 +642,22 @@ http_interactions:
         Finca Palo Verde, Panimach\u00e9 I and II and others near the volcano were
         evacuated by the fire brigades, National Coordination for Disaster Reduction
         (CONRED) first response teams, Guatemalan armed forces personnel and other
-        organizations who are providing aid in affected areas...At the time of this
-        report, the possibility of carrying out missions to identify critical needs
-        in affected areas is being evaluated. Information related to the humanitarian
-        impact of the disaster is thus far preliminary and highly subject to change.
-        CONRED has mobilized first response teams to affected areas, as well as Guatemalan
-        Red Cross and military personnel, reporting that there are 1,200 people working
-        on and around the volcano in search and rescue. At present, there is no detailed
-        information regarding the number of people missing. (<a href=\"https:\/\/reliefweb.int\/node\/2638129\">OCHA,
-        4 Jun 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"https:\/\/conred.gob.gt\/site\/index.php\"><img
+        organizations who are providing aid in affected areas. (<a href=\"https:\/\/reliefweb.int\/node\/2638129\">OCHA,
+        4 Jun 2018<\/a>)<\/p>\n\n<p>On 6 June, the National Institute for Seismology,
+        Volcanology, Meteorology and Hydrology (INSIVUMEH) reported that the accumulation
+        of volcanic material resulted in lahar flows down the Seca and Mineral ravines,
+        both of which are tributaries of the Pantale\u00f3n river...A red alert remains
+        in place for the Escuintla, Sacatep\u00e9quez and Chimaltenango departments,
+        as well as in the municipalities of Escuintla, Alotenango, Yepocapa and Santa
+        Luc\u00eda Cotzumalguapa. The institutional alert level remains at orange...As
+        of 7 June 2018, 1,713,566 people have been affected, 99 people have been killed,
+        58 people have been injured and 4,137 people are in shelters. CONRED has 21
+        registered shelters in the departments of Escuintla (17), Sacatep\u00e9quez
+        (1), Santa Rosa (2) and Suchitep\u00e9quez (1). The number of people sheltered
+        continues to rise. (<a href=\"https:\/\/reliefweb.int\/node\/2643439\">OCHA,
+        7 Jun 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"https:\/\/conred.gob.gt\/site\/index.php\"><img
         src=\"https:\/\/conred.gob.gt\/site\/images\/logo.png\" alt=\"CONRED - Logo\"><\/a><\/li>\n<\/ul>\n","name":"Guatemala:
         Fuego Volcano - Jun 2018","glide":"VO-2018-000066-GTM","type":[{"name":"Volcano"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45934","status":"current"},"id":"45934"}]}'
     http_version: 
-  recorded_at: Wed, 06 Jun 2018 03:24:33 GMT
+  recorded_at: Sat, 09 Jun 2018 19:09:29 GMT
 recorded_with: VCR 4.0.0
