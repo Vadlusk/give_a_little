@@ -4,6 +4,6 @@ class DisastersController < ApplicationController
   end
 
   def show
-    @disaster = DisasterService.new(params[:id]).disaster
+    @disaster = DisasterSearch.new(params[:id]).disaster
   end
 end

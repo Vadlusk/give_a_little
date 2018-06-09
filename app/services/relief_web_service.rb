@@ -1,7 +1,12 @@
 class ReliefWebService
 
-  def initialize
+  def initialize(id=nil)
+    @id   = id
     @conn = Faraday.new('https://api.reliefweb.int')
+  end
+
+  def json_disaster
+    JSON.parse(response("/v1/disasters/#{@id}").body)['data'][0]
   end
 
   def json_disasters
@@ -16,8 +21,8 @@ class ReliefWebService
         profile: 'list',
         preset: 'latest',
         fields: {
-          include: ['primary_country', 'primary_type', 'description'],
-          exclude: ['country']
+          include: %w[primary_country primary_type description-html],
+          exclude: %w[country]
         } }
     end
 
