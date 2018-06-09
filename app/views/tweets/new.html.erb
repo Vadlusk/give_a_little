@@ -1,0 +1,16 @@
+<h1>Congratulations! Your donation was successful.</h1>
+<h2>A receipt is being e-mailed to you</h2>
+<div class="tweet-card card">
+  <h3>Tweet about your experience?</h3>
+  <%= link_to 'Tweet',
+    'https://twitter.com/share?ref_src=twsrc%5Etfw',
+    class: 'twitter-share-button',
+    'data-text': 'I just donated to a charity of my choice using',
+    'data-url': 'http://givealittle.herokuapp.com',
+    'data-hashtags': 'charity #donating ',
+    'data-show-count': 'true' %>
+
+  <%= link_to 'Continue without tweeting', dashboard_path, class: 'no-tweet'%>
+
+  <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
+</div>

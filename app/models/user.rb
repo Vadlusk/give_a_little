@@ -5,6 +5,9 @@ class User < ApplicationRecord
   has_many :donations
 
   def self.from_omniauth(auth_info)
+    if user = User.find_by(email: auth_info.info.email)
+      update_user(auth_info, user)
+    end
     where(uid: auth_info[:uid]).first_or_create do |new_user|
       new_user.uid                = auth_info.id
       new_user.password           = SecureRandom.base64.tr('+/=', 'Qrt')
@@ -14,4 +17,12 @@ class User < ApplicationRecord
       new_user.oauth_token_secret = auth_info.credentials.secret
     end
   end
+
+  private
+
+    def update_user(info, user)
+      user.update(uid: info.id)
+      user.update(oauth_token: info.credentials.token)
+      user.update(oauth_token_secret: info.credentials.secret)
+    end
 end

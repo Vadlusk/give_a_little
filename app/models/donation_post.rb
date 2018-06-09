@@ -10,6 +10,6 @@ class DonationPost
   private
 
     def json_donation
-      PandaPayService.new(@data).json
+      PandaPayService.new(@data).json_receipt
     end
 end
