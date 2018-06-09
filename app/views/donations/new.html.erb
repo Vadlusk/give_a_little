@@ -2,7 +2,7 @@
 <h1 class="donation-header">Enter your information</h1>
 
 <div id="panda-form">
-  <form id="panda_cc_form">
+  <form id="panda_cc_form" data-charity='<%= params['charity'] %>' data-email='<%= current_user.email %>'>
     <div class="form-group">
       <label>First Name</label>
       <input type="text" data-panda="first_name" name="first_name" id="first_name" class="form-control" value=<%= current_user.first_name %>>
@@ -20,7 +20,7 @@
 
     <div class="form-group">
       <label>Credit Card Number</label>
-      <input type="text" data-panda="credit_card" name="credit_card_number" id="credit_card_number" class="form-control">
+      <input type="text" data-panda="credit_card" name="credit_card_number" id="credit_card_number" class="form-control" value="4111111111111111">
     </div>
 
     <div class="form-group">
@@ -50,8 +50,9 @@
 
   Panda.on('success', (cardToken) => {
     let dollar_amount = $('#panda_cc_form :input[name=donation_amount]').val();
-    let ein           = <%= params['charity'] %>;
-    let email         = '<%= current_user.email %>';
+    let ein           = $(`#panda_cc_form`).data(`charity`);
+    let email         = $(`#panda_cc_form`).data(`email`);
+    debugger
     window.location.replace('/tweets');
     sendValues(collectValues(cardToken, dollar_amount, ein, email));
   });
