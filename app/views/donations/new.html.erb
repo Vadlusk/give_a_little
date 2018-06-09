@@ -52,16 +52,9 @@
     let dollar_amount = $('#panda_cc_form :input[name=donation_amount]').val();
     let ein           = <%= params['charity'] %>;
     let email         = '<%= current_user.email %>';
+    window.location.replace('/tweets');
     sendValues(collectValues(cardToken, dollar_amount, ein, email));
-    replaceContent();
   });
-
-  const replaceContent = () => {
-    $('.donation-header').empty();
-    $('.donation-header').append(`Congratulations!`);
-    $('#panda-form').empty();
-    $('#panda-form').append(`<%= render partial: 'donations/successful_donation' %>`);
-  };
 
   const collectValues = (token, dollar_amount, ein, email) => {
     let values = {};

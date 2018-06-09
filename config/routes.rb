@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get '/register',  to: 'users#new'
   post '/register', to: 'users#create'
 
+  get '/tweets', to: 'tweets#new'
+
   namespace :api do
     namespace :v1 do
       post '/donations', to: 'donations#create'
