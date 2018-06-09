@@ -13,7 +13,8 @@
   </ul>
 
   <% if params['tab'] == 'map' || params['tab'].nil? %>
-    <%= render partial: 'disasters/map' %>
+  <div id="map" data-disasters="<%= @disasters.to_json %>"></div>
+  <%= javascript_include_tag 'disasters/index' %>
     <!-- <%= render partial: 'disasters/filters' %> -->
   <% elsif params['tab'] == 'chart' %>
     <%= render partial: 'disasters/disasters_table' %>

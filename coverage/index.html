@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-08T18:36:12-06:00">2018-06-08T18:36:12-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-08T20:17:56-06:00">2018-06-08T20:17:56-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">84.43%</span></span>
+    (<span class="covered_percent"><span class="yellow">83.11%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         8.74
+         8.48
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>24</b> files in total.
-    <b>212</b> relevant lines. 
-    <span class="green"><b>179</b> lines covered</span> and
-    <span class="red"><b>33</b> lines missed </span>
+    <b>219</b> relevant lines. 
+    <span class="green"><b>182</b> lines covered</span> and
+    <span class="red"><b>37</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -242,12 +242,12 @@
       
       <tr>
         <td class="strong"><a href="#a17d7b43e10ac0678ee1abde4986c220fcd6dfdd" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>17</td>
-        <td>12</td>
-        <td>12</td>
-        <td>0</td>
-        <td>1.6</td>
+        <td class="red strong">78.95 %</td>
+        <td>28</td>
+        <td>19</td>
+        <td>15</td>
+        <td>4</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -473,20 +473,20 @@
           <div class="file_list_container" id="Models">
   <h2>
     <span class="group_name">Models</span>
-    (<span class="covered_percent"><span class="green">95.08%</span></span>
+    (<span class="covered_percent"><span class="yellow">89.71%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         23.4
+         21.04
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
     <b>7</b> files in total.
-    <b>61</b> relevant lines. 
-    <span class="green"><b>58</b> lines covered</span> and
-    <span class="red"><b>3</b> lines missed </span>
+    <b>68</b> relevant lines. 
+    <span class="green"><b>61</b> lines covered</span> and
+    <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -564,12 +564,12 @@
       
       <tr>
         <td class="strong"><a href="#a17d7b43e10ac0678ee1abde4986c220fcd6dfdd" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>17</td>
-        <td>12</td>
-        <td>12</td>
-        <td>0</td>
-        <td>1.6</td>
+        <td class="red strong">78.95 %</td>
+        <td>28</td>
+        <td>19</td>
+        <td>15</td>
+        <td>4</td>
+        <td>1.2</td>
       </tr>
       
     </tbody>
@@ -2628,11 +2628,11 @@
         <div class="source_table" id="a17d7b43e10ac0678ee1abde4986c220fcd6dfdd">
   <div class="header">
     <h3>app/models/user.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">78.95 %</span> covered</h4>
     <div>
-      <b>12</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>19</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -2684,58 +2684,124 @@
         <li class="covered" data-hits="2" data-linenumber="8">
           <span class="hits">2</span>
           
-          <code class="ruby">    where(uid: auth_info[:uid]).first_or_create do |new_user|</code>
+          <code class="ruby">    if user = User.find_by(email: auth_info.info.email)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="9">
           
-          <code class="ruby">      new_user.uid                = auth_info.id</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
           
-          <code class="ruby">      new_user.password           = SecureRandom.base64.tr(&#39;+/=&#39;, &#39;Qrt&#39;)</code>
+          <code class="ruby">      update_user(auth_info, user)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      new_user.first_name         = auth_info.info.name</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      new_user.email              = auth_info.info.email</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="13">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      new_user.oauth_token        = auth_info.credentials.token</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="14">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      new_user.oauth_token_secret = auth_info.credentials.secret</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    where(uid: auth_info[:uid]).first_or_create do |new_user|</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      new_user.uid                = auth_info.id</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      new_user.password           = SecureRandom.base64.tr(&#39;+/=&#39;, &#39;Qrt&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      new_user.first_name         = auth_info.info.name</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      new_user.email              = auth_info.info.email</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      new_user.oauth_token        = auth_info.credentials.token</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="17">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      new_user.oauth_token_secret = auth_info.credentials.secret</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def update_user(info, user)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="24">
+          
+          
+          <code class="ruby">      user.update(uid: info.id)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">      user.update(oauth_token: info.credentials.token)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">      user.update(oauth_token_secret: info.credentials.secret)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">end</code>

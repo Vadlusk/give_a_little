@@ -9,7 +9,7 @@ describe 'user selects a charity' do
 
       visit disaster_path(45829)
       click_on 'Donate Now'
-      choose 'charity_010211478'
+      choose 'charity_010202467'
       click_on 'Proceed to entering financial info'
 
       expect(current_path).to eq(new_donation_path)
