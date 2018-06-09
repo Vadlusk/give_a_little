@@ -6,7 +6,6 @@ describe 'visitor goes to the disasters page and' do
       visit disasters_path
 
       expect(page).to have_css('#map')
-      save_and_open_page
     end
   end
   it 'sees filters that manipulate the available disasters' do
