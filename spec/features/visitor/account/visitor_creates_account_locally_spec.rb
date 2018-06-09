@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'visitor creates an account' do
-  scenario 'works' do
+  scenario 'without using oauth' do
     VCR.use_cassette('account_creation') do
       visit '/disasters'
       click_on 'Create an Account'
