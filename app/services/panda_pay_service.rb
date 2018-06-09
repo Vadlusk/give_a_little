@@ -1,11 +1,11 @@
 class PandaPayService
   def initialize(data)
     @data = data
-    @conn = Faraday.new('https://sk_test_TqHxqQG7X3JpLnfgpCcZpQ:@api.pandapay.io/v1/donations')
+    @conn = Faraday.new('https://sk_test_TqHxqQG7X3JpLnfgpCcZpQ:@api.pandapay.io')
   end
 
   def json_receipt
-    JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response('/v1/donations').body, symbolize_names: true)
   end
 
   private
@@ -18,8 +18,8 @@ class PandaPayService
         currency: 'usd' }
     end
 
-    def response
-      @response ||= @conn.post do |req|
+    def response(uri)
+      @response ||= @conn.post(uri) do |req|
         req.params = params
       end
     end

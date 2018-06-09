@@ -14,6 +14,11 @@ describe ReliefWebService do
           expect(subject.json_disasters.length).to eq(10)
         end
       end
+      it '.json_disaster' do
+        VCR.use_cassette('.json_disaster') do
+          expect(subject.json_disaster.length).to eq(4)
+        end
+      end
     end
   end
 end
