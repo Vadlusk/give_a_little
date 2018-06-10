@@ -18,6 +18,10 @@ class User < ApplicationRecord
     end
   end
 
+  def total_donations
+    donations.sum(:charge_amount)
+  end
+
   private
 
     def update_user(info, user)

@@ -1,20 +1,12 @@
-<aside class="filters">
-  <h2 class="filter-title">
-    filters
-  </h2>
+<fieldset class="filters">
+  <legend class="filter-title">
+    <h2>filters</h2>
+  </legend>
   <div class="limit">
-    <h3>Number of Disasters</h3>
     <%= form_tag '/disasters?limit=', method: :get do %>
-      <%= number_field_tag :limit %>
-      <%= submit_tag %>
+      <%= label_tag :limit %>
+      <%= number_field_tag :limit, 10, max: 50 %>
+      <%= submit_tag 'Update map', class: 'btn btn-primary' %>
     <% end %>
   </div>
-  <div class="types">
-    <h3>Types</h3>
-    <% @disasters.each do |disaster| %>
-      <form>
-        <input type="radio" name="type-<%= disaster.type %>" value= disaster.type><%= disaster.type %><br>
-      </form>
-    <% end %>
-  </div>
-</aside>
+</fieldset>

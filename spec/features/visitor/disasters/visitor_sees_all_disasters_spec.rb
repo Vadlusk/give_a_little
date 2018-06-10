@@ -9,11 +9,12 @@ describe 'visitor goes to the disasters page and' do
     end
   end
   it 'sees filters that manipulate the available disasters' do
-    VCR.use_cassette('disasters_index') do
+    VCR.use_cassette('disasters_index_limit') do
       visit disasters_path
       fill_in :limit, with: 44
+      click_on 'Update map'
 
-      expect(page).to have_content('in', count: 44)
+      expect(page).to have_css('#map')
     end
   end
 end
