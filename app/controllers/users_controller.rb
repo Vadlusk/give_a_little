@@ -15,6 +15,19 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = current_user
+  end
+
+  def update
+    @user = User.find(params[:id])
+    @user.update(user_params)
+    if @user.save!
+      flash[:success] = 'Successfully updated account.'
+      redirect_to dashboard_path
+    end
+  end
+
   private
 
     def user_params
