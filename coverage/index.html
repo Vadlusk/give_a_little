@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-10T20:59:15-06:00">2018-06-10T20:59:15-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-10T21:52:15-06:00">2018-06-10T21:52:15-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -123,7 +123,7 @@
       <tr>
         <td class="strong"><a href="#d84228110524d066c630f027f339a3ec42ecd214" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>67</td>
+        <td>68</td>
         <td>39</td>
         <td>39</td>
         <td>0</td>
@@ -421,7 +421,7 @@
       <tr>
         <td class="strong"><a href="#d84228110524d066c630f027f339a3ec42ecd214" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>67</td>
+        <td>68</td>
         <td>39</td>
         <td>39</td>
         <td>0</td>
@@ -1768,52 +1768,58 @@
         <li class="covered" data-hits="2" data-linenumber="59">
           <span class="hits">2</span>
           
-          <code class="ruby">      @user.save!</code>
+          <code class="ruby">      if @user.save!</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="60">
           <span class="hits">2</span>
           
-          <code class="ruby">      WelcomeOauthUserMailer.welcome(@user).deliver_later</code>
+          <code class="ruby">        WelcomeOauthUserMailer.welcome(@user).deliver_later</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="61">
           <span class="hits">2</span>
           
-          <code class="ruby">      set_session_user(&quot;Welcome #{@user.first_name}, thanks for creating an account with us.&quot;)</code>
+          <code class="ruby">        set_session_user(&quot;Welcome #{@user.first_name}, thanks for creating an account with us.&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="64">
           
-          <code class="ruby">    def unrecognized_email</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
+          <code class="ruby">    def unrecognized_email</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
           <code class="ruby">      flash_error(&#39;Email not found. Please create an account or try again.&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
+        <li class="never" data-hits="" data-linenumber="67">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
+        <li class="never" data-hits="" data-linenumber="68">
           
           
           <code class="ruby">end</code>
@@ -1944,7 +1950,7 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">    if @user.save</code>
+          <code class="ruby">    if @user.save!</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
@@ -2219,7 +2225,7 @@
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">      to: user,</code>
+          <code class="ruby">      to: user.email,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
@@ -2292,7 +2298,7 @@
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">      to: user,</code>
+          <code class="ruby">      to: user.email,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
