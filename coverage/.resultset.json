@@ -52,13 +52,13 @@
         null,
         null,
         1,
-        84,
-        84,
-        84,
-        84,
-        84,
-        84,
-        84,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
+        128,
         null,
         null,
         1,
@@ -195,7 +195,6 @@
       ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/services/relief_web_service.rb": [
         1,
-        null,
         1,
         16,
         16,
@@ -220,6 +219,7 @@
         null,
         null,
         1,
+        15,
         15,
         null,
         null,
@@ -252,8 +252,8 @@
         null,
         null,
         1,
-        5,
-        5,
+        4,
+        4,
         null,
         null,
         1,
@@ -376,7 +376,7 @@
         null,
         null,
         1,
-        89,
+        133,
         null,
         null,
         1,
@@ -430,8 +430,9 @@
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/donations_controller.rb": [
         1,
         1,
-        5,
-        2,
+        4,
+        4,
+        1,
         3,
         1,
         null,
@@ -476,6 +477,6 @@
         0
       ]
     },
-    "timestamp": 1528660201
+    "timestamp": 1528685955
   }
 }
