@@ -2,7 +2,7 @@ class WelcomeOauthUserMailer < ApplicationMailer
   def welcome(user)
     @user = user
     mail(
-      to: user,
+      to: user.email,
       subject: "Welcome to GiveALittle, #{user.first_name}!"
     )
   end

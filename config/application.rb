@@ -22,7 +22,19 @@ module GiveALittle
     config.load_defaults 5.2
 
     # Settings in config/environments/* take precedence over those specified here.
+    config.action_mailer.delivery_method = :smtp
 
+    config.action_mailer.default_url_options = { host: 'givealittle.herokuapp.com' }
+
+    config.action_mailer.smtp_settings = {
+      address:              'smtp.sendgrid.net',
+      port:                 '587',
+      domain:               'givealittle.herokuapp.com',
+      user_name:            ENV["sendgrid_username"],
+      password:             ENV["sendgrid_password"],
+      authentication:       'plain',
+      enable_starttls_auto: true
+    }
     # Don't generate system test files.
     config.generators.system_tests = nil
   end

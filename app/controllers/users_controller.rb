@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    if @user.save
+    if @user.save!
       WelcomeLocalUserMailer.welcome(@user).deliver_later
       set_session_user("Welcome #{@user.first_name}, thanks for creating an account with us.")
     end
