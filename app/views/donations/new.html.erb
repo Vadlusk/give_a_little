@@ -1,7 +1,7 @@
 <%= javascript_include_tag "//d2t45z63lq9zlh.cloudfront.net/panda-v0.0.5.min.js" %>
 <h1 class="donation-header">Enter your information</h1>
 
-<div id="panda-form" data-charity='<%= @charity %>' data-email='<%= current_user.email %>'>
+<div id="panda-form" data-charity='<%= @charity %>' data-email='<%= current_user.email %>' data-base_url='<%= ENV['base_url'] %>'>
   <form id="panda_cc_form">
     <div class="form-group">
       <label>First Name</label>
@@ -52,6 +52,7 @@
     let dollar_amount = $('#panda_cc_form :input[name=donation_amount]').val();
     let ein           = $(`#panda-form`).data(`charity`);
     let email         = $(`#panda-form`).data(`email`);
+    debugger
     window.location.replace('/tweets');
     sendValues(collectValues(cardToken, dollar_amount, ein, email));
   });
@@ -65,7 +66,7 @@
     return values;
   };
 
-  let baseUrl = 'http://localhost:3000';
+  let baseUrl = $(`#panda-form`).data(`base_url`);
 
   const sendValues = values => {
     fetch(`${baseUrl}/api/v1/donations`, postPayload(values))
