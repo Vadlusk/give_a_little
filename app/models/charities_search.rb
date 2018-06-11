@@ -1,5 +1,5 @@
 class CharitiesSearch
-  def initialize(disaster_type)
+  def initialize(disaster_type = nil)
     @disaster_type = disaster_type
   end
 

@@ -15,8 +15,8 @@ class CharitiesService
         app_key: ENV['charity_nav_api_key'],
         pageSize: 15,
         search: @disaster_type,
-        sort: 'relevance:desc',
-        rated: true }
+        sort: ('relevance:desc' if @disaster_type),
+        rated: true }.delete_if{ |k,v| v.nil? }
     end
 
     def response(uri)
