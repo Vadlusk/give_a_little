@@ -1,8 +1,8 @@
 class ReliefWebService
-
-  def initialize(id = '', limit = nil)
+  def initialize(id = '', limit = nil, types = nil)
     @id    = id
     @limit = limit
+    @types = types
     @conn  = Faraday.new('https://api.reliefweb.int')
   end
 
@@ -16,34 +16,27 @@ class ReliefWebService
 
   private
 
-    def params
-      @id.empty? ? disasters_params : disaster_params
-    end
-
     def response(uri)
       @response ||= @conn.get(uri) do |req|
         req.params = params
       end
     end
 
-    def disaster_params
-      { appname: 'givealittle',
-        profile: 'list',
-        preset: 'latest',
-        fields: {
-          include: %w[primary_country primary_type description-html],
-          exclude: %w[country]
-        } }
-    end
-
-    def disasters_params
-      { limit: @limit,
+    def params
+      @types = nil if @types == ['on']
+      { limit: (@limit if @limit),
         appname: 'givealittle',
         profile: 'list',
         preset: 'latest',
         fields: {
           include: %w[primary_country primary_type description-html],
           exclude: %w[country]
-        } }
+        },
+        filter: ({
+          field: 'primary_type.name',
+          value: @types,
+          operator: 'OR'
+        } if @types)
+      }.delete_if{ |k,v| v.nil? }
     end
 end

@@ -13,11 +13,11 @@
   <div id="small_map" data-lat="<%= @disaster.latitude %>" data-lng="<%= @disaster.longitude %>"></div>
 
   <%= javascript_include_tag 'disasters/show' %>
-
-  <section class="description">
-    <%= @disaster.description.html_safe %>
-  </section>
-
+  <% unless @disaster.description.nil? %>
+    <section class="description">
+      <%= @disaster.description.html_safe %>
+    </section>
+  <% end %>
 </main>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_api_key'] %>&callback=initMap">

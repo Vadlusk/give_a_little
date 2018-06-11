@@ -1,6 +1,6 @@
 class DisastersController < ApplicationController
   def index
-    @disasters = DisastersSearch.new(params[:limit]).disasters
+    @disasters = DisastersSearch.new(params[:limit], params[:type]).disasters
   end
 
   def show
