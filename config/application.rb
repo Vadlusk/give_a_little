@@ -25,17 +25,5 @@ module GiveALittle
 
     # Don't generate system test files.
     config.generators.system_tests = nil
-
-    config.action_mailer.delivery_method = :smtp
-    config.action_mailer.smtp_settings = {
-      address:              'smtp.sendgrid.net',
-      port:                 '587',
-      domain:               'givealittle.herokuapp.com',
-      user_name:            ENV['sendgrid_username'],
-      password:             ENV['sendgrid_password'],
-      authentication:       'plain',
-      enable_starttls_auto: true
-    }
-    config.active_record.raise_in_transactional_callbacks = true
   end
 end

@@ -1,12 +1,49 @@
-<fieldset class="filters">
-  <legend class="filter-title">
+<fieldset class='filters'>
+  <legend class='filter-title'>
     <h2>filters</h2>
   </legend>
-  <div class="limit">
     <%= form_tag '/disasters?limit=', method: :get do %>
-      <%= label_tag :limit %>
-      <%= number_field_tag :limit, 10, max: 50 %>
-      <%= submit_tag 'Update map', class: 'btn btn-primary' %>
+      <div class='limit'>
+        <%= label_tag :limit %>
+        <%= number_field_tag :limit, 10, max: 50 %>
+      </div>
+      <div class='type'>
+        <%= label_tag :type %><br>
+
+        <%= check_box_tag 'type[]', nil, true, id: 'all' %>
+        <%= label_tag :all %>
+
+        <%= check_box_tag 'type[]', 'cold wave' %>
+        <%= label_tag 'cold waves' %>
+
+        <%= check_box_tag 'type[]', 'tropical cyclone' %>
+        <%= label_tag :cyclones %>
+
+        <%= check_box_tag 'type[]', 'drought' %>
+        <%= label_tag :droughts %>
+
+        <%= check_box_tag 'type[]', 'earthquake' %>
+        <%= label_tag :earthquakes %>
+
+        <%= check_box_tag 'type[]', 'epidemic' %>
+        <%= label_tag :epidemics %>
+
+        <%= check_box_tag 'type[]', 'flood' %>
+        <%= label_tag :floods %>
+
+        <%= check_box_tag 'type[]', 'volcano' %>
+        <%= label_tag :volcanoes %>
+
+      </div>
+      <div class="buttons">
+        <%= submit_tag 'Reset Defaults', type: 'reset', class: 'btn btn-default' %>
+        <%= submit_tag 'Update map', class: 'btn btn-primary' %>
+      </div>
     <% end %>
-  </div>
 </fieldset>
+
+<script>
+$(`#all`).change(function() {
+  debugger
+});
+</script>

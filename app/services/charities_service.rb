@@ -14,7 +14,8 @@ class CharitiesService
       { app_id: ENV['charity_nav_app_id'],
         app_key: ENV['charity_nav_api_key'],
         pageSize: 15,
-        search: @type,
+        search: @disaster_type,
+        sort: 'relevance:desc',
         rated: true }
     end
 

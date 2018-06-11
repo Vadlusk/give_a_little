@@ -1,6 +1,7 @@
 class DisastersSearch
-  def initialize(limit)
+  def initialize(limit, types)
     @limit = limit
+    @types  = types
   end
 
   def disasters
@@ -10,6 +11,6 @@ class DisastersSearch
   private
 
     def raw_disasters
-      ReliefWebService.new('', @limit).json_disasters
+      ReliefWebService.new('', @limit, @types).json_disasters
     end
 end

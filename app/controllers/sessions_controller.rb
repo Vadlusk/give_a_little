@@ -57,6 +57,7 @@ class SessionsController < ApplicationController
     def new_twitter_user
       @user = User.from_omniauth(request.env['omniauth.auth'])
       @user.save!
+      WelcomeOauthUserMailer.welcome(@user).deliver_later
       set_session_user("Welcome #{@user.first_name}, thanks for creating an account with us.")
     end
 

@@ -71,9 +71,9 @@
     fetch(`${baseUrl}/api/v1/donations`, postPayload(values))
   };
 
-  const postPayload = body => {
-    return { method: 'POST',
-             headers: { 'Content-Type': 'application/json' },
-             body: JSON.stringify(body) };
-  };
+  const postPayload = body => ({
+    method: ‘POST’,
+    headers: { ‘Content-Type’: ‘application/json’ },
+    body: JSON.stringify(body)
+  });
 </script>
