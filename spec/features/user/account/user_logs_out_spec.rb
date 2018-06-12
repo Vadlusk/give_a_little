@@ -11,6 +11,7 @@ describe 'user logs out' do
       click_on 'Log out'
 
       expect(page).to have_link('Create an Account')
+      expect(page).to have_link('Log in')
       expect(page).to_not have_link('Log out')
     end
   end

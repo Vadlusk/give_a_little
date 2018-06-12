@@ -51,6 +51,7 @@ class SessionsController < ApplicationController
 
     def returning_twitter_user
       @user = User.find_by(email: email)
+      @user.update_with_oauth(request.env['omniauth.auth']) if @user.uid.nil?
       set_session_user("Welcome back, #{@user.first_name}.")
     end
 

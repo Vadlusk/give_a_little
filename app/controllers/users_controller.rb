@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @donations = current_user.donations.all
+    @donations = Donation.where(user_id: current_user.id) || current_user.donations
   end
 
   def new
