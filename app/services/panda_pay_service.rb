@@ -1,7 +1,7 @@
 class PandaPayService
   def initialize(data)
     @data = data
-    @conn = Faraday.new("https://#{ENV['pandapay_test_secret_key']}:@api.pandapay.io")
+    @conn = Faraday.new("https://api.pandapay.io")
   end
 
   def json_receipt
@@ -20,7 +20,8 @@ class PandaPayService
 
     def response(uri)
       @response ||= @conn.post(uri) do |req|
-        req.params = params
+        req.params  = params
+        req.headers['Authorization'] = ENV['pandapay_test_secret_key']
       end
     end
 end

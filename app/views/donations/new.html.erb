@@ -42,8 +42,7 @@
 </div>
 
 <script>
-  let secret = $(`panda-form`).data(`secret`)
-  Panda.init(secret, 'panda_cc_form');
+  Panda.init('pk_test_wFlnyfcJa4ucu68P24jKpg', 'panda_cc_form');
 
   Panda.on('error', (errors) => {
     $(`.error`).text(errors[0].message);
