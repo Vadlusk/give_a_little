@@ -5,7 +5,7 @@ class PandaPayService
   end
 
   def json_receipt
-    JSON.parse(response('/v1/donations').body, symbolize_names: true)
+     JSON.parse(response('/v1/donations').body, symbolize_names: true)
   end
 
   private
@@ -15,13 +15,14 @@ class PandaPayService
         amount: @data[:amount],
         destination: @data[:destination],
         receipt_email: @data[:email],
-        currency: 'usd' }
+        currency: 'usd',
+        charge_amount: @data[:amount] }
     end
 
     def response(uri)
       @response ||= @conn.post(uri) do |req|
         req.params  = params
-        req.headers['Authorization'] = ENV['pandapay_test_secret_key']
+        req.headers['Authorization'] = "Basic #{Base64.encode64(ENV['pandapay_test_secret_key'])}"
       end
     end
 end
