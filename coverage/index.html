@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-11T18:28:17-06:00">2018-06-11T18:28:17-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-11T18:31:57-06:00">2018-06-11T18:31:57-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">84.82%</span></span>
+    (<span class="covered_percent"><span class="yellow">84.5%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         9.66
+         9.62
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>28</b> files in total.
-    <b>257</b> relevant lines. 
+    <b>258</b> relevant lines. 
     <span class="green"><b>218</b> lines covered</span> and
-    <span class="red"><b>39</b> lines missed </span>
+    <span class="red"><b>40</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -73,10 +73,10 @@
       <tr>
         <td class="strong"><a href="#50baac16e87c9916289b66c428193967e1c80451" class="src_link" title="app/controllers/api/v1/donations_controller.rb">app/controllers/api/v1/donations_controller.rb</a></td>
         <td class="red strong">0.0 %</td>
-        <td>11</td>
-        <td>11</td>
+        <td>12</td>
+        <td>12</td>
         <td>0</td>
-        <td>11</td>
+        <td>12</td>
         <td>0.0</td>
       </tr>
       
@@ -339,20 +339,20 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="yellow">86.54%</span></span>
+    (<span class="covered_percent"><span class="yellow">85.71%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.62
+         2.6
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>9</b> files in total.
-    <b>104</b> relevant lines. 
+    <b>105</b> relevant lines. 
     <span class="green"><b>90</b> lines covered</span> and
-    <span class="red"><b>14</b> lines missed </span>
+    <span class="red"><b>15</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -371,10 +371,10 @@
       <tr>
         <td class="strong"><a href="#50baac16e87c9916289b66c428193967e1c80451" class="src_link" title="app/controllers/api/v1/donations_controller.rb">app/controllers/api/v1/donations_controller.rb</a></td>
         <td class="red strong">0.0 %</td>
-        <td>11</td>
-        <td>11</td>
+        <td>12</td>
+        <td>12</td>
         <td>0</td>
-        <td>11</td>
+        <td>12</td>
         <td>0.0</td>
       </tr>
       
@@ -1013,9 +1013,9 @@
     <h3>app/controllers/api/v1/donations_controller.rb</h3>
     <h4><span class="red">0.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
+      <b>12</b> relevant lines. 
       <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>11</b> lines missed.</span>
+      <span class="red"><b>12</b> lines missed.</span>
     </div>
   </div>
   
@@ -1049,40 +1049,46 @@
         <li class="missed" data-hits="0" data-linenumber="5">
           
           
-          <code class="ruby">    if @donation.save!</code>
+          <code class="ruby">    binding.pry</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="6">
           
           
-          <code class="ruby">      head :ok, status: :created</code>
+          <code class="ruby">    if @donation.save!</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="7">
           
           
-          <code class="ruby">    else</code>
+          <code class="ruby">      head :ok, status: :created</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="8">
           
           
-          <code class="ruby">      flash[:danger] = &#39;Donation did not save.&#39;</code>
+          <code class="ruby">    else</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="9">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      flash[:danger] = &#39;Donation did not save.&#39;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="10">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
           
           
           <code class="ruby">end</code>
@@ -3297,19 +3303,19 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  def self.from_omniauth(auth_info)</code>
+          <code class="ruby">  def self.from_omniauth(info)</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="8">
           <span class="hits">2</span>
           
-          <code class="ruby">    where(uid: auth_info[:uid]).first_or_create do |new_user|</code>
+          <code class="ruby">    where(uid: info[:uid]).first_or_create do |new_user|</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="9">
           <span class="hits">2</span>
           
-          <code class="ruby">      new_user.uid                = auth_info.uid</code>
+          <code class="ruby">      new_user.uid                = info.uid</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="10">
@@ -3321,25 +3327,25 @@
         <li class="covered" data-hits="2" data-linenumber="11">
           <span class="hits">2</span>
           
-          <code class="ruby">      new_user.first_name         = auth_info.info.name</code>
+          <code class="ruby">      new_user.first_name         = info.info.name</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="12">
           <span class="hits">2</span>
           
-          <code class="ruby">      new_user.email              = auth_info.info.email</code>
+          <code class="ruby">      new_user.email              = info.info.email</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="13">
           <span class="hits">2</span>
           
-          <code class="ruby">      new_user.oauth_token        = auth_info.credentials.token</code>
+          <code class="ruby">      new_user.oauth_token        = info.credentials.token</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="14">
           <span class="hits">2</span>
           
-          <code class="ruby">      new_user.oauth_token_secret = auth_info.credentials.secret</code>
+          <code class="ruby">      new_user.oauth_token_secret = info.credentials.secret</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
@@ -3363,49 +3369,49 @@
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">  def total_donations</code>
-        </li>
-      
-        <li class="covered" data-hits="9" data-linenumber="19">
-          <span class="hits">9</span>
-          
-          <code class="ruby">    donations.sum(:charge_amount)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
-          
           <code class="ruby">  def update_with_oauth(info)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="23">
+        <li class="missed" data-hits="0" data-linenumber="19">
           
           
           <code class="ruby">    update(uid:                info.uid)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="24">
+        <li class="missed" data-hits="0" data-linenumber="20">
           
           
           <code class="ruby">    update(oauth_token:        info.credentials.token)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="25">
+        <li class="missed" data-hits="0" data-linenumber="21">
           
           
           <code class="ruby">    update(oauth_token_secret: info.credentials.secret)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def total_donations</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="25">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    donations.sum(:charge_amount)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">

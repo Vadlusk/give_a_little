@@ -1,7 +1,7 @@
 class PandaPayService
   def initialize(data)
     @data = data
-    @conn = Faraday.new('https://sk_test_TqHxqQG7X3JpLnfgpCcZpQ:@api.pandapay.io')
+    @conn = Faraday.new("https://#{ENV['pandapay_test_secret_key']}:@api.pandapay.io")
   end
 
   def json_receipt

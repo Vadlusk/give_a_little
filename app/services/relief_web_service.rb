@@ -36,7 +36,6 @@ class ReliefWebService
           field: 'primary_type.name',
           value: @types,
           operator: 'OR'
-        } if @types)
-      }.delete_if{ |k,v| v.nil? }
+        } if @types) }.delete_if { |_k, v| v.nil? }
     end
 end

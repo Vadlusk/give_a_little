@@ -1,7 +1,7 @@
 <%= javascript_include_tag "//d2t45z63lq9zlh.cloudfront.net/panda-v0.0.5.min.js" %>
 <h1 class="donation-header">Enter your information</h1>
 
-<div id="panda-form" data-charity='<%= @charity %>' data-email='<%= current_user.email %>' data-base_url='<%= ENV['base_url'] %>'>
+<div id="panda-form" data-charity='<%= @charity %>' data-email='<%= current_user.email %>' data-base_url='<%= ENV['base_url'] %>' data-secret='<%= ENV['pandapay_test_publishable_key'] %>'>
   <form id="panda_cc_form">
     <div class="form-group">
       <label>First Name</label>
@@ -42,7 +42,8 @@
 </div>
 
 <script>
-  Panda.init('pk_test_wFlnyfcJa4ucu68P24jKpg', 'panda_cc_form');
+  let secret = $(`panda-form`).data(`secret`)
+  Panda.init(secret, 'panda_cc_form');
 
   Panda.on('error', (errors) => {
     $(`.error`).text(errors[0].message);
