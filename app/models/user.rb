@@ -3,7 +3,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
 
   has_many :donations, dependent: :destroy
-  has_many :authentications
+  has_many :authentications, dependent: :destroy
 
   def self.from_omniauth(info)
     where(email: info[:info][:email]).first_or_create do |new_user|
