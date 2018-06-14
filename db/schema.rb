@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_04_005615) do
+ActiveRecord::Schema.define(version: 2018_06_14_011231) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "authentications", force: :cascade do |t|
+    t.bigint "user_id"
+    t.integer "provider"
+    t.text "uid"
+    t.text "oauth_token"
+    t.text "oauth_token_secret"
+    t.index ["user_id"], name: "index_authentications_on_user_id"
+  end
 
   create_table "donations", force: :cascade do |t|
     t.bigint "user_id"
@@ -32,11 +41,8 @@ ActiveRecord::Schema.define(version: 2018_06_04_005615) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "screen_name"
-    t.string "uid"
-    t.string "oauth_token"
-    t.string "oauth_token_secret"
   end
 
+  add_foreign_key "authentications", "users"
   add_foreign_key "donations", "users"
 end

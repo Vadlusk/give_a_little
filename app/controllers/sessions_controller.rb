@@ -46,17 +46,25 @@ class SessionsController < ApplicationController
     end
 
     def omniauth_user
-      User.exists?(email: email) ? returning_twitter_user : new_twitter_user
+      User.exists?(email: email) ? returning_oauth_user : new_oauth_user
     end
 
-    def returning_twitter_user
+    def returning_oauth_user
       @user = User.find_by(email: email)
-      @user.update_with_oauth(request.env['omniauth.auth']) if @user.uid.nil?
-      set_session_user("Welcome back, #{@user.first_name}.")
+      if @user.authentications.where(provider: request.env['omniauth.auth'][:provider])
+        set_session_user("Welcome back, #{@user.first_name}.")
+      else
+        auth = Authentication.from_oauth(request.env['omniauth.auth'], @user)
+        if auth.save!
+          set_session_user("Welcome back, #{@user.first_name}.")
+        end
+      end
     end
 
-    def new_twitter_user
+    def new_oauth_user
       @user = User.from_omniauth(request.env['omniauth.auth'])
+      auth = Authentication.from_oauth(request.env['omniauth.auth'], @user)
+      auth.save!
       if @user.save!
         WelcomeOauthUserMailer.welcome(@user).deliver_later
         set_session_user("Welcome #{@user.first_name}, thanks for creating an account with us.")

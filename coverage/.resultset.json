@@ -108,22 +108,14 @@
         1,
         null,
         1,
+        1,
         null,
         1,
         2,
         2,
         2,
         2,
-        2,
-        2,
-        2,
         null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
         null,
         null,
         1,
@@ -178,11 +170,13 @@
         null,
         null,
         null,
+        null,
         0,
         null,
         null,
         1,
         null,
+        0,
         0,
         0,
         null,
@@ -227,7 +221,6 @@
         null,
         null,
         null,
-        15,
         105,
         null,
         null
@@ -296,6 +289,22 @@
         null,
         null
       ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/authentication.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null
+      ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/sessions_controller.rb": [
         1,
         1,
@@ -352,9 +361,18 @@
         1,
         1,
         1,
+        1,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
         null,
         null,
         1,
+        2,
+        2,
         2,
         2,
         2,
@@ -464,7 +482,6 @@
         0,
         0,
         0,
-        0,
         0
       ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/tweets_controller.rb": [
@@ -492,6 +509,6 @@
         0
       ]
     },
-    "timestamp": 1528763517
+    "timestamp": 1528939762
   }
 }

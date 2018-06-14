@@ -9,7 +9,7 @@
   <dd><%= current_user.email %></dd>
 
   <dt>Twitter User?</dt>
-  <dd><%= current_user.uid ? 'yes' : 'no' %></dd>
+  <dd><%= current_user.authentications.where(provider: 'twitter') ? 'yes' : 'no' %></dd>
 
 </dl>
 
