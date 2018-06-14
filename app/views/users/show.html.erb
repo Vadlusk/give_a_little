@@ -8,8 +8,9 @@
   <dt>Email:</dt>
   <dd><%= current_user.email %></dd>
 
-  <dt>Twitter User?</dt>
-  <dd><%= current_user.authentications.where(provider: 'twitter') ? 'yes' : 'no' %></dd>
+  <dt>OAuths</dt>
+  <dd>Twitter: <%= current_user.authentications.where(provider: 'twitter').empty? ? 'no' : 'yes' %></dd>
+  <dd>Google: <%= current_user.authentications.where(provider: 'google_oauth2').empty? ? 'no' : 'yes' %></dd>
 
 </dl>
 

@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   get '/auth/twitter',          as: :twitter_login
   get '/auth/twitter/callback', to: 'sessions#create'
 
+  get '/auth/google_oauth2',          as: :google_login
+  get '/auth/google_oauth2/callback', to: 'sessions#create'
+
   get '/dashboard', to: 'users#show'
   get '/register',  to: 'users#new'
   post '/register', to: 'users#create'

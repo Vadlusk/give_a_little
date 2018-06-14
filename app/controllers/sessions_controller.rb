@@ -51,7 +51,7 @@ class SessionsController < ApplicationController
 
     def returning_oauth_user
       @user = User.find_by(email: email)
-      if @user.authentications.where(provider: request.env['omniauth.auth'][:provider])
+      unless @user.authentications.where(provider: request.env['omniauth.auth'][:provider]).empty?
         set_session_user("Welcome back, #{@user.first_name}.")
       else
         auth = Authentication.from_oauth(request.env['omniauth.auth'], @user)

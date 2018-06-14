@@ -1,6 +1,6 @@
 class Authentication < ApplicationRecord
   belongs_to :user
-  enum provider: %w[twitter]
+  enum provider: %w[twitter google_oauth2]
 
   def self.from_oauth(info, user)
     where(provider: info[:provider]).first_or_create do |new_auth|
