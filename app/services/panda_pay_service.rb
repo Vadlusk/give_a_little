@@ -1,11 +1,11 @@
 class PandaPayService
   def initialize(data)
     @data = data
-    @conn = Faraday.new("https://api.pandapay.io")
+    @conn = Faraday.new('https://api.pandapay.io')
   end
 
   def json_receipt
-     JSON.parse(response('/v1/donations').body, symbolize_names: true)
+    JSON.parse(response('/v1/donations').body, symbolize_names: true)
   end
 
   private

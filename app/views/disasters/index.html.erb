@@ -15,10 +15,10 @@
   <% if params['tab'] == 'map' || params['tab'].nil? %>
   <div id="map" data-disasters="<%= @disasters.to_json %>"></div>
     <%= javascript_include_tag 'disasters/index' %>
-    <%= render partial: 'disasters/filters' %>
   <% elsif params['tab'] == 'chart' %>
     <%= render partial: 'disasters/disasters_table' %>
   <% end %>
+  <%= render partial: 'disasters/filters' %>
 
 </main>
 <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['google_maps_api_key']}&callback=initMap", async: true %>
