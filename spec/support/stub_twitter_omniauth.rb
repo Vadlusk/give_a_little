@@ -1,4 +1,4 @@
-def stub_omniauth
+def stub_twitter_omniauth
   # first, set OmniAuth to run in test mode
   OmniAuth.config.test_mode = true
   # then, provide a set of fake oauth data that

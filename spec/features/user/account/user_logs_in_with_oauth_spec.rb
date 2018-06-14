@@ -4,7 +4,7 @@ describe 'visitor creates an account' do
   subject { create(:user, first_name: 'Valane Adam Lusk') }
   scenario 'by using twitter oauth' do
     VCR.use_cassette('returning_twitter_user') do
-      stub_omniauth
+      stub_twitter_omniauth
       visit root_path
       click_on 'Create an Account'
       click_on 'Continue with Twitter'

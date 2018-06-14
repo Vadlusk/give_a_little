@@ -64,8 +64,7 @@ class SessionsController < ApplicationController
     def new_oauth_user
       @user = User.from_omniauth(request.env['omniauth.auth'])
       auth = Authentication.from_oauth(request.env['omniauth.auth'], @user)
-      auth.save!
-      if @user.save!
+      if @user.save! && auth.save!
         WelcomeOauthUserMailer.welcome(@user).deliver_later
         set_session_user("Welcome #{@user.first_name}, thanks for creating an account with us.")
       end
