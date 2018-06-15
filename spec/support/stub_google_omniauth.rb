@@ -6,7 +6,7 @@ def stub_google_omniauth
   OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({"provider"=>"google_oauth2",
  "uid"=>"116073257923801628545",
  "info"=>
-  {"name"=>"Adam Lusk",
+  {"name"=>"Valane Adam Lusk",
    "email"=>"adlusk@gmail.com",
    "first_name"=>"Adam",
    "last_name"=>"Lusk",

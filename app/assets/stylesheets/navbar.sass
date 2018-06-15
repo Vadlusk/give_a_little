@@ -2,6 +2,8 @@ nav.navbar
   background-color: #DD0A06
   color: white
   border: solid black thin
+  border-left: none
+  border-right: none
 
   a
     color: white
@@ -17,9 +19,11 @@ nav.navbar
   .nav-title
     font-size: 46px
     margin-right: 20px
-
     a
       font-family: 'Merriweather', Serif
+
+  .navbar-toggler
+    border-color: black
 
   .dropdown-menu
     background-color: #DD0A06
@@ -39,3 +43,10 @@ nav.navbar
 
       a:active
         color: #6D7275
+
+      .nav-item
+        .dropdown-menu
+          .dropdown-divider
+            border-color: black
+          .dropdown-item:hover
+            background-color: #990704

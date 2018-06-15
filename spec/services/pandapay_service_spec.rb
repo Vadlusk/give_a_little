@@ -12,9 +12,11 @@ describe PandaPayService do
     context 'returns json with receipt info' do
       it '.json_receipt' do
         VCR.use_cassette('.json_receipt') do
-          skip
-          # can't mock because data[:source] must be unique
-          expect(subject.json_receipt).to eq(15)
+          message = { errors: [{
+              type: 'invalid_parameters',
+              message: 'Source was declined' }] }
+
+          expect(subject.json_receipt).to eq(message)
         end
       end
     end

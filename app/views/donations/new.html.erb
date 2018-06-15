@@ -34,7 +34,8 @@
     </div>
     <p class="error"></p>
 
-    <div id="tokenize">
+    <div class="buttons" id="tokenize">
+      <%= link_to "Cancel", disasters_path, class: 'btn btn-secondary' %>
       <button type="submit" class="tokenize btn btn-primary">Make Donation</button>
     </div>
     <input id="charity" name="charity" type="hidden" />

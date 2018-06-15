@@ -23,7 +23,6 @@ class ReliefWebService
     end
 
     def params
-      @types = nil if @types == ['on']
       { limit: @limit,
         appname: 'givealittle',
         profile: 'list',

@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if @user
       returning_local_user
     elsif request.env['omniauth.auth']
-      omniauth_user
+      oauth_user
     elsif @user.nil?
       unrecognized_email
     end
@@ -42,28 +42,31 @@ class SessionsController < ApplicationController
     end
 
     def email
-      request.env['omniauth.auth']['info']['email']
+      request.env['omniauth.auth']['info']['email'].downcase
     end
 
-    def omniauth_user
+    def oauth_user
       User.exists?(email: email) ? returning_oauth_user : new_oauth_user
     end
 
     def returning_oauth_user
-      @user = User.find_by(email: email)
-      unless @user.authentications.where(provider: request.env['omniauth.auth'][:provider]).empty?
+      @user    = User.find_by(email: email)
+      provider = request.env['omniauth.auth'][:provider]
+      if !@user.authentications.where(provider: provider).empty?
         set_session_user("Welcome back, #{@user.first_name}.")
       else
-        auth = Authentication.from_oauth(request.env['omniauth.auth'], @user)
-        if auth.save!
-          set_session_user("Welcome back, #{@user.first_name}.")
-        end
+        new_authentication
       end
+    end
+
+    def new_authentication
+      auth = @user.authentications.from_oauth(request.env['omniauth.auth'])
+      set_session_user("Welcome back, #{@user.first_name}.") if auth.save!
     end
 
     def new_oauth_user
       @user = User.from_omniauth(request.env['omniauth.auth'])
-      auth = Authentication.from_oauth(request.env['omniauth.auth'], @user)
+      auth = @user.authentications.from_oauth(request.env['omniauth.auth'])
       if @user.save! && auth.save!
         WelcomeOauthUserMailer.welcome(@user).deliver_later
         set_session_user("Welcome #{@user.first_name}, thanks for creating an account with us.")

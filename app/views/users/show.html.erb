@@ -1,39 +1,5 @@
 <h2><%= current_user.first_name %>'s dashboard</h2>
 
-<dl class="users-info">
+<%= render partial: 'info' %>
 
-  <dt>Name:</dt>
-  <dd><%= current_user.first_name %> <%= current_user.last_name %></dd>
-
-  <dt>Email:</dt>
-  <dd><%= current_user.email %></dd>
-
-  <dt>OAuths:</dt>
-  <dd>Twitter: <%= current_user.authentications.where(provider: 'twitter').empty? ? 'no' : 'yes' %></dd>
-  <dd>Google: <%= current_user.authentications.where(provider: 'google_oauth2').empty? ? 'no' : 'yes' %></dd>
-
-</dl>
-
-<table class="users-donations table table-sm table-bordered">
-  <tr class="thead">
-    <th>Date</th>
-    <th>Charity ID</th>
-    <th>Charge amount</th>
-  </tr>
-  <% @donations.each do |donation| %>
-    <tr>
-      <td><%= format_date(donation.created_at) %></td>
-      <td><%= donation.charity_ein %></td>
-      <td><%= number_to_currency(donation.charge_amount.to_f / 100) %></td>
-    </tr>
-  <% end %>
-  <tr>
-    <td></td>
-    <td>
-      Total donated:
-    </td>
-    <td>
-      <%= number_to_currency(current_user.total_donations.to_f / 100) %>
-    </td>
-  </tr>
-</table>
+<%= render partial: 'donations' %>

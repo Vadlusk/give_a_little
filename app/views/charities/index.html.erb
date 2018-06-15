@@ -12,5 +12,8 @@
       </div>
     </div>
   <% end %>
-  <%= submit_tag('Proceed to entering financial info', class: 'btn btn-primary') %>
+  <div class="buttons">
+    <%= link_to "Cancel", disasters_path, class: 'btn btn-secondary' %>
+    <%= submit_tag('Proceed to entering financial info', class: 'btn btn-primary') %>
+  </div>
 <% end %>

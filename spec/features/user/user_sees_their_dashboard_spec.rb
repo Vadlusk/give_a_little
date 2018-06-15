@@ -1,8 +1,7 @@
 require 'rails_helper'
 
 describe 'user logs in' do
-  let(:user) { create(:user) }
-  let(:donations) { create_list(:donation, 10, user_id: user.id) }
+  let(:user) { create(:user_with_donations) }
   before(:each) do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     visit dashboard_path
@@ -13,7 +12,7 @@ describe 'user logs in' do
     expect(page).to have_content(user.email)
   end
   scenario 'and sees their donations' do
-    donations.each do |donation|
+    user.donations.each do |donation|
       expect(page).to have_content(donation.charity_ein)
     end
   end

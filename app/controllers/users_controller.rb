@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   end
 
   def create
+    user_params[:email].downcase!
     @user = User.new(user_params)
     if @user.save!
       WelcomeLocalUserMailer.welcome(@user).deliver_later
@@ -21,6 +22,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
+    user_params[:email].downcase!
     @user.update(user_params)
     if @user.save!
       flash[:success] = 'Successfully updated account.'
