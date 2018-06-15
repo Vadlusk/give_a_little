@@ -1,11 +1,10 @@
 <header class="disaster-header">
-  <div class="disaster-header-left">
-    <h1 class="type country"><%= @disaster.type %> in <%= @disaster.country %></h1>
-    <h2 class="date"><%= @disaster.format_date %></h2>
-  </div><br>
-  <div class="disaster-header-right">
-    <%= link_to 'Donate Now', charities_path(type: @disaster.type), class: "donate-now btn btn-primary" %>
-  </div>
+  <h1 class="type country"><%= @disaster.type %> in <%= @disaster.country %></h1>
+  <h2 class="date"><%= @disaster.format_date %>
+    <div class="buttons">
+      <%= link_to 'Donate Now', charities_path(type: @disaster.type), class: "donate-now btn btn-primary" %>
+    </div>
+  </h2>
 </header>
 
 <main class="disaster-main">
@@ -20,5 +19,5 @@
   <% end %>
 </main>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_maps_api_key'] %>&callback=initMap">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_api_key'] %>&callback=initMap">
 </script>

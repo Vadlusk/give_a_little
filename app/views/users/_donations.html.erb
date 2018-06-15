@@ -1,0 +1,23 @@
+<table class="users-donations table table-sm table-bordered">
+  <tr class="thead">
+    <th>Date</th>
+    <th>Charity ID</th>
+    <th>Charge amount</th>
+  </tr>
+  <% @donations.each do |donation| %>
+    <tr>
+      <td><%= format_date(donation.created_at) %></td>
+      <td><%= donation.charity_ein %></td>
+      <td><%= number_to_currency(donation.charge_amount.to_f / 100) %></td>
+    </tr>
+  <% end %>
+  <tr>
+    <td></td>
+    <td>
+      Total donated:
+    </td>
+    <td>
+      <%= number_to_currency(current_user.total_donations.to_f / 100) %>
+    </td>
+  </tr>
+</table>

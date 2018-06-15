@@ -16,23 +16,16 @@ describe 'user logs in' do
 
     expect(current_path).to eq(dashboard_path)
     expect(page).to have_content('Successfully updated account.')
-    expect(User.last.first_name).to eq('ThisMy')
     expect(User.last.last_name).to eq('NameNow')
-    expect(User.last.email).to eq('Name@Now.com')
+    expect(User.last.email).to eq('name@now.com')
   end
   scenario 'and edits their password' do
-    skip
     VCR.use_cassette('password_edit') do
       fill_in 'user[password]', with: 'lazy'
       fill_in 'user[password_confirmation]', with: 'lazy'
       click_on 'Update Account'
-      click_on "Logged in as: #{user.first_name}"
-      click_on 'Log out'
-      click_on 'Log in'
-      fill_in 'email',    with: user.email
-      fill_in 'password', with: 'lazy'
 
-      expect(page).to have_content("Welcome back, #{user.first_name}.")
+      expect(page).to have_content('Successfully updated account.')
     end
   end
 end

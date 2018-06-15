@@ -2,16 +2,13 @@
   <legend class='filter-title'>
     <h2>filters</h2>
   </legend>
-    <%= form_tag '/disasters?limit=', method: :get do %>
+    <%= form_tag '/disasters?limit=', method: :get, class: 'filter-form' do %>
       <div class='limit'>
         <%= label_tag :limit %>
         <%= number_field_tag :limit, 10, max: 50 %>
       </div>
       <div class='type'>
         <%= label_tag :type %><br>
-
-        <%= check_box_tag 'type[]', nil, true, id: 'all' %>
-        <%= label_tag :all %>
 
         <%= check_box_tag 'type[]', 'cold wave' %>
         <%= label_tag 'cold waves' %>
@@ -36,14 +33,8 @@
 
       </div>
       <div class="buttons">
-        <%= submit_tag 'Reset Defaults', type: 'reset', class: 'btn btn-default' %>
+        <%= submit_tag 'Reset Defaults', type: 'reset', class: 'btn btn-secondary' %>
         <%= submit_tag 'Update map', class: 'btn btn-primary' %>
       </div>
     <% end %>
 </fieldset>
-
-<script>
-$(`#all`).change(function() {
-  debugger
-});
-</script>

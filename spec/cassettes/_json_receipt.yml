@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.pandapay.io/v1/donations?amount=1423&charge_amount=1423&currency=usd&destination=2164023&receipt_email=AdLusk@gmail.com&source=cBOCDezOtgCOrLStSvmsz7bpHp
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Authorization:
+      - Basic c2tfdGVzdF9UcUh4cVFHN1gzSnBMbmZncENjWnBR
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx/1.4.6 (Ubuntu)
+      Date:
+      - Thu, 14 Jun 2018 22:20:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9760c560-4cc7-4047-94de-49c2443a8f0d
+      X-Runtime:
+      - '0.855170'
+      Vary:
+      - Origin
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"type":"invalid_parameters","message":"Source was declined"}]}'
+    http_version: 
+  recorded_at: Thu, 14 Jun 2018 22:20:29 GMT
+recorded_with: VCR 4.0.0

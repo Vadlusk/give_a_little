@@ -1,5 +1,6 @@
 <h1>Enter your information below</h1>
 <h2>Or <%= link_to 'Continue with Twitter', twitter_login_path %></h2>
+<h2>Or <%= link_to 'Continue with Google', google_login_path %></h2>
 
 <div class="new-account card">
   <%= form_tag login_path do %>
@@ -14,8 +15,8 @@
       <%= password_field_tag :password %>
     </div>
 
-    <div>
-      <%= link_to "Cancel", disasters_path, class: 'btn btn-default' %>
+    <div class="buttons">
+      <%= link_to "Cancel", disasters_path, class: 'btn btn-secondary' %>
       <%= submit_tag 'Log In', class: 'btn btn-primary' %>
     </div>
   <% end %>
