@@ -10,6 +10,13 @@ class PandaPayService
 
   private
 
+    def response(uri)
+      @response ||= @conn.post(uri) do |req|
+        req.params  = params
+        req.headers['Authorization'] = "Basic #{Base64.encode64(ENV['pandapay_test_secret_key'])}"
+      end
+    end
+
     def params
       { source: @data[:source],
         amount: @data[:amount],
@@ -17,12 +24,5 @@ class PandaPayService
         receipt_email: @data[:email],
         currency: 'usd',
         charge_amount: @data[:amount] }
-    end
-
-    def response(uri)
-      @response ||= @conn.post(uri) do |req|
-        req.params  = params
-        req.headers['Authorization'] = "Basic #{Base64.encode64(ENV['pandapay_test_secret_key'])}"
-      end
     end
 end

@@ -10,18 +10,18 @@ class CharitiesService
 
   private
 
+    def response(uri)
+      @response ||= @conn.get(uri) do |req|
+        req.params = params
+      end
+    end
+
     def params
       { app_id: ENV['charity_nav_app_id'],
         app_key: ENV['charity_nav_api_key'],
         pageSize: 15,
         search: @disaster_type,
         sort: ('relevance:desc' if @disaster_type),
-        rated: true }.delete_if{ |k,v| v.nil? }
-    end
-
-    def response(uri)
-      @response ||= @conn.get(uri) do |req|
-        req.params = params
-      end
+        rated: true }.delete_if { |_k, v| v.nil? }
     end
 end

@@ -11,13 +11,9 @@
     <dd><%= current_user.email %></dd>
 
     <dt>OAuths:</dt>
-
     <dd>
-      <% if current_user.providers.include?('google_oauth2') %>
-        <%= image_tag 'google.png', class: 'google-logo' %>
-      <% end %>
-      <% if current_user.providers.include?('twitter') %>
-        <%= image_tag 'twitter.png', class: 'twitter-logo' %>
+      <% current_user.providers.each do |provider| %>
+        <%= image_tag "#{provider}.png", class: "#{provider}-logo" %>
       <% end %>
     </dd>
 

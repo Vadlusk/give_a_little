@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-14T16:45:50-06:00">2018-06-14T16:45:50-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-06-14T21:20:52-06:00">2018-06-14T21:20:52-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         11.62
+         11.56
        </span>
     </span> hits/line)
   </h2>
@@ -123,9 +123,9 @@
       <tr>
         <td class="strong"><a href="#d84228110524d066c630f027f339a3ec42ecd214" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>78</td>
-        <td>45</td>
-        <td>45</td>
+        <td>79</td>
+        <td>46</td>
+        <td>46</td>
         <td>0</td>
         <td>3.1</td>
       </tr>
@@ -333,11 +333,11 @@
       <tr>
         <td class="strong"><a href="#91993e9d3e9326974edef84f6be9bfc048c4962e" class="src_link" title="app/services/relief_web_service.rb">app/services/relief_web_service.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>41</td>
-        <td>17</td>
-        <td>17</td>
+        <td>40</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
-        <td>17.4</td>
+        <td>17.3</td>
       </tr>
       
     </tbody>
@@ -349,19 +349,19 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="yellow">87.39%</span></span>
+    (<span class="covered_percent"><span class="yellow">87.5%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.02
+         4.01
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>9</b> files in total.
-    <b>111</b> relevant lines. 
-    <span class="green"><b>97</b> lines covered</span> and
+    <b>112</b> relevant lines. 
+    <span class="green"><b>98</b> lines covered</span> and
     <span class="red"><b>14</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -431,9 +431,9 @@
       <tr>
         <td class="strong"><a href="#d84228110524d066c630f027f339a3ec42ecd214" class="src_link" title="app/controllers/sessions_controller.rb">app/controllers/sessions_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>78</td>
-        <td>45</td>
-        <td>45</td>
+        <td>79</td>
+        <td>46</td>
+        <td>46</td>
         <td>0</td>
         <td>3.1</td>
       </tr>
@@ -872,15 +872,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         9.24
+         9.0
        </span>
     </span> hits/line)
   </h2>
   <a name="Ungrouped"></a>
   <div>
     <b>3</b> files in total.
-    <b>43</b> relevant lines. 
-    <span class="green"><b>43</b> lines covered</span> and
+    <b>42</b> relevant lines. 
+    <span class="green"><b>42</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -920,11 +920,11 @@
       <tr>
         <td class="strong"><a href="#91993e9d3e9326974edef84f6be9bfc048c4962e" class="src_link" title="app/services/relief_web_service.rb">app/services/relief_web_service.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>41</td>
-        <td>17</td>
-        <td>17</td>
+        <td>40</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
-        <td>17.4</td>
+        <td>17.3</td>
       </tr>
       
     </tbody>
@@ -1452,8 +1452,8 @@
     <h3>app/controllers/sessions_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>45</b> relevant lines. 
-      <span class="green"><b>45</b> lines covered</span> and
+      <b>46</b> relevant lines. 
+      <span class="green"><b>46</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1776,154 +1776,160 @@
         <li class="covered" data-hits="3" data-linenumber="53">
           <span class="hits">3</span>
           
-          <code class="ruby">      @user = User.find_by(email: email)</code>
+          <code class="ruby">      @user    = User.find_by(email: email)</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="54">
           <span class="hits">3</span>
           
-          <code class="ruby">      unless @user.authentications.where(provider: request.env[&#39;omniauth.auth&#39;][:provider]).empty?</code>
+          <code class="ruby">      provider = request.env[&#39;omniauth.auth&#39;][:provider]</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="55">
+        <li class="covered" data-hits="3" data-linenumber="55">
+          <span class="hits">3</span>
+          
+          <code class="ruby">      if !@user.authentications.where(provider: provider).empty?</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="56">
           <span class="hits">2</span>
           
           <code class="ruby">        set_session_user(&quot;Welcome back, #{@user.first_name}.&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="never" data-hits="" data-linenumber="57">
           
           
           <code class="ruby">      else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="57">
+        <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
           <code class="ruby">        new_authentication</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="61">
           
-          <code class="ruby">    def new_authentication</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
-          <code class="ruby">      auth = @user.authentications.from_oauth(request.env[&#39;omniauth.auth&#39;])</code>
+          <code class="ruby">    def new_authentication</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
-          <code class="ruby">      set_session_user(&quot;Welcome back, #{@user.first_name}.&quot;) if auth.save!</code>
+          <code class="ruby">      auth = @user.authentications.from_oauth(request.env[&#39;omniauth.auth&#39;])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      set_session_user(&quot;Welcome back, #{@user.first_name}.&quot;) if auth.save!</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="66">
+        <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
           <code class="ruby">    def new_oauth_user</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="67">
+        <li class="covered" data-hits="5" data-linenumber="68">
           <span class="hits">5</span>
           
           <code class="ruby">      @user = User.from_omniauth(request.env[&#39;omniauth.auth&#39;])</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="68">
+        <li class="covered" data-hits="5" data-linenumber="69">
           <span class="hits">5</span>
           
           <code class="ruby">      auth = @user.authentications.from_oauth(request.env[&#39;omniauth.auth&#39;])</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="69">
+        <li class="covered" data-hits="5" data-linenumber="70">
           <span class="hits">5</span>
           
           <code class="ruby">      if @user.save! &amp;&amp; auth.save!</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="70">
+        <li class="covered" data-hits="5" data-linenumber="71">
           <span class="hits">5</span>
           
           <code class="ruby">        WelcomeOauthUserMailer.welcome(@user).deliver_later</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="71">
+        <li class="covered" data-hits="5" data-linenumber="72">
           <span class="hits">5</span>
           
           <code class="ruby">        set_session_user(&quot;Welcome #{@user.first_name}, thanks for creating an account with us.&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="72">
+        <li class="never" data-hits="" data-linenumber="73">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="74">
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="75">
+        <li class="covered" data-hits="1" data-linenumber="76">
           <span class="hits">1</span>
           
           <code class="ruby">    def unrecognized_email</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="76">
+        <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
           <code class="ruby">      flash_error(&#39;Email not found. Please create an account or try again.&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="78">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="78">
+        <li class="never" data-hits="" data-linenumber="79">
           
           
           <code class="ruby">end</code>
@@ -3957,8 +3963,8 @@
     <h3>app/services/relief_web_service.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>17</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4116,97 +4122,91 @@
           <code class="ruby">    def params</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="26">
-          <span class="hits">19</span>
-          
-          <code class="ruby">      @types = nil if @types == [&#39;on&#39;]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">      { limit: @limit,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">        appname: &#39;givealittle&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">        profile: &#39;list&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">        preset: &#39;latest&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">        fields: {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">          include: %w[primary_country primary_type description-html],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">          exclude: %w[country]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">        },</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">        filter: ({</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">          field: &#39;primary_type.name&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">          value: @types,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby">          operator: &#39;OR&#39;</code>
         </li>
       
-        <li class="covered" data-hits="133" data-linenumber="39">
+        <li class="covered" data-hits="133" data-linenumber="38">
           <span class="hits">133</span>
           
           <code class="ruby">        } if @types) }.delete_if { |_k, v| v.nil? }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby">end</code>

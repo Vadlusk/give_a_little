@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :disaster do
-    date Time.new("2018-05-23T00:00:00+00:00")
+    date Time.parse("2018-05-23T00:00:00+00:00")
     sequence(:type) { %w[flood hurricane mudslide earthquake].sample }
     country 'United States of America'
     latitude (-25.344)

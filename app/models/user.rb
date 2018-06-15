@@ -7,9 +7,9 @@ class User < ApplicationRecord
 
   def self.from_omniauth(info)
     where(email: info[:info][:email]).first_or_create do |new_user|
-      new_user.first_name         = info.info.name
-      new_user.email              = info.info.email.downcase
-      new_user.password           = SecureRandom.base64.tr('+/=', 'Qrt')
+      new_user.first_name = info.info.name
+      new_user.email      = info.info.email.downcase
+      new_user.password   = SecureRandom.base64.tr('+/=', 'Qrt')
     end
   end
 
