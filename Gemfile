@@ -32,6 +32,7 @@ gem 'uglifier', '>= 1.3.0'
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara'
+  gem 'database_cleaner'
   gem 'factory_bot_rails'
   gem 'launchy'
   gem 'pry'
@@ -48,6 +49,7 @@ group :development do
 end
 
 group :test do
+  gem 'selenium-webdriver'
   gem 'vcr'
   gem 'webmock'
 end
