@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe ReliefWebService do
+RSpec.describe ReliefWebService do
   subject { ReliefWebService.new }
   context 'attributes' do
     it 'exists' do

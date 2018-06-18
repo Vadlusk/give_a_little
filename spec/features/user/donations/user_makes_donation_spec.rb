@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'user selects a charity' do
+RSpec.describe 'user selects a charity', js: true do
   scenario 'and makes a successful donation' do
     VCR.use_cassette('donation') do
       user = create(:user)
@@ -13,13 +13,7 @@ describe 'user selects a charity' do
       click_on 'Proceed to entering financial info'
 
       expect(current_path).to eq(new_donation_path)
-
-      fill_in 'first_name', with: user.first_name
-      fill_in 'last_name', with: user.last_name
-      fill_in 'credit_card_number', with: 4111111111111111
-      fill_in 'expiration', with: 07/2018
-      fill_in 'CVV', with: 123
-      click_on 'Make Donation'
+      fill_in_donation_info(user.first_name, user.last_name)
 
       expect(page).to have_css('#panda_cc_form')
     end

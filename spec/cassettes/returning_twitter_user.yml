@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.2
+      - Faraday v0.12.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sun, 10 Jun 2018 19:31:43 GMT
+      - Mon, 18 Jun 2018 18:46:21 GMT
       Content-Type:
       - application/json
       Vary:
@@ -41,9 +41,9 @@ http_interactions:
       X-Varnish-Ttl:
       - '2.000'
       X-Varnish:
-      - 41289654 41164909
+      - 55260518 55071930
       Age:
-      - '857'
+      - '2'
       Via:
       - 1.1 varnish-v4
       X-Varnish-Server:
@@ -51,12 +51,12 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Content-Length:
-      - '9072'
+      - '10390'
       Set-Cookie:
       - __bm-hap_hKBcutrqRn9rEZDW=S1; path=/; HttpOnly; Secure
     body:
       encoding: ASCII-8BIT
-      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?appname=givealittle&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description-html&preset=latest&profile=list","time":3,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=0&limit=10&preset=latest"},"next":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=10&limit=10&preset=latest"}},"totalCount":2963,"count":10,"data":[{"id":"45934","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45934","fields":{"date":{"created":"2018-06-03T00:00:00+00:00"},"primary_type":{"code":"VO","name":"Volcano","id":4615},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/109","name":"Guatemala","location":{"lon":-90.39,"lat":15.61},"id":109,"iso3":"gtm"},"description-html":"<p>On
+      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?appname=givealittle&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description-html&preset=latest&profile=list","time":2,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=0&limit=10&preset=latest"},"next":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=10&limit=10&preset=latest"}},"totalCount":2962,"count":10,"data":[{"id":"45934","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45934","fields":{"date":{"created":"2018-06-03T00:00:00+00:00"},"primary_type":{"code":"VO","name":"Volcano","id":4615},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/109","name":"Guatemala","location":{"lon":-90.39,"lat":15.61},"id":109,"iso3":"gtm"},"description-html":"<p>On
         3 June, the Fuego volcano erupted for the second time in 2018, launching columns
         of ash and pyroclastic flow some 15,000m above sea level and spreading west
         and southwest, according to a special bulletin issued by the National Institute
@@ -83,7 +83,12 @@ http_interactions:
         registered shelters in the departments of Escuintla (17), Sacatep\u00e9quez
         (1), Santa Rosa (2) and Suchitep\u00e9quez (1). The number of people sheltered
         continues to rise. (<a href=\"https:\/\/reliefweb.int\/node\/2643439\">OCHA,
-        7 Jun 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"https:\/\/conred.gob.gt\/site\/index.php\"><img
+        7 Jun 2018<\/a>)<\/p>\n\n<p>As of 13 June 2018, 1,714,373 people are affected,
+        110 people have been killed, 57 people have been injured and 3,557 people
+        are in shelters.  According to a Food for the Hungry evaluation, there are
+        approximately 17 official and 19 unofficial shelters with 1,200 people. Per
+        the Red Cross, 197 people remain missing. (<a href=\"https:\/\/reliefweb.int\/node\/2652609\">OCHA,
+        13 Jun 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"https:\/\/conred.gob.gt\/site\/index.php\"><img
         src=\"https:\/\/conred.gob.gt\/site\/images\/logo.png\" alt=\"CONRED - Logo\"><\/a><\/li>\n<\/ul>\n","name":"Guatemala:
         Fuego Volcano - Jun 2018","glide":"VO-2018-000066-GTM","type":[{"name":"Volcano"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45934","status":"current"}},{"id":"45829","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45829","fields":{"date":{"created":"2018-05-23T00:00:00+00:00"},"primary_type":{"code":"TC","name":"Tropical
         Cyclone","id":4618},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/255","name":"Yemen","location":{"lon":47.62,"lat":15.94},"id":255,"iso3":"yem"},"description-html":"<p>A
@@ -112,7 +117,17 @@ http_interactions:
         of the affected population (90 per cent) are hosted in schools, with the rest
         staying in other government buildings...An inter-cluster assessment team is
         expected to travel to Socotra on 29 May with the support of UNHAS. (<a href=\"https:\/\/reliefweb.int\/node\/2624009\">OCHA,
-        28 May 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"http:\/\/www.rsmcnewdelhi.imd.gov.in\/index.php?lang=en\">Regional
+        28 May 2018<\/a>)<\/p>\n\n<p>An inter-cluster mission led by OCHA visited
+        Socotra from 29 May to 4 June to assess humanitarian needs in the aftermath
+        of cyclone \u201cMekunu\u201d.\nSteroh, Badhola and Zahiq, in the area of
+        Nowgd (located on the southern part of the island) are the locations most
+        affected by the cyclone which the team was able to visit. It is estimated
+        that in these areas 90 per cent of the population are in urgent need of food,
+        non-food items and WASH assistance.\nLocal authorities have warned of an imminent
+        hunger crisis, if no resources are mobilized, as approximately 90 per cent
+        of the population in the assessed areas lost their food stocks to the cyclone
+        and are unable to sustain themselves. (<a href=\"https:\/\/reliefweb.int\/node\/2643249\">OCHA,
+        07 Jun 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"http:\/\/www.rsmcnewdelhi.imd.gov.in\/index.php?lang=en\">Regional
         Specialized Meteorological Centre for Tropical Cyclones over North Indian
         Ocean<\/a><\/li>\n<li><a href=\"http:\/\/www.met.gov.om\/opencms\/export\/sites\/default\/dgman\/en\/home\/\">Oman
         Directorate General of Meteorology<\/a><\/li>\n<\/ul>\n","name":"Tropical
@@ -152,7 +167,11 @@ http_interactions:
         Service Centre (NDRSC) disbursed Rs. 25 million to meet the costs of immediate
         response, in addition to Rs. 55.45 million provided for emergency relief assistance.
         (<a href=\"https:\/\/reliefweb.int\/node\/2635214\/\">Govt. of Sri Lanka,
-        4 Jun 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"http:\/\/www.dmc.gov.lk\/index.php?lang=en\">Sri
+        4 Jun 2018<\/a>)<\/p>\n\n<p>As of 12 June, the DMC has reported thatclose
+        to 175 000 people have been affected across 19 districts, and 26 people killed.
+        Puttalam, Gampaha, Ratnapura, Colombo, Kurunegala, Kalutara and Kegalle are
+        amongst the worst affected districts. (<a href=\"https:\/\/reliefweb.int\/node\/2649204\/\">ECHO,
+        12 Jun 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"http:\/\/www.dmc.gov.lk\/index.php?lang=en\">Sri
         Lanka Disaster Management Centre<\/a><\/li>\n<\/ul>\n","name":"Sri Lanka:
         Floods and Landslides - May 2018","glide":"FL-2018-000060-LKA","type":[{"name":"Flood"},{"name":"Land
         Slide"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45809","status":"current"}},{"id":"45784","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45784","fields":{"date":{"created":"2018-05-19T00:00:00+00:00"},"primary_type":{"code":"TC","name":"Tropical
@@ -230,8 +249,30 @@ http_interactions:
         (IHR) (2005) regarding [EVD] outbreak in [DRC] took place on...18 May 2018...It
         was the view of the Committee that the conditions for a Public Health Emergency
         of International Concern (PHEIC) have not currently been met. (<a href=\"https:\/\/reliefweb.int\/node\/2611179\">WHO,
-        18 May 2018<\/a>)   <\/p>\n\n<h3>Appeals &amp; Response Plans<\/h3>\n\n<ul>\n<li><a
-        href=\"https:\/\/reliefweb.int\/node\/2629959\"><img src=\"https:\/\/reliefweb.int\/sites\/reliefweb.int\/files\/styles\/attachment-small\/public\/resources-pdf-previews\/1104799-DRC-ebola-disease-outbreak-response-plan-28May2018-ENfinal.png\"
+        18 May 2018<\/a>)   <\/p>\n\n<p>On 15 June 2018, five new suspected EVD cases
+        were reported in Bikoro Health Zone. Six laboratory specimens (from suspected
+        cases reported previously) tested negative. No new confirmed\nEVD cases and
+        no new deaths were reported on the reporting date. Since 17 May 2018, no new
+        confirmed EVD cases have been reported in Bikoro and Wangata health zones,
+        while the last confirmed case-patient in Iboko Health Zone developed illness
+        on 2 June 2018 and was confirmed 6 June 2018. To date, a total 24 case-patients
+        with confirmed EVD have been cured since the onset of the outbreak. Since
+        the beginning of the outbreak (on 4 April 2018), a total of 57 EVD cases and
+        28 deaths (case fatality rate 49.1%) have been reported, as of 15 June 2018.
+        Of the 57 cases, 38 have been laboratory confirmed, 14 are probable (deaths
+        for which it was not possible to collect laboratory specimens for testing)
+        and five are suspected. Of the confirmed and probable cases, 27 (52%) are
+        from Iboko, followed by 21 (40%) from Bikoro and four (8%) from Wangata health
+        zones. A total of five healthcare workers have been affected, with four confirmed
+        cases and two deaths. (<a href=\"https:\/\/reliefweb.int\/node\/2657889\">WHO,
+        15 Jun 2018<\/a>)   <\/p>\n\n<h3>Appeals &amp; Response Plans<\/h3>\n\n<ul>\n<li><a
+        href=\"https:\/\/reliefweb.int\/node\/2644434\"><img src=\"https:\/\/reliefweb.int\/sites\/reliefweb.int\/files\/styles\/attachment-small\/public\/resources-pdf-previews\/1110194-WHO-regional-strategic-EVD-operational-readiness.png\"
+        alt=\" WHO Regional Strategic Plan for EVD Operational Readiness and Preparedness
+        in Countries Neighboring the Democratic Republic of the Congo (June 2018 -
+        February 2019) - Cover preview\"> WHO: WHO Regional Strategic Plan for EVD
+        Operational Readiness and Preparedness in Countries Neighboring the Democratic
+        Republic of the Congo (June 2018 - February 2019)<\/a><\/li>\n<li><a href=\"https:\/\/reliefweb.int\/node\/2629959\"><img
+        src=\"https:\/\/reliefweb.int\/sites\/reliefweb.int\/files\/styles\/attachment-small\/public\/resources-pdf-previews\/1104799-DRC-ebola-disease-outbreak-response-plan-28May2018-ENfinal.png\"
         alt=\" Democratic Republic of the Congo, 2018 - Cover preview\"> Govt. DR
         Congo: Strategic Response Plan for the Ebola Virus Disease Outbreak: Democratic
         Republic of the Congo, 2018<\/a><\/li>\n<\/ul>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a
@@ -249,7 +290,13 @@ http_interactions:
         earthquakes (magnitude 5.6 and intensity VII) was recorded on 6 May at 1:02
         p.m. in Chirilagua and Intipuc\u00e1. It caused severe damage to homes made
         of mud, adobe, or wattle and daub. (<a href=\"https:\/\/reliefweb.int\/node\/2612149\">IFRC,
-        18 May 2018<\/a>)<\/p>\n","name":"El Salvador: Earthquake - May 2018","glide":"EQ-2018-000053-SLV","type":[{"name":"Earthquake"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45789","status":"current"}},{"id":"45924","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45924","fields":{"date":{"created":"2018-05-05T00:00:00+00:00"},"primary_type":{"code":"FL","name":"Flood","id":4611},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/227","name":"Tajikistan","location":{"lon":71.04,"lat":38.84},"id":227,"iso3":"tjk"},"description-html":"<p>Heavy
+        18 May 2018<\/a>)<\/p>\n\n<p>As part of the response and support process that
+        has been provided to those affected by the seismic swarm that occurred since
+        May 5, authorities from different State institutions presented a housing model
+        that will be built for 150 affected families in the Intipuc\u00e1 municipalities.
+        Tierra Blanca and El Carmen, in the eastern part of the country. (<a href=\"https:\/\/reliefweb.int\/node\/2642724\">Gov&#39;t
+        of El Salvador, 5 Jun 2018<\/a>)<\/p>\n","name":"El Salvador: Earthquake -
+        May 2018","glide":"EQ-2018-000053-SLV","type":[{"name":"Earthquake"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45789","status":"current"}},{"id":"45924","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45924","fields":{"date":{"created":"2018-05-05T00:00:00+00:00"},"primary_type":{"code":"FL","name":"Flood","id":4611},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/227","name":"Tajikistan","location":{"lon":71.04,"lat":38.84},"id":227,"iso3":"tjk"},"description-html":"<p>Heavy
         and prolonged rains on 16-21 May caused floods in the southern part of Tajikistan
         affecting 9 villages in 2 districts of Khatlon Province. According to the
         results of the rapid assessment conducted by the Government Emergency Response
@@ -258,7 +305,7 @@ http_interactions:
         were killed, 1,145 households (5,725 people) were heavily affected, infrastructure
         objects were damaged or destroyed in Farkhor and Panj districts of Khatlon
         Province. (<a href=\"https:\/\/reliefweb.int\/node\/2634614\">IFRC, 2 Jun
-        2018<\/a>)<\/p>\n","name":"Tajikistan: Floods - May 2018","glide":"FL-2018-000065-TJK","type":[{"name":"Flood"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45924","status":"current"}},{"id":"45774","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45774","fields":{"date":{"created":"2018-05-04T00:00:00+00:00"},"primary_type":{"code":"FL","name":"Flood","id":4611},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/47","name":"Burundi","location":{"lon":29.89,"lat":-3.53},"id":47,"iso3":"bdi"},"description-html":"<p>On
+        2018<\/a>)<\/p>\n","name":"Tajikistan: Floods - May 2018","glide":"FL-2018-000065-TJK","type":[{"name":"Flood"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45924","status":"past"}},{"id":"45774","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45774","fields":{"date":{"created":"2018-05-04T00:00:00+00:00"},"primary_type":{"code":"FL","name":"Flood","id":4611},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/47","name":"Burundi","location":{"lon":29.89,"lat":-3.53},"id":47,"iso3":"bdi"},"description-html":"<p>On
         4 May, a heavy rainfall led to flooding in Gatumba, located at approximately
         12 kilometres from the city of Bujumbura. This was one of the many floods
         which have affected the country since January 2018. Like many others, this
@@ -291,5 +338,5 @@ http_interactions:
         in Arusha due to the continuous heavy downpour. (<a href=\"https:\/\/reliefweb.int\/node\/2581164\">IFRC,
         30 Apr 2018<\/a>)<\/p>\n","name":"Tanzania: Floods - Apr 2018","glide":"FL-2018-000043-TZA","type":[{"name":"Flood"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45654","status":"current"}}]}'
     http_version: 
-  recorded_at: Sun, 10 Jun 2018 19:45:59 GMT
+  recorded_at: Mon, 18 Jun 2018 18:46:23 GMT
 recorded_with: VCR 4.0.0

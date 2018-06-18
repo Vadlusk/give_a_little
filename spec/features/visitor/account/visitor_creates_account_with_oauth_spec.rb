@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'visitor goes to create account page' do
+RSpec.describe 'visitor goes to create account page' do
   scenario 'and uses twitter oauth' do
     VCR.use_cassette('twitter_oauth') do
       visit disasters_path

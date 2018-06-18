@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'user logs in' do
+RSpec.describe 'user logs in' do
   subject { create(:user, first_name: 'Valane Adam Lusk') }
   scenario 'using twitter oauth' do
     VCR.use_cassette('returning_twitter_user') do

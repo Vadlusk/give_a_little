@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe CharitiesService do
+RSpec.describe CharitiesService do
   subject { CharitiesService.new('Flood') }
   context 'attributes' do
     it 'exists with a type of disaster' do
