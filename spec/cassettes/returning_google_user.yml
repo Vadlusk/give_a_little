@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Jun 2018 18:46:20 GMT
+      - Mon, 18 Jun 2018 18:53:03 GMT
       Content-Type:
       - application/json
       Vary:
@@ -41,9 +41,9 @@ http_interactions:
       X-Varnish-Ttl:
       - '2.000'
       X-Varnish:
-      - 53920094 53571870
+      - 54167840 54134762
       Age:
-      - '3'
+      - '2'
       Via:
       - 1.1 varnish-v4
       X-Varnish-Server:
@@ -338,5 +338,5 @@ http_interactions:
         in Arusha due to the continuous heavy downpour. (<a href=\"https:\/\/reliefweb.int\/node\/2581164\">IFRC,
         30 Apr 2018<\/a>)<\/p>\n","name":"Tanzania: Floods - Apr 2018","glide":"FL-2018-000043-TZA","type":[{"name":"Flood"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45654","status":"current"}}]}'
     http_version: 
-  recorded_at: Mon, 18 Jun 2018 18:46:22 GMT
+  recorded_at: Mon, 18 Jun 2018 18:53:05 GMT
 recorded_with: VCR 4.0.0

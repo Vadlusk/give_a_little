@@ -182,7 +182,7 @@
         null,
         null,
         null,
-        1,
+        7,
         null,
         null
       ],
@@ -228,15 +228,9 @@
         null,
         null
       ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/disasters_controller.rb": [
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/welcome_controller.rb": [
         1,
         1,
-        13,
-        null,
-        null,
-        1,
-        4,
-        null,
         null
       ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/application_controller.rb": [
@@ -258,70 +252,6 @@
         11,
         11,
         null,
-        null
-      ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/disaster_search.rb": [
-        1,
-        1,
-        4,
-        null,
-        null,
-        1,
-        4,
-        null,
-        null,
-        1,
-        null,
-        1,
-        4,
-        null,
-        null
-      ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/charities_controller.rb": [
-        1,
-        1,
-        5,
-        null,
-        null
-      ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/charities_search.rb": [
-        1,
-        1,
-        5,
-        null,
-        null,
-        1,
-        80,
-        null,
-        null,
-        1,
-        null,
-        1,
-        5,
-        null,
-        null
-      ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/disasters_search.rb": [
-        1,
-        1,
-        13,
-        13,
-        null,
-        null,
-        1,
-        177,
-        null,
-        null,
-        1,
-        null,
-        1,
-        13,
-        null,
-        null
-      ],
-      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/welcome_controller.rb": [
-        1,
-        1,
         null
       ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/sessions_controller.rb": [
@@ -460,6 +390,76 @@
         null,
         null
       ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/disasters_controller.rb": [
+        1,
+        1,
+        13,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null
+      ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/disasters_search.rb": [
+        1,
+        1,
+        13,
+        13,
+        null,
+        null,
+        1,
+        177,
+        null,
+        null,
+        1,
+        null,
+        1,
+        13,
+        null,
+        null
+      ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/disaster_search.rb": [
+        1,
+        1,
+        4,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null
+      ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/charities_controller.rb": [
+        1,
+        1,
+        5,
+        null,
+        null
+      ],
+      "/Users/vadlusk/turing/3module/projects/give_a_little/app/models/charities_search.rb": [
+        1,
+        1,
+        5,
+        null,
+        null,
+        1,
+        80,
+        null,
+        null,
+        1,
+        null,
+        1,
+        5,
+        null,
+        null
+      ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/donations_controller.rb": [
         1,
         1,
@@ -477,10 +477,6 @@
         0
       ],
       "/Users/vadlusk/turing/3module/projects/give_a_little/app/controllers/api/v1/donations_controller.rb": [
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0,
@@ -514,6 +510,6 @@
         0
       ]
     },
-    "timestamp": 1529347596
+    "timestamp": 1534960146
   }
 }

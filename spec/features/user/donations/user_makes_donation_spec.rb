@@ -13,9 +13,10 @@ RSpec.describe 'user selects a charity', js: true do
       click_on 'Proceed to entering financial info'
 
       expect(current_path).to eq(new_donation_path)
-      fill_in_donation_info(user.first_name, user.last_name)
-
       expect(page).to have_css('#panda_cc_form')
+
+      fill_in_donation_info(user.first_name, user.last_name)
+      click_on 'Make Donation'
     end
   end
 end

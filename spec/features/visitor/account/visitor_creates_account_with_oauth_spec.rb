@@ -11,7 +11,7 @@ RSpec.describe 'visitor goes to create account page' do
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content('Logged in as:')
       expect(page).to have_css('.twitter-logo')
-      expect(page).to_not have_css('.google-logo')
+      expect(page).to_not have_css('.google_oauth2-logo')
       expect(page).to_not have_link('Log in')
       expect(page).to_not have_link('Create an Account')
       expect(User.all.length).to eq(1)
@@ -27,7 +27,7 @@ RSpec.describe 'visitor goes to create account page' do
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content('Logged in as:')
       expect(page).to_not have_css('.twitter-logo')
-      expect(page).to have_css('.google-logo')
+      expect(page).to have_css('.google_oauth2-logo')
       expect(page).to_not have_link('Log in')
       expect(page).to_not have_link('Create an Account')
       expect(User.all.length).to eq(1)
@@ -41,12 +41,13 @@ RSpec.describe 'visitor goes to create account page' do
       click_on 'Continue with Google'
       click_on 'Log out'
       click_on 'Log in'
+      stub_twitter_omniauth
       click_on 'Continue with Twitter'
 
       expect(current_path).to eq(dashboard_path)
       expect(page).to have_content('Logged in as:')
       expect(page).to have_css('.twitter-logo')
-      expect(page).to have_css('.google-logo')
+      expect(page).to have_css('.google_oauth2-logo')
       expect(page).to_not have_link('Log in')
       expect(page).to_not have_link('Create an Account')
     end

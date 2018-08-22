@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Jun 2018 16:59:40 GMT
+      - Mon, 18 Jun 2018 18:53:05 GMT
       Content-Type:
       - application/json
       Vary:
@@ -41,9 +41,9 @@ http_interactions:
       X-Varnish-Ttl:
       - '2.000'
       X-Varnish:
-      - 53571869 53407123
+      - 54167843 54167841
       Age:
-      - '6400'
+      - '12'
       Via:
       - 1.1 varnish-v4
       X-Varnish-Server:
@@ -338,7 +338,452 @@ http_interactions:
         in Arusha due to the continuous heavy downpour. (<a href=\"https:\/\/reliefweb.int\/node\/2581164\">IFRC,
         30 Apr 2018<\/a>)<\/p>\n","name":"Tanzania: Floods - Apr 2018","glide":"FL-2018-000043-TZA","type":[{"name":"Flood"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45654","status":"current"}}]}'
     http_version: 
-  recorded_at: Mon, 18 Jun 2018 18:46:20 GMT
+  recorded_at: Mon, 18 Jun 2018 18:53:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"http://127.0.0.1:54365/disasters"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Content-Length:
+      - '42'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":null}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":".//*[self::input | self::textarea][not(((((((./@type
+        = ''submit'') or (./@type = ''image'')) or (./@type = ''radio'')) or (./@type
+        = ''checkbox'')) or (./@type = ''hidden'')) or (./@type = ''file'')))][((((./@id
+        = ''limit'') or (./@name = ''limit'')) or (./@placeholder = ''limit'')) or
+        (./@id = //label[(normalize-space(string(.)) = ''limit'')]/@for))] | .//label[(normalize-space(string(.))
+        = ''limit'')]//.//*[self::input | self::textarea][not(((((((./@type = ''submit'')
+        or (./@type = ''image'')) or (./@type = ''radio'')) or (./@type = ''checkbox''))
+        or (./@type = ''hidden'')) or (./@type = ''file'')))]"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Content-Length:
+      - '603'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":[{"ELEMENT":"0.2384031458657574-1"}]}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:17 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-1/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":true}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:17 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-1/enabled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":true}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:17 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-1/attribute/readonly
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":null}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:17 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-1/name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":"input"}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:17 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-1/attribute/type
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":"number"}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/execute
+    body:
+      encoding: UTF-8
+      string: '{"script":"arguments[0].value = ''''","args":[{"ELEMENT":"0.2384031458657574-1"}]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Content-Length:
+      - '80'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":null}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-1/value
+    body:
+      encoding: UTF-8
+      string: '{"value":["44"]}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Content-Length:
+      - '16'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":null}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"xpath","value":".//a[./@href][((((./@id = ''Update map'')
+        or (normalize-space(string(.)) = ''Update map'')) or (./@title = ''Update
+        map'')) or .//img[(./@alt = ''Update map'')])] | .//input[((((./@type = ''submit'')
+        or (./@type = ''reset'')) or (./@type = ''image'')) or (./@type = ''button''))][(((./@id
+        = ''Update map'') or (./@value = ''Update map'')) or (./@title = ''Update
+        map''))] | .//input[(./@type = ''image'')][(./@alt = ''Update map'')] | .//button[(((((./@id
+        = ''Update map'') or (./@value = ''Update map'')) or (./@title = ''Update
+        map'')) or (normalize-space(string(.)) = ''Update map'')) or .//img[(./@alt
+        = ''Update map'')])] | .//input[(./@type = ''image'')][(./@alt = ''Update
+        map'')]"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Content-Length:
+      - '675'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":[{"ELEMENT":"0.2384031458657574-2"}]}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-2/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":true}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-2/name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":"input"}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-2/enabled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":true}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:18 GMT
 - request:
     method: get
     uri: https://api.reliefweb.int/v1/disasters?appname=givealittle&fields%5Bexclude%5D%5B0%5D=country&fields%5Binclude%5D%5B0%5D=primary_country&fields%5Binclude%5D%5B1%5D=primary_type&fields%5Binclude%5D%5B2%5D=description-html&limit=44&preset=latest&profile=list
@@ -360,7 +805,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Mon, 18 Jun 2018 18:46:20 GMT
+      - Mon, 18 Jun 2018 18:53:18 GMT
       Content-Type:
       - application/json
       Vary:
@@ -380,7 +825,7 @@ http_interactions:
       X-Varnish-Ttl:
       - '2.000'
       X-Varnish:
-      - '55292673'
+      - '53734076'
       Age:
       - '0'
       Via:
@@ -389,10 +834,10 @@ http_interactions:
       - rwint-api-varnish
       Accept-Ranges:
       - bytes
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '58454'
       Set-Cookie:
-      - __bm-hap_hKBcutrqRn9rEZDW=S1; path=/; HttpOnly; Secure
+      - __bm-hap_hKBcutrqRn9rEZDW=S2; path=/; HttpOnly; Secure
     body:
       encoding: ASCII-8BIT
       string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?appname=givealittle&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description-html&limit=44&preset=latest&profile=list","time":2,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=0&limit=44&preset=latest"},"next":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=44&limit=44&preset=latest"}},"totalCount":2962,"count":44,"data":[{"id":"45934","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45934","fields":{"date":{"created":"2018-06-03T00:00:00+00:00"},"primary_type":{"code":"VO","name":"Volcano","id":4615},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/109","name":"Guatemala","location":{"lon":-90.39,"lat":15.61},"id":109,"iso3":"gtm"},"description-html":"<p>On
@@ -2185,5 +2630,104 @@ http_interactions:
         112 hospitalisations. (<a href=\"https:\/\/reliefweb.int\/node\/2641569\">WHO,
         7 June 2018<\/a>).<\/p>\n","name":"Pacific: Dengue Outbreak - 2017-2018","glide":"EP-2017-000184-WSM","type":[{"name":"Epidemic"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/44929","status":"current"}}]}'
     http_version: 
-  recorded_at: Mon, 18 Jun 2018 18:46:20 GMT
+  recorded_at: Mon, 18 Jun 2018 18:53:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.2384031458657574-2/click
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Content-Length:
+      - '2'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":null}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:18 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":"#map"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Content-Length:
+      - '39'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '106'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":[{"ELEMENT":"0.007606692884863486-1"}]}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:18 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9515/session/ca1c19792f8b2090e30c71683007e513/element/0.007606692884863486-1/displayed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.12.0 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"sessionId":"ca1c19792f8b2090e30c71683007e513","status":0,"value":true}'
+    http_version: 
+  recorded_at: Mon, 18 Jun 2018 18:53:18 GMT
 recorded_with: VCR 4.0.0
