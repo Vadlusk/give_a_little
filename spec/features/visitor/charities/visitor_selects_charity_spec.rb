@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'visitor selects charity' do
+RSpec.describe 'visitor selects charity' do
   scenario 'and proceeds without and then with selecting a charity' do
     VCR.use_cassette('charity_selection') do
       visit disaster_path(45829)

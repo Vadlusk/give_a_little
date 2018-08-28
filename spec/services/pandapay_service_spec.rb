@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe PandaPayService do
+RSpec.describe PandaPayService do
   let(:data) { {:source=>"cBOCDezOtgCOrLStSvmsz7bpHp", :amount=>"1423", :destination=>2164023, :email=>"AdLusk@gmail.com"} }
   subject { PandaPayService.new(data) }
   context 'attributes' do

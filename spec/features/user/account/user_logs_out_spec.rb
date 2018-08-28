@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-describe 'user logs out' do
+RSpec.describe 'user logs out' do
   it 'is possible' do
     VCR.use_cassette('logout') do
       user = create(:user)
 
       visit root_path
       click_on 'Log in'
-      fill_in_credentials(user.email, user.password)
+      fill_in_login_info(user.email, user.password)
       click_on 'Log out'
 
       expect(page).to have_link('Create an Account')

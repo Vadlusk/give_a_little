@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'visitor goes to a disaster page and' do
+RSpec.describe 'visitor goes to a disaster page and' do
   scenario 'sees all the info they should see' do
     VCR.use_cassette('disaster_show') do
       visit disasters_path

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Disaster do
+RSpec.describe Disaster do
   let (:data) {
     {
       "fields": {

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'visitor clicks on donate now' do
+RSpec.describe 'visitor clicks on donate now' do
   scenario 'and sees the correct path and a list of charities' do
     VCR.use_cassette('charities_index') do
       visit disaster_path(45829)

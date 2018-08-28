@@ -1,4 +1,4 @@
 require "rails_helper"
 
-describe WelcomeLocalUserMailer do
+RSpec.describe WelcomeLocalUserMailer do
 end

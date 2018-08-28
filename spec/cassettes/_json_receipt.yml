@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.4.6 (Ubuntu)
       Date:
-      - Thu, 14 Jun 2018 22:20:29 GMT
+      - Mon, 18 Jun 2018 18:53:07 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -43,14 +43,14 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 9760c560-4cc7-4047-94de-49c2443a8f0d
+      - ea66627d-f192-4a5b-989a-9818f9d6c8da
       X-Runtime:
-      - '0.855170'
+      - '0.680593'
       Vary:
       - Origin
     body:
       encoding: UTF-8
       string: '{"errors":[{"type":"invalid_parameters","message":"Source was declined"}]}'
     http_version: 
-  recorded_at: Thu, 14 Jun 2018 22:20:29 GMT
+  recorded_at: Mon, 18 Jun 2018 18:53:07 GMT
 recorded_with: VCR 4.0.0

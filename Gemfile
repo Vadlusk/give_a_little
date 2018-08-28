@@ -17,6 +17,7 @@ gem 'omniauth-twitter'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.0'
+gem 'rails_12factor'
 gem 'sass-rails', '~> 5.0'
 gem 'sendgrid-ruby'
 gem 'uglifier', '>= 1.3.0'
@@ -40,6 +41,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'simplecov'
   gem 'faker'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
 end
 
 group :development do
@@ -49,7 +52,6 @@ group :development do
 end
 
 group :test do
-  gem 'selenium-webdriver'
   gem 'vcr'
   gem 'webmock'
 end

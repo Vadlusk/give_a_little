@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.2
+      - Faraday v0.12.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 14 Jun 2018 01:23:35 GMT
+      - Mon, 18 Jun 2018 18:53:03 GMT
       Content-Type:
       - application/json
       Vary:
@@ -41,9 +41,9 @@ http_interactions:
       X-Varnish-Ttl:
       - '2.000'
       X-Varnish:
-      - 44846249 45318940
+      - 53976944 54134762
       Age:
-      - '1627'
+      - '1'
       Via:
       - 1.1 varnish-v4
       X-Varnish-Server:
@@ -51,12 +51,12 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Content-Length:
-      - '9790'
+      - '10390'
       Set-Cookie:
       - __bm-hap_hKBcutrqRn9rEZDW=S2; path=/; HttpOnly; Secure
     body:
       encoding: ASCII-8BIT
-      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?appname=givealittle&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description-html&preset=latest&profile=list","time":3,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=0&limit=10&preset=latest"},"next":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=10&limit=10&preset=latest"}},"totalCount":2963,"count":10,"data":[{"id":"45934","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45934","fields":{"date":{"created":"2018-06-03T00:00:00+00:00"},"primary_type":{"code":"VO","name":"Volcano","id":4615},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/109","name":"Guatemala","location":{"lon":-90.39,"lat":15.61},"id":109,"iso3":"gtm"},"description-html":"<p>On
+      string: '{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?appname=givealittle&fields%5Bexclude%5D%5B%5D=country&fields%5Binclude%5D%5B%5D=primary_country&fields%5Binclude%5D%5B%5D=primary_type&fields%5Binclude%5D%5B%5D=description-html&preset=latest&profile=list","time":2,"links":{"self":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=0&limit=10&preset=latest"},"next":{"href":"https:\/\/api.reliefweb.int\/v1\/disasters?offset=10&limit=10&preset=latest"}},"totalCount":2962,"count":10,"data":[{"id":"45934","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45934","fields":{"date":{"created":"2018-06-03T00:00:00+00:00"},"primary_type":{"code":"VO","name":"Volcano","id":4615},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/109","name":"Guatemala","location":{"lon":-90.39,"lat":15.61},"id":109,"iso3":"gtm"},"description-html":"<p>On
         3 June, the Fuego volcano erupted for the second time in 2018, launching columns
         of ash and pyroclastic flow some 15,000m above sea level and spreading west
         and southwest, according to a special bulletin issued by the National Institute
@@ -83,7 +83,12 @@ http_interactions:
         registered shelters in the departments of Escuintla (17), Sacatep\u00e9quez
         (1), Santa Rosa (2) and Suchitep\u00e9quez (1). The number of people sheltered
         continues to rise. (<a href=\"https:\/\/reliefweb.int\/node\/2643439\">OCHA,
-        7 Jun 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"https:\/\/conred.gob.gt\/site\/index.php\"><img
+        7 Jun 2018<\/a>)<\/p>\n\n<p>As of 13 June 2018, 1,714,373 people are affected,
+        110 people have been killed, 57 people have been injured and 3,557 people
+        are in shelters.  According to a Food for the Hungry evaluation, there are
+        approximately 17 official and 19 unofficial shelters with 1,200 people. Per
+        the Red Cross, 197 people remain missing. (<a href=\"https:\/\/reliefweb.int\/node\/2652609\">OCHA,
+        13 Jun 2018<\/a>)<\/p>\n\n<h3>Useful Links<\/h3>\n\n<ul>\n<li><a href=\"https:\/\/conred.gob.gt\/site\/index.php\"><img
         src=\"https:\/\/conred.gob.gt\/site\/images\/logo.png\" alt=\"CONRED - Logo\"><\/a><\/li>\n<\/ul>\n","name":"Guatemala:
         Fuego Volcano - Jun 2018","glide":"VO-2018-000066-GTM","type":[{"name":"Volcano"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45934","status":"current"}},{"id":"45829","score":1,"href":"https:\/\/api.reliefweb.int\/v1\/disasters\/45829","fields":{"date":{"created":"2018-05-23T00:00:00+00:00"},"primary_type":{"code":"TC","name":"Tropical
         Cyclone","id":4618},"primary_country":{"href":"https:\/\/api.reliefweb.int\/v1\/countries\/255","name":"Yemen","location":{"lon":47.62,"lat":15.94},"id":255,"iso3":"yem"},"description-html":"<p>A
@@ -244,7 +249,23 @@ http_interactions:
         (IHR) (2005) regarding [EVD] outbreak in [DRC] took place on...18 May 2018...It
         was the view of the Committee that the conditions for a Public Health Emergency
         of International Concern (PHEIC) have not currently been met. (<a href=\"https:\/\/reliefweb.int\/node\/2611179\">WHO,
-        18 May 2018<\/a>)   <\/p>\n\n<h3>Appeals &amp; Response Plans<\/h3>\n\n<ul>\n<li><a
+        18 May 2018<\/a>)   <\/p>\n\n<p>On 15 June 2018, five new suspected EVD cases
+        were reported in Bikoro Health Zone. Six laboratory specimens (from suspected
+        cases reported previously) tested negative. No new confirmed\nEVD cases and
+        no new deaths were reported on the reporting date. Since 17 May 2018, no new
+        confirmed EVD cases have been reported in Bikoro and Wangata health zones,
+        while the last confirmed case-patient in Iboko Health Zone developed illness
+        on 2 June 2018 and was confirmed 6 June 2018. To date, a total 24 case-patients
+        with confirmed EVD have been cured since the onset of the outbreak. Since
+        the beginning of the outbreak (on 4 April 2018), a total of 57 EVD cases and
+        28 deaths (case fatality rate 49.1%) have been reported, as of 15 June 2018.
+        Of the 57 cases, 38 have been laboratory confirmed, 14 are probable (deaths
+        for which it was not possible to collect laboratory specimens for testing)
+        and five are suspected. Of the confirmed and probable cases, 27 (52%) are
+        from Iboko, followed by 21 (40%) from Bikoro and four (8%) from Wangata health
+        zones. A total of five healthcare workers have been affected, with four confirmed
+        cases and two deaths. (<a href=\"https:\/\/reliefweb.int\/node\/2657889\">WHO,
+        15 Jun 2018<\/a>)   <\/p>\n\n<h3>Appeals &amp; Response Plans<\/h3>\n\n<ul>\n<li><a
         href=\"https:\/\/reliefweb.int\/node\/2644434\"><img src=\"https:\/\/reliefweb.int\/sites\/reliefweb.int\/files\/styles\/attachment-small\/public\/resources-pdf-previews\/1110194-WHO-regional-strategic-EVD-operational-readiness.png\"
         alt=\" WHO Regional Strategic Plan for EVD Operational Readiness and Preparedness
         in Countries Neighboring the Democratic Republic of the Congo (June 2018 -
@@ -317,5 +338,5 @@ http_interactions:
         in Arusha due to the continuous heavy downpour. (<a href=\"https:\/\/reliefweb.int\/node\/2581164\">IFRC,
         30 Apr 2018<\/a>)<\/p>\n","name":"Tanzania: Floods - Apr 2018","glide":"FL-2018-000043-TZA","type":[{"name":"Flood"}],"url":"https:\/\/reliefweb.int\/taxonomy\/term\/45654","status":"current"}}]}'
     http_version: 
-  recorded_at: Thu, 14 Jun 2018 01:50:42 GMT
+  recorded_at: Mon, 18 Jun 2018 18:53:04 GMT
 recorded_with: VCR 4.0.0

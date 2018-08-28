@@ -1,7 +1,7 @@
 require 'spec_helper'
 require './app/models/charity'
 
-describe Charity do
+RSpec.describe Charity do
   let (:data) {
     {
     "charityNavigatorURL": "https://www.charitynavigator.org/?bay=search.summary&orgid=5954&utm_source=DataAPI&utm_content=b16336bb",

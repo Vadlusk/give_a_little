@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Donation do
+RSpec.describe Donation do
   subject { Donation.from_data(donation_stub) }
   before(:each) do
   user = User.create!(

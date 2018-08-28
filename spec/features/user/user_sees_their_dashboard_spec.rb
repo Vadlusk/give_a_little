@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'user logs in' do
+RSpec.describe 'user logs in' do
   let(:user) { create(:user_with_donations) }
   before(:each) do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)

@@ -1,4 +1,4 @@
 require "rails_helper"
 
-describe WelcomeOauthUserMailer do
+RSpec.describe WelcomeOauthUserMailer do
 end

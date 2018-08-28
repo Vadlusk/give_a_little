@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe User do
+RSpec.describe User do
 
   subject { User.create(
     first_name: 'Al',
