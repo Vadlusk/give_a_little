@@ -17,6 +17,8 @@ RSpec.describe 'user selects a charity', js: true do
 
       fill_in_donation_info(user.first_name, user.last_name)
       click_on 'Make Donation'
+
+      expect(current_path).to eq(tweets_path)
     end
   end
 end
